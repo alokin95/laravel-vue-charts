@@ -36,6 +36,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "LoginPage"
 });
@@ -284,9 +304,64 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("Login")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "flex items-center justify-center h-screen" },
+      [
+        _c("div", { staticClass: "font-bold" }, [
+          _c("form", { staticClass: "w-full max-w-sm" }, [
+            _c("div", { staticClass: "md:flex md:items-center mb-6" }, [
+              _c("div", [
+                _c("input", {
+                  staticClass:
+                    "text-center shadow-xl appearance-none border-2 border-blue-600 rounded-full w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none",
+                  attrs: {
+                    id: "username",
+                    type: "text",
+                    placeholder: "Username"
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "md:flex md:items-center mb-6" }, [
+              _c("div", [
+                _c("input", {
+                  staticClass:
+                    "shadow-xl text-center appearance-none border-2 border-blue-600 rounded-full w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none",
+                  attrs: {
+                    id: "inline-password",
+                    type: "password",
+                    placeholder: "Password"
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "md:flex md:items-center mb-6" }, [
+              _c(
+                "button",
+                {
+                  staticClass:
+                    "text-center shadow-xl bg-loginButton appearance-none border-2 border-loginButton rounded-full w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none",
+                  attrs: { type: "button" }
+                },
+                [_vm._v("\n                    Login\n                ")]
+              )
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 
