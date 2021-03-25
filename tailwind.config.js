@@ -10,7 +10,7 @@ module.exports = {
         extend: {
             colors: {
                 loginButton: '#8df9fc',
-                loginInfoButton: '#00cccc',
+                loginInfoButton: '#24bdcd',
                 loginBorders: '#006080',
                 loginInputText: '#828483',
                 loginButtonText: '#7ea0b9'

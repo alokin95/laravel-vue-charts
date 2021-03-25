@@ -1926,7 +1926,7 @@ video {
 
 .divide-loginInfoButton > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
-  border-color: rgba(0, 204, 204, var(--tw-divide-opacity));
+  border-color: rgba(36, 189, 205, var(--tw-divide-opacity));
 }
 
 .divide-loginBorders > :not([hidden]) ~ :not([hidden]) {
@@ -2553,7 +2553,7 @@ video {
 
 .bg-loginInfoButton {
   --tw-bg-opacity: 1;
-  background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+  background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
 }
 
 .bg-loginBorders {
@@ -2996,7 +2996,7 @@ video {
 
 .group:hover .group-hover\:bg-loginInfoButton {
   --tw-bg-opacity: 1;
-  background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+  background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:bg-loginBorders {
@@ -3439,7 +3439,7 @@ video {
 
 .focus-within\:bg-loginInfoButton:focus-within {
   --tw-bg-opacity: 1;
-  background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+  background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
 }
 
 .focus-within\:bg-loginBorders:focus-within {
@@ -3882,7 +3882,7 @@ video {
 
 .hover\:bg-loginInfoButton:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+  background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
 }
 
 .hover\:bg-loginBorders:hover {
@@ -4325,7 +4325,7 @@ video {
 
 .focus\:bg-loginInfoButton:focus {
   --tw-bg-opacity: 1;
-  background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+  background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
 }
 
 .focus\:bg-loginBorders:focus {
@@ -4805,8 +4805,8 @@ video {
 }
 
 .from-loginInfoButton {
-  --tw-gradient-from: #00cccc;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+  --tw-gradient-from: #24bdcd;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
 }
 
 .from-loginBorders {
@@ -5165,7 +5165,7 @@ video {
 }
 
 .via-loginInfoButton {
-  --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
 }
 
 .via-loginBorders {
@@ -5521,7 +5521,7 @@ video {
 }
 
 .to-loginInfoButton {
-  --tw-gradient-to: #00cccc;
+  --tw-gradient-to: #24bdcd;
 }
 
 .to-loginBorders {
@@ -5962,8 +5962,8 @@ video {
 }
 
 .hover\:from-loginInfoButton:hover {
-  --tw-gradient-from: #00cccc;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+  --tw-gradient-from: #24bdcd;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
 }
 
 .hover\:from-loginBorders:hover {
@@ -6322,7 +6322,7 @@ video {
 }
 
 .hover\:via-loginInfoButton:hover {
-  --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
 }
 
 .hover\:via-loginBorders:hover {
@@ -6678,7 +6678,7 @@ video {
 }
 
 .hover\:to-loginInfoButton:hover {
-  --tw-gradient-to: #00cccc;
+  --tw-gradient-to: #24bdcd;
 }
 
 .hover\:to-loginBorders:hover {
@@ -7119,8 +7119,8 @@ video {
 }
 
 .focus\:from-loginInfoButton:focus {
-  --tw-gradient-from: #00cccc;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+  --tw-gradient-from: #24bdcd;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
 }
 
 .focus\:from-loginBorders:focus {
@@ -7479,7 +7479,7 @@ video {
 }
 
 .focus\:via-loginInfoButton:focus {
-  --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
 }
 
 .focus\:via-loginBorders:focus {
@@ -7835,7 +7835,7 @@ video {
 }
 
 .focus\:to-loginInfoButton:focus {
-  --tw-gradient-to: #00cccc;
+  --tw-gradient-to: #24bdcd;
 }
 
 .focus\:to-loginBorders:focus {
@@ -8655,7 +8655,7 @@ video {
 
 .border-loginInfoButton {
   --tw-border-opacity: 1;
-  border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+  border-color: rgba(36, 189, 205, var(--tw-border-opacity));
 }
 
 .border-loginBorders {
@@ -9098,7 +9098,7 @@ video {
 
 .group:hover .group-hover\:border-loginInfoButton {
   --tw-border-opacity: 1;
-  border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+  border-color: rgba(36, 189, 205, var(--tw-border-opacity));
 }
 
 .group:hover .group-hover\:border-loginBorders {
@@ -9541,7 +9541,7 @@ video {
 
 .focus-within\:border-loginInfoButton:focus-within {
   --tw-border-opacity: 1;
-  border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+  border-color: rgba(36, 189, 205, var(--tw-border-opacity));
 }
 
 .focus-within\:border-loginBorders:focus-within {
@@ -9984,7 +9984,7 @@ video {
 
 .hover\:border-loginInfoButton:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+  border-color: rgba(36, 189, 205, var(--tw-border-opacity));
 }
 
 .hover\:border-loginBorders:hover {
@@ -10427,7 +10427,7 @@ video {
 
 .focus\:border-loginInfoButton:focus {
   --tw-border-opacity: 1;
-  border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+  border-color: rgba(36, 189, 205, var(--tw-border-opacity));
 }
 
 .focus\:border-loginBorders:focus {
@@ -17311,17 +17311,17 @@ video {
 
 .placeholder-loginInfoButton::-moz-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+  color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
 }
 
 .placeholder-loginInfoButton:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+  color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
 }
 
 .placeholder-loginInfoButton::placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+  color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
 }
 
 .placeholder-loginBorders::-moz-placeholder {
@@ -18640,17 +18640,17 @@ video {
 
 .focus\:placeholder-loginInfoButton:focus::-moz-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+  color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-loginInfoButton:focus:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+  color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-loginInfoButton:focus::placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+  color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-loginBorders:focus::-moz-placeholder {
@@ -22581,7 +22581,7 @@ video {
 }
 
 .ring-offset-loginInfoButton {
-  --tw-ring-offset-color: #00cccc;
+  --tw-ring-offset-color: #24bdcd;
 }
 
 .ring-offset-loginBorders {
@@ -22937,7 +22937,7 @@ video {
 }
 
 .focus-within\:ring-offset-loginInfoButton:focus-within {
-  --tw-ring-offset-color: #00cccc;
+  --tw-ring-offset-color: #24bdcd;
 }
 
 .focus-within\:ring-offset-loginBorders:focus-within {
@@ -23293,7 +23293,7 @@ video {
 }
 
 .focus\:ring-offset-loginInfoButton:focus {
-  --tw-ring-offset-color: #00cccc;
+  --tw-ring-offset-color: #24bdcd;
 }
 
 .focus\:ring-offset-loginBorders:focus {
@@ -23793,7 +23793,7 @@ video {
 
 .ring-loginInfoButton {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+  --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
 }
 
 .ring-loginBorders {
@@ -24236,7 +24236,7 @@ video {
 
 .focus-within\:ring-loginInfoButton:focus-within {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+  --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
 }
 
 .focus-within\:ring-loginBorders:focus-within {
@@ -24679,7 +24679,7 @@ video {
 
 .focus\:ring-loginInfoButton:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+  --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
 }
 
 .focus\:ring-loginBorders:focus {
@@ -25346,7 +25346,7 @@ video {
 
 .text-loginInfoButton {
   --tw-text-opacity: 1;
-  color: rgba(0, 204, 204, var(--tw-text-opacity));
+  color: rgba(36, 189, 205, var(--tw-text-opacity));
 }
 
 .text-loginBorders {
@@ -25789,7 +25789,7 @@ video {
 
 .group:hover .group-hover\:text-loginInfoButton {
   --tw-text-opacity: 1;
-  color: rgba(0, 204, 204, var(--tw-text-opacity));
+  color: rgba(36, 189, 205, var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-loginBorders {
@@ -26232,7 +26232,7 @@ video {
 
 .focus-within\:text-loginInfoButton:focus-within {
   --tw-text-opacity: 1;
-  color: rgba(0, 204, 204, var(--tw-text-opacity));
+  color: rgba(36, 189, 205, var(--tw-text-opacity));
 }
 
 .focus-within\:text-loginBorders:focus-within {
@@ -26675,7 +26675,7 @@ video {
 
 .hover\:text-loginInfoButton:hover {
   --tw-text-opacity: 1;
-  color: rgba(0, 204, 204, var(--tw-text-opacity));
+  color: rgba(36, 189, 205, var(--tw-text-opacity));
 }
 
 .hover\:text-loginBorders:hover {
@@ -27118,7 +27118,7 @@ video {
 
 .focus\:text-loginInfoButton:focus {
   --tw-text-opacity: 1;
-  color: rgba(0, 204, 204, var(--tw-text-opacity));
+  color: rgba(36, 189, 205, var(--tw-text-opacity));
 }
 
 .focus\:text-loginBorders:focus {
@@ -33431,7 +33431,7 @@ video {
 
   .sm\:divide-loginInfoButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-divide-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-divide-opacity));
   }
 
   .sm\:divide-loginBorders > :not([hidden]) ~ :not([hidden]) {
@@ -34058,7 +34058,7 @@ video {
 
   .sm\:bg-loginInfoButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .sm\:bg-loginBorders {
@@ -34501,7 +34501,7 @@ video {
 
   .group:hover .sm\:group-hover\:bg-loginInfoButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .group:hover .sm\:group-hover\:bg-loginBorders {
@@ -34944,7 +34944,7 @@ video {
 
   .sm\:focus-within\:bg-loginInfoButton:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .sm\:focus-within\:bg-loginBorders:focus-within {
@@ -35387,7 +35387,7 @@ video {
 
   .sm\:hover\:bg-loginInfoButton:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .sm\:hover\:bg-loginBorders:hover {
@@ -35830,7 +35830,7 @@ video {
 
   .sm\:focus\:bg-loginInfoButton:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .sm\:focus\:bg-loginBorders:focus {
@@ -36310,8 +36310,8 @@ video {
   }
 
   .sm\:from-loginInfoButton {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .sm\:from-loginBorders {
@@ -36670,7 +36670,7 @@ video {
   }
 
   .sm\:via-loginInfoButton {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .sm\:via-loginBorders {
@@ -37026,7 +37026,7 @@ video {
   }
 
   .sm\:to-loginInfoButton {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .sm\:to-loginBorders {
@@ -37467,8 +37467,8 @@ video {
   }
 
   .sm\:hover\:from-loginInfoButton:hover {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .sm\:hover\:from-loginBorders:hover {
@@ -37827,7 +37827,7 @@ video {
   }
 
   .sm\:hover\:via-loginInfoButton:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .sm\:hover\:via-loginBorders:hover {
@@ -38183,7 +38183,7 @@ video {
   }
 
   .sm\:hover\:to-loginInfoButton:hover {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .sm\:hover\:to-loginBorders:hover {
@@ -38624,8 +38624,8 @@ video {
   }
 
   .sm\:focus\:from-loginInfoButton:focus {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .sm\:focus\:from-loginBorders:focus {
@@ -38984,7 +38984,7 @@ video {
   }
 
   .sm\:focus\:via-loginInfoButton:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .sm\:focus\:via-loginBorders:focus {
@@ -39340,7 +39340,7 @@ video {
   }
 
   .sm\:focus\:to-loginInfoButton:focus {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .sm\:focus\:to-loginBorders:focus {
@@ -40160,7 +40160,7 @@ video {
 
   .sm\:border-loginInfoButton {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .sm\:border-loginBorders {
@@ -40603,7 +40603,7 @@ video {
 
   .group:hover .sm\:group-hover\:border-loginInfoButton {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .group:hover .sm\:group-hover\:border-loginBorders {
@@ -41046,7 +41046,7 @@ video {
 
   .sm\:focus-within\:border-loginInfoButton:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .sm\:focus-within\:border-loginBorders:focus-within {
@@ -41489,7 +41489,7 @@ video {
 
   .sm\:hover\:border-loginInfoButton:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .sm\:hover\:border-loginBorders:hover {
@@ -41932,7 +41932,7 @@ video {
 
   .sm\:focus\:border-loginInfoButton:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .sm\:focus\:border-loginBorders:focus {
@@ -48816,17 +48816,17 @@ video {
 
   .sm\:placeholder-loginInfoButton::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-loginInfoButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-loginInfoButton::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-loginBorders::-moz-placeholder {
@@ -50145,17 +50145,17 @@ video {
 
   .sm\:focus\:placeholder-loginInfoButton:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-loginInfoButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-loginInfoButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-loginBorders:focus::-moz-placeholder {
@@ -54073,7 +54073,7 @@ video {
   }
 
   .sm\:ring-offset-loginInfoButton {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .sm\:ring-offset-loginBorders {
@@ -54429,7 +54429,7 @@ video {
   }
 
   .sm\:focus-within\:ring-offset-loginInfoButton:focus-within {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .sm\:focus-within\:ring-offset-loginBorders:focus-within {
@@ -54785,7 +54785,7 @@ video {
   }
 
   .sm\:focus\:ring-offset-loginInfoButton:focus {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .sm\:focus\:ring-offset-loginBorders:focus {
@@ -55285,7 +55285,7 @@ video {
 
   .sm\:ring-loginInfoButton {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .sm\:ring-loginBorders {
@@ -55728,7 +55728,7 @@ video {
 
   .sm\:focus-within\:ring-loginInfoButton:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .sm\:focus-within\:ring-loginBorders:focus-within {
@@ -56171,7 +56171,7 @@ video {
 
   .sm\:focus\:ring-loginInfoButton:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .sm\:focus\:ring-loginBorders:focus {
@@ -56838,7 +56838,7 @@ video {
 
   .sm\:text-loginInfoButton {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .sm\:text-loginBorders {
@@ -57281,7 +57281,7 @@ video {
 
   .group:hover .sm\:group-hover\:text-loginInfoButton {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .group:hover .sm\:group-hover\:text-loginBorders {
@@ -57724,7 +57724,7 @@ video {
 
   .sm\:focus-within\:text-loginInfoButton:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .sm\:focus-within\:text-loginBorders:focus-within {
@@ -58167,7 +58167,7 @@ video {
 
   .sm\:hover\:text-loginInfoButton:hover {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .sm\:hover\:text-loginBorders:hover {
@@ -58610,7 +58610,7 @@ video {
 
   .sm\:focus\:text-loginInfoButton:focus {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .sm\:focus\:text-loginBorders:focus {
@@ -64858,7 +64858,7 @@ video {
 
   .md\:divide-loginInfoButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-divide-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-divide-opacity));
   }
 
   .md\:divide-loginBorders > :not([hidden]) ~ :not([hidden]) {
@@ -65485,7 +65485,7 @@ video {
 
   .md\:bg-loginInfoButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .md\:bg-loginBorders {
@@ -65928,7 +65928,7 @@ video {
 
   .group:hover .md\:group-hover\:bg-loginInfoButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .group:hover .md\:group-hover\:bg-loginBorders {
@@ -66371,7 +66371,7 @@ video {
 
   .md\:focus-within\:bg-loginInfoButton:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .md\:focus-within\:bg-loginBorders:focus-within {
@@ -66814,7 +66814,7 @@ video {
 
   .md\:hover\:bg-loginInfoButton:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .md\:hover\:bg-loginBorders:hover {
@@ -67257,7 +67257,7 @@ video {
 
   .md\:focus\:bg-loginInfoButton:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .md\:focus\:bg-loginBorders:focus {
@@ -67737,8 +67737,8 @@ video {
   }
 
   .md\:from-loginInfoButton {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .md\:from-loginBorders {
@@ -68097,7 +68097,7 @@ video {
   }
 
   .md\:via-loginInfoButton {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .md\:via-loginBorders {
@@ -68453,7 +68453,7 @@ video {
   }
 
   .md\:to-loginInfoButton {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .md\:to-loginBorders {
@@ -68894,8 +68894,8 @@ video {
   }
 
   .md\:hover\:from-loginInfoButton:hover {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .md\:hover\:from-loginBorders:hover {
@@ -69254,7 +69254,7 @@ video {
   }
 
   .md\:hover\:via-loginInfoButton:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .md\:hover\:via-loginBorders:hover {
@@ -69610,7 +69610,7 @@ video {
   }
 
   .md\:hover\:to-loginInfoButton:hover {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .md\:hover\:to-loginBorders:hover {
@@ -70051,8 +70051,8 @@ video {
   }
 
   .md\:focus\:from-loginInfoButton:focus {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .md\:focus\:from-loginBorders:focus {
@@ -70411,7 +70411,7 @@ video {
   }
 
   .md\:focus\:via-loginInfoButton:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .md\:focus\:via-loginBorders:focus {
@@ -70767,7 +70767,7 @@ video {
   }
 
   .md\:focus\:to-loginInfoButton:focus {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .md\:focus\:to-loginBorders:focus {
@@ -71587,7 +71587,7 @@ video {
 
   .md\:border-loginInfoButton {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .md\:border-loginBorders {
@@ -72030,7 +72030,7 @@ video {
 
   .group:hover .md\:group-hover\:border-loginInfoButton {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .group:hover .md\:group-hover\:border-loginBorders {
@@ -72473,7 +72473,7 @@ video {
 
   .md\:focus-within\:border-loginInfoButton:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .md\:focus-within\:border-loginBorders:focus-within {
@@ -72916,7 +72916,7 @@ video {
 
   .md\:hover\:border-loginInfoButton:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .md\:hover\:border-loginBorders:hover {
@@ -73359,7 +73359,7 @@ video {
 
   .md\:focus\:border-loginInfoButton:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .md\:focus\:border-loginBorders:focus {
@@ -80243,17 +80243,17 @@ video {
 
   .md\:placeholder-loginInfoButton::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-loginInfoButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-loginInfoButton::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-loginBorders::-moz-placeholder {
@@ -81572,17 +81572,17 @@ video {
 
   .md\:focus\:placeholder-loginInfoButton:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-loginInfoButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-loginInfoButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-loginBorders:focus::-moz-placeholder {
@@ -85500,7 +85500,7 @@ video {
   }
 
   .md\:ring-offset-loginInfoButton {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .md\:ring-offset-loginBorders {
@@ -85856,7 +85856,7 @@ video {
   }
 
   .md\:focus-within\:ring-offset-loginInfoButton:focus-within {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .md\:focus-within\:ring-offset-loginBorders:focus-within {
@@ -86212,7 +86212,7 @@ video {
   }
 
   .md\:focus\:ring-offset-loginInfoButton:focus {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .md\:focus\:ring-offset-loginBorders:focus {
@@ -86712,7 +86712,7 @@ video {
 
   .md\:ring-loginInfoButton {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .md\:ring-loginBorders {
@@ -87155,7 +87155,7 @@ video {
 
   .md\:focus-within\:ring-loginInfoButton:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .md\:focus-within\:ring-loginBorders:focus-within {
@@ -87598,7 +87598,7 @@ video {
 
   .md\:focus\:ring-loginInfoButton:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .md\:focus\:ring-loginBorders:focus {
@@ -88265,7 +88265,7 @@ video {
 
   .md\:text-loginInfoButton {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .md\:text-loginBorders {
@@ -88708,7 +88708,7 @@ video {
 
   .group:hover .md\:group-hover\:text-loginInfoButton {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .group:hover .md\:group-hover\:text-loginBorders {
@@ -89151,7 +89151,7 @@ video {
 
   .md\:focus-within\:text-loginInfoButton:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .md\:focus-within\:text-loginBorders:focus-within {
@@ -89594,7 +89594,7 @@ video {
 
   .md\:hover\:text-loginInfoButton:hover {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .md\:hover\:text-loginBorders:hover {
@@ -90037,7 +90037,7 @@ video {
 
   .md\:focus\:text-loginInfoButton:focus {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .md\:focus\:text-loginBorders:focus {
@@ -96285,7 +96285,7 @@ video {
 
   .lg\:divide-loginInfoButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-divide-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-divide-opacity));
   }
 
   .lg\:divide-loginBorders > :not([hidden]) ~ :not([hidden]) {
@@ -96912,7 +96912,7 @@ video {
 
   .lg\:bg-loginInfoButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .lg\:bg-loginBorders {
@@ -97355,7 +97355,7 @@ video {
 
   .group:hover .lg\:group-hover\:bg-loginInfoButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .group:hover .lg\:group-hover\:bg-loginBorders {
@@ -97798,7 +97798,7 @@ video {
 
   .lg\:focus-within\:bg-loginInfoButton:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .lg\:focus-within\:bg-loginBorders:focus-within {
@@ -98241,7 +98241,7 @@ video {
 
   .lg\:hover\:bg-loginInfoButton:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .lg\:hover\:bg-loginBorders:hover {
@@ -98684,7 +98684,7 @@ video {
 
   .lg\:focus\:bg-loginInfoButton:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .lg\:focus\:bg-loginBorders:focus {
@@ -99164,8 +99164,8 @@ video {
   }
 
   .lg\:from-loginInfoButton {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .lg\:from-loginBorders {
@@ -99524,7 +99524,7 @@ video {
   }
 
   .lg\:via-loginInfoButton {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .lg\:via-loginBorders {
@@ -99880,7 +99880,7 @@ video {
   }
 
   .lg\:to-loginInfoButton {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .lg\:to-loginBorders {
@@ -100321,8 +100321,8 @@ video {
   }
 
   .lg\:hover\:from-loginInfoButton:hover {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .lg\:hover\:from-loginBorders:hover {
@@ -100681,7 +100681,7 @@ video {
   }
 
   .lg\:hover\:via-loginInfoButton:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .lg\:hover\:via-loginBorders:hover {
@@ -101037,7 +101037,7 @@ video {
   }
 
   .lg\:hover\:to-loginInfoButton:hover {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .lg\:hover\:to-loginBorders:hover {
@@ -101478,8 +101478,8 @@ video {
   }
 
   .lg\:focus\:from-loginInfoButton:focus {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .lg\:focus\:from-loginBorders:focus {
@@ -101838,7 +101838,7 @@ video {
   }
 
   .lg\:focus\:via-loginInfoButton:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .lg\:focus\:via-loginBorders:focus {
@@ -102194,7 +102194,7 @@ video {
   }
 
   .lg\:focus\:to-loginInfoButton:focus {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .lg\:focus\:to-loginBorders:focus {
@@ -103014,7 +103014,7 @@ video {
 
   .lg\:border-loginInfoButton {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .lg\:border-loginBorders {
@@ -103457,7 +103457,7 @@ video {
 
   .group:hover .lg\:group-hover\:border-loginInfoButton {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .group:hover .lg\:group-hover\:border-loginBorders {
@@ -103900,7 +103900,7 @@ video {
 
   .lg\:focus-within\:border-loginInfoButton:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .lg\:focus-within\:border-loginBorders:focus-within {
@@ -104343,7 +104343,7 @@ video {
 
   .lg\:hover\:border-loginInfoButton:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .lg\:hover\:border-loginBorders:hover {
@@ -104786,7 +104786,7 @@ video {
 
   .lg\:focus\:border-loginInfoButton:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .lg\:focus\:border-loginBorders:focus {
@@ -111670,17 +111670,17 @@ video {
 
   .lg\:placeholder-loginInfoButton::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-loginInfoButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-loginInfoButton::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-loginBorders::-moz-placeholder {
@@ -112999,17 +112999,17 @@ video {
 
   .lg\:focus\:placeholder-loginInfoButton:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-loginInfoButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-loginInfoButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-loginBorders:focus::-moz-placeholder {
@@ -116927,7 +116927,7 @@ video {
   }
 
   .lg\:ring-offset-loginInfoButton {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .lg\:ring-offset-loginBorders {
@@ -117283,7 +117283,7 @@ video {
   }
 
   .lg\:focus-within\:ring-offset-loginInfoButton:focus-within {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .lg\:focus-within\:ring-offset-loginBorders:focus-within {
@@ -117639,7 +117639,7 @@ video {
   }
 
   .lg\:focus\:ring-offset-loginInfoButton:focus {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .lg\:focus\:ring-offset-loginBorders:focus {
@@ -118139,7 +118139,7 @@ video {
 
   .lg\:ring-loginInfoButton {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .lg\:ring-loginBorders {
@@ -118582,7 +118582,7 @@ video {
 
   .lg\:focus-within\:ring-loginInfoButton:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .lg\:focus-within\:ring-loginBorders:focus-within {
@@ -119025,7 +119025,7 @@ video {
 
   .lg\:focus\:ring-loginInfoButton:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .lg\:focus\:ring-loginBorders:focus {
@@ -119692,7 +119692,7 @@ video {
 
   .lg\:text-loginInfoButton {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .lg\:text-loginBorders {
@@ -120135,7 +120135,7 @@ video {
 
   .group:hover .lg\:group-hover\:text-loginInfoButton {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .group:hover .lg\:group-hover\:text-loginBorders {
@@ -120578,7 +120578,7 @@ video {
 
   .lg\:focus-within\:text-loginInfoButton:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .lg\:focus-within\:text-loginBorders:focus-within {
@@ -121021,7 +121021,7 @@ video {
 
   .lg\:hover\:text-loginInfoButton:hover {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .lg\:hover\:text-loginBorders:hover {
@@ -121464,7 +121464,7 @@ video {
 
   .lg\:focus\:text-loginInfoButton:focus {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .lg\:focus\:text-loginBorders:focus {
@@ -127712,7 +127712,7 @@ video {
 
   .xl\:divide-loginInfoButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-divide-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-divide-opacity));
   }
 
   .xl\:divide-loginBorders > :not([hidden]) ~ :not([hidden]) {
@@ -128339,7 +128339,7 @@ video {
 
   .xl\:bg-loginInfoButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .xl\:bg-loginBorders {
@@ -128782,7 +128782,7 @@ video {
 
   .group:hover .xl\:group-hover\:bg-loginInfoButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .group:hover .xl\:group-hover\:bg-loginBorders {
@@ -129225,7 +129225,7 @@ video {
 
   .xl\:focus-within\:bg-loginInfoButton:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .xl\:focus-within\:bg-loginBorders:focus-within {
@@ -129668,7 +129668,7 @@ video {
 
   .xl\:hover\:bg-loginInfoButton:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .xl\:hover\:bg-loginBorders:hover {
@@ -130111,7 +130111,7 @@ video {
 
   .xl\:focus\:bg-loginInfoButton:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .xl\:focus\:bg-loginBorders:focus {
@@ -130591,8 +130591,8 @@ video {
   }
 
   .xl\:from-loginInfoButton {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .xl\:from-loginBorders {
@@ -130951,7 +130951,7 @@ video {
   }
 
   .xl\:via-loginInfoButton {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .xl\:via-loginBorders {
@@ -131307,7 +131307,7 @@ video {
   }
 
   .xl\:to-loginInfoButton {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .xl\:to-loginBorders {
@@ -131748,8 +131748,8 @@ video {
   }
 
   .xl\:hover\:from-loginInfoButton:hover {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .xl\:hover\:from-loginBorders:hover {
@@ -132108,7 +132108,7 @@ video {
   }
 
   .xl\:hover\:via-loginInfoButton:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .xl\:hover\:via-loginBorders:hover {
@@ -132464,7 +132464,7 @@ video {
   }
 
   .xl\:hover\:to-loginInfoButton:hover {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .xl\:hover\:to-loginBorders:hover {
@@ -132905,8 +132905,8 @@ video {
   }
 
   .xl\:focus\:from-loginInfoButton:focus {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .xl\:focus\:from-loginBorders:focus {
@@ -133265,7 +133265,7 @@ video {
   }
 
   .xl\:focus\:via-loginInfoButton:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .xl\:focus\:via-loginBorders:focus {
@@ -133621,7 +133621,7 @@ video {
   }
 
   .xl\:focus\:to-loginInfoButton:focus {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .xl\:focus\:to-loginBorders:focus {
@@ -134441,7 +134441,7 @@ video {
 
   .xl\:border-loginInfoButton {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .xl\:border-loginBorders {
@@ -134884,7 +134884,7 @@ video {
 
   .group:hover .xl\:group-hover\:border-loginInfoButton {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .group:hover .xl\:group-hover\:border-loginBorders {
@@ -135327,7 +135327,7 @@ video {
 
   .xl\:focus-within\:border-loginInfoButton:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .xl\:focus-within\:border-loginBorders:focus-within {
@@ -135770,7 +135770,7 @@ video {
 
   .xl\:hover\:border-loginInfoButton:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .xl\:hover\:border-loginBorders:hover {
@@ -136213,7 +136213,7 @@ video {
 
   .xl\:focus\:border-loginInfoButton:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .xl\:focus\:border-loginBorders:focus {
@@ -143097,17 +143097,17 @@ video {
 
   .xl\:placeholder-loginInfoButton::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-loginInfoButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-loginInfoButton::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-loginBorders::-moz-placeholder {
@@ -144426,17 +144426,17 @@ video {
 
   .xl\:focus\:placeholder-loginInfoButton:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-loginInfoButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-loginInfoButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-loginBorders:focus::-moz-placeholder {
@@ -148354,7 +148354,7 @@ video {
   }
 
   .xl\:ring-offset-loginInfoButton {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .xl\:ring-offset-loginBorders {
@@ -148710,7 +148710,7 @@ video {
   }
 
   .xl\:focus-within\:ring-offset-loginInfoButton:focus-within {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .xl\:focus-within\:ring-offset-loginBorders:focus-within {
@@ -149066,7 +149066,7 @@ video {
   }
 
   .xl\:focus\:ring-offset-loginInfoButton:focus {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .xl\:focus\:ring-offset-loginBorders:focus {
@@ -149566,7 +149566,7 @@ video {
 
   .xl\:ring-loginInfoButton {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .xl\:ring-loginBorders {
@@ -150009,7 +150009,7 @@ video {
 
   .xl\:focus-within\:ring-loginInfoButton:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .xl\:focus-within\:ring-loginBorders:focus-within {
@@ -150452,7 +150452,7 @@ video {
 
   .xl\:focus\:ring-loginInfoButton:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .xl\:focus\:ring-loginBorders:focus {
@@ -151119,7 +151119,7 @@ video {
 
   .xl\:text-loginInfoButton {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .xl\:text-loginBorders {
@@ -151562,7 +151562,7 @@ video {
 
   .group:hover .xl\:group-hover\:text-loginInfoButton {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .group:hover .xl\:group-hover\:text-loginBorders {
@@ -152005,7 +152005,7 @@ video {
 
   .xl\:focus-within\:text-loginInfoButton:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .xl\:focus-within\:text-loginBorders:focus-within {
@@ -152448,7 +152448,7 @@ video {
 
   .xl\:hover\:text-loginInfoButton:hover {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .xl\:hover\:text-loginBorders:hover {
@@ -152891,7 +152891,7 @@ video {
 
   .xl\:focus\:text-loginInfoButton:focus {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .xl\:focus\:text-loginBorders:focus {
@@ -159139,7 +159139,7 @@ video {
 
   .\32xl\:divide-loginInfoButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-divide-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-divide-opacity));
   }
 
   .\32xl\:divide-loginBorders > :not([hidden]) ~ :not([hidden]) {
@@ -159766,7 +159766,7 @@ video {
 
   .\32xl\:bg-loginInfoButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .\32xl\:bg-loginBorders {
@@ -160209,7 +160209,7 @@ video {
 
   .group:hover .\32xl\:group-hover\:bg-loginInfoButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:bg-loginBorders {
@@ -160652,7 +160652,7 @@ video {
 
   .\32xl\:focus-within\:bg-loginInfoButton:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus-within\:bg-loginBorders:focus-within {
@@ -161095,7 +161095,7 @@ video {
 
   .\32xl\:hover\:bg-loginInfoButton:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .\32xl\:hover\:bg-loginBorders:hover {
@@ -161538,7 +161538,7 @@ video {
 
   .\32xl\:focus\:bg-loginInfoButton:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(0, 204, 204, var(--tw-bg-opacity));
+    background-color: rgba(36, 189, 205, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus\:bg-loginBorders:focus {
@@ -162018,8 +162018,8 @@ video {
   }
 
   .\32xl\:from-loginInfoButton {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .\32xl\:from-loginBorders {
@@ -162378,7 +162378,7 @@ video {
   }
 
   .\32xl\:via-loginInfoButton {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .\32xl\:via-loginBorders {
@@ -162734,7 +162734,7 @@ video {
   }
 
   .\32xl\:to-loginInfoButton {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .\32xl\:to-loginBorders {
@@ -163175,8 +163175,8 @@ video {
   }
 
   .\32xl\:hover\:from-loginInfoButton:hover {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .\32xl\:hover\:from-loginBorders:hover {
@@ -163535,7 +163535,7 @@ video {
   }
 
   .\32xl\:hover\:via-loginInfoButton:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .\32xl\:hover\:via-loginBorders:hover {
@@ -163891,7 +163891,7 @@ video {
   }
 
   .\32xl\:hover\:to-loginInfoButton:hover {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .\32xl\:hover\:to-loginBorders:hover {
@@ -164332,8 +164332,8 @@ video {
   }
 
   .\32xl\:focus\:from-loginInfoButton:focus {
-    --tw-gradient-from: #00cccc;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-from: #24bdcd;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .\32xl\:focus\:from-loginBorders:focus {
@@ -164692,7 +164692,7 @@ video {
   }
 
   .\32xl\:focus\:via-loginInfoButton:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #00cccc, var(--tw-gradient-to, rgba(0, 204, 204, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #24bdcd, var(--tw-gradient-to, rgba(36, 189, 205, 0));
   }
 
   .\32xl\:focus\:via-loginBorders:focus {
@@ -165048,7 +165048,7 @@ video {
   }
 
   .\32xl\:focus\:to-loginInfoButton:focus {
-    --tw-gradient-to: #00cccc;
+    --tw-gradient-to: #24bdcd;
   }
 
   .\32xl\:focus\:to-loginBorders:focus {
@@ -165868,7 +165868,7 @@ video {
 
   .\32xl\:border-loginInfoButton {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .\32xl\:border-loginBorders {
@@ -166311,7 +166311,7 @@ video {
 
   .group:hover .\32xl\:group-hover\:border-loginInfoButton {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:border-loginBorders {
@@ -166754,7 +166754,7 @@ video {
 
   .\32xl\:focus-within\:border-loginInfoButton:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .\32xl\:focus-within\:border-loginBorders:focus-within {
@@ -167197,7 +167197,7 @@ video {
 
   .\32xl\:hover\:border-loginInfoButton:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .\32xl\:hover\:border-loginBorders:hover {
@@ -167640,7 +167640,7 @@ video {
 
   .\32xl\:focus\:border-loginInfoButton:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(0, 204, 204, var(--tw-border-opacity));
+    border-color: rgba(36, 189, 205, var(--tw-border-opacity));
   }
 
   .\32xl\:focus\:border-loginBorders:focus {
@@ -174524,17 +174524,17 @@ video {
 
   .\32xl\:placeholder-loginInfoButton::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-loginInfoButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-loginInfoButton::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-loginBorders::-moz-placeholder {
@@ -175853,17 +175853,17 @@ video {
 
   .\32xl\:focus\:placeholder-loginInfoButton:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-loginInfoButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-loginInfoButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-placeholder-opacity));
+    color: rgba(36, 189, 205, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-loginBorders:focus::-moz-placeholder {
@@ -179781,7 +179781,7 @@ video {
   }
 
   .\32xl\:ring-offset-loginInfoButton {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .\32xl\:ring-offset-loginBorders {
@@ -180137,7 +180137,7 @@ video {
   }
 
   .\32xl\:focus-within\:ring-offset-loginInfoButton:focus-within {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .\32xl\:focus-within\:ring-offset-loginBorders:focus-within {
@@ -180493,7 +180493,7 @@ video {
   }
 
   .\32xl\:focus\:ring-offset-loginInfoButton:focus {
-    --tw-ring-offset-color: #00cccc;
+    --tw-ring-offset-color: #24bdcd;
   }
 
   .\32xl\:focus\:ring-offset-loginBorders:focus {
@@ -180993,7 +180993,7 @@ video {
 
   .\32xl\:ring-loginInfoButton {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .\32xl\:ring-loginBorders {
@@ -181436,7 +181436,7 @@ video {
 
   .\32xl\:focus-within\:ring-loginInfoButton:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .\32xl\:focus-within\:ring-loginBorders:focus-within {
@@ -181879,7 +181879,7 @@ video {
 
   .\32xl\:focus\:ring-loginInfoButton:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(0, 204, 204, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(36, 189, 205, var(--tw-ring-opacity));
   }
 
   .\32xl\:focus\:ring-loginBorders:focus {
@@ -182546,7 +182546,7 @@ video {
 
   .\32xl\:text-loginInfoButton {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .\32xl\:text-loginBorders {
@@ -182989,7 +182989,7 @@ video {
 
   .group:hover .\32xl\:group-hover\:text-loginInfoButton {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:text-loginBorders {
@@ -183432,7 +183432,7 @@ video {
 
   .\32xl\:focus-within\:text-loginInfoButton:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .\32xl\:focus-within\:text-loginBorders:focus-within {
@@ -183875,7 +183875,7 @@ video {
 
   .\32xl\:hover\:text-loginInfoButton:hover {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .\32xl\:hover\:text-loginBorders:hover {
@@ -184318,7 +184318,7 @@ video {
 
   .\32xl\:focus\:text-loginInfoButton:focus {
     --tw-text-opacity: 1;
-    color: rgba(0, 204, 204, var(--tw-text-opacity));
+    color: rgba(36, 189, 205, var(--tw-text-opacity));
   }
 
   .\32xl\:focus\:text-loginBorders:focus {
