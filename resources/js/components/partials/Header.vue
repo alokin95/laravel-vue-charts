@@ -15,19 +15,19 @@
 
             <div class="lg:items-center mb-4 ml-4 lg:w-2/6 w-1/2">
                 <div>
-                    <input class="text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="macAddress" type="text" placeholder="Mac: address">
+                    <input v-model="filters.macAddress" class="text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="macAddress" type="text" placeholder="Mac: address">
                 </div>
             </div>
 
             <div class="lg:items-center ml-4 mb-4 lg:w-2/6 w-1/2">
                 <div>
-                    <input class="text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="contractId" type="text" placeholder="Contract ID">
+                    <input v-model="filters.contractId" class="text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="contractId" type="text" placeholder="Contract ID">
                 </div>
             </div>
 
-            <div class="lg:items-center mb-4 lg:w-1/6 w-1/2 relative">
-                <i  v-show="isSpinning"class="fa fa-refresh fa-spin lg:float-right mr-4 absolute" style="font-size:24px"></i>
-                <i v-show="!isSpinning" class="fa fa-refresh lg:float-right mr-4 absolute" style="font-size:24px"></i>
+            <div class="lg:items-center mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative">
+                <i  v-show="isSpinning"class="fa fa-refresh fa-spin lg:float-rightabsolute" style="font-size:24px"></i>
+                <i v-show="!isSpinning" class="fa fa-refresh lg:float-right absolute" style="font-size:24px"></i>
             </div>
 
             <div class="lg:items-center mb-4 lg:w-1/6 w-1/2">
@@ -35,7 +35,6 @@
                     Apply filters
                 </button>
             </div>
-
         </form>
     </div>
 
@@ -48,7 +47,11 @@ export default {
 
     data() {
         return {
-            isSpinning: false
+            isSpinning: false,
+            filters: {
+                macAddress: "",
+                contractId: ""
+            }
         }
     },
 

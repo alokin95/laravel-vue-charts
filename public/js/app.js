@@ -144,12 +144,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Header",
   data: function data() {
     return {
-      isSpinning: false
+      isSpinning: false,
+      filters: {
+        macAddress: "",
+        contractId: ""
+      }
     };
   },
   methods: {
@@ -1034,13 +1037,82 @@ var render = function() {
             "lg:flex lg:w-1/2 w-2/3 text-center ml-4 lg:justify-between"
         },
         [
-          _vm._m(1),
-          _vm._v(" "),
-          _vm._m(2),
+          _c(
+            "div",
+            { staticClass: "lg:items-center mb-4 ml-4 lg:w-2/6 w-1/2" },
+            [
+              _c("div", [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.filters.macAddress,
+                      expression: "filters.macAddress"
+                    }
+                  ],
+                  staticClass:
+                    "text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none",
+                  attrs: {
+                    id: "macAddress",
+                    type: "text",
+                    placeholder: "Mac: address"
+                  },
+                  domProps: { value: _vm.filters.macAddress },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.filters, "macAddress", $event.target.value)
+                    }
+                  }
+                })
+              ])
+            ]
+          ),
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "lg:items-center mb-4 lg:w-1/6 w-1/2 relative" },
+            { staticClass: "lg:items-center ml-4 mb-4 lg:w-2/6 w-1/2" },
+            [
+              _c("div", [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.filters.contractId,
+                      expression: "filters.contractId"
+                    }
+                  ],
+                  staticClass:
+                    "text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none",
+                  attrs: {
+                    id: "contractId",
+                    type: "text",
+                    placeholder: "Contract ID"
+                  },
+                  domProps: { value: _vm.filters.contractId },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.filters, "contractId", $event.target.value)
+                    }
+                  }
+                })
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "lg:items-center mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative"
+            },
             [
               _c("i", {
                 directives: [
@@ -1051,8 +1123,7 @@ var render = function() {
                     expression: "isSpinning"
                   }
                 ],
-                staticClass:
-                  "fa fa-refresh fa-spin lg:float-right mr-4 absolute",
+                staticClass: "fa fa-refresh fa-spin lg:float-rightabsolute",
                 staticStyle: { "font-size": "24px" }
               }),
               _vm._v(" "),
@@ -1065,7 +1136,7 @@ var render = function() {
                     expression: "!isSpinning"
                   }
                 ],
-                staticClass: "fa fa-refresh lg:float-right mr-4 absolute",
+                staticClass: "fa fa-refresh lg:float-right absolute",
                 staticStyle: { "font-size": "24px" }
               })
             ]
@@ -1126,50 +1197,6 @@ var staticRenderFns = [
             )
           ]
         )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "lg:items-center mb-4 ml-4 lg:w-2/6 w-1/2" },
-      [
-        _c("div", [
-          _c("input", {
-            staticClass:
-              "text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none",
-            attrs: {
-              id: "macAddress",
-              type: "text",
-              placeholder: "Mac: address"
-            }
-          })
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "lg:items-center ml-4 mb-4 lg:w-2/6 w-1/2" },
-      [
-        _c("div", [
-          _c("input", {
-            staticClass:
-              "text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none",
-            attrs: {
-              id: "contractId",
-              type: "text",
-              placeholder: "Contract ID"
-            }
-          })
-        ])
       ]
     )
   }
