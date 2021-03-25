@@ -11,9 +11,7 @@
     </head>
     <body class="bg-gray-100">
         <div id="app">
-            <div class="container mx-auto">
-                <router-view></router-view>
-            </div>
+            <router-view></router-view>
         </div>
     </body>
     <script src="{{asset('js/app.js')}}"></script>
