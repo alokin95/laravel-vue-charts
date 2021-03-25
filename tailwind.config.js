@@ -9,7 +9,9 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                loginButton: '#99ffff'
+                loginButton: '#99ffff',
+                loginInfoButton: '#00cccc',
+                loginBorders: '#006080'
             }
         },
     },
