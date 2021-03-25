@@ -1921,7 +1921,7 @@ video {
 
 .divide-loginButton > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
-  border-color: rgba(153, 255, 255, var(--tw-divide-opacity));
+  border-color: rgba(141, 249, 252, var(--tw-divide-opacity));
 }
 
 .divide-loginInfoButton > :not([hidden]) ~ :not([hidden]) {
@@ -1932,6 +1932,16 @@ video {
 .divide-loginBorders > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgba(0, 96, 128, var(--tw-divide-opacity));
+}
+
+.divide-loginInputText > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgba(130, 132, 131, var(--tw-divide-opacity));
+}
+
+.divide-loginButtonText > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgba(126, 160, 185, var(--tw-divide-opacity));
 }
 
 .divide-solid > :not([hidden]) ~ :not([hidden]) {
@@ -2538,7 +2548,7 @@ video {
 
 .bg-loginButton {
   --tw-bg-opacity: 1;
-  background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+  background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
 }
 
 .bg-loginInfoButton {
@@ -2549,6 +2559,16 @@ video {
 .bg-loginBorders {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+}
+
+.bg-loginInputText {
+  --tw-bg-opacity: 1;
+  background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+}
+
+.bg-loginButtonText {
+  --tw-bg-opacity: 1;
+  background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:bg-transparent {
@@ -2971,7 +2991,7 @@ video {
 
 .group:hover .group-hover\:bg-loginButton {
   --tw-bg-opacity: 1;
-  background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+  background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:bg-loginInfoButton {
@@ -2982,6 +3002,16 @@ video {
 .group:hover .group-hover\:bg-loginBorders {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-loginInputText {
+  --tw-bg-opacity: 1;
+  background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-loginButtonText {
+  --tw-bg-opacity: 1;
+  background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
 }
 
 .focus-within\:bg-transparent:focus-within {
@@ -3404,7 +3434,7 @@ video {
 
 .focus-within\:bg-loginButton:focus-within {
   --tw-bg-opacity: 1;
-  background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+  background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
 }
 
 .focus-within\:bg-loginInfoButton:focus-within {
@@ -3415,6 +3445,16 @@ video {
 .focus-within\:bg-loginBorders:focus-within {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+}
+
+.focus-within\:bg-loginInputText:focus-within {
+  --tw-bg-opacity: 1;
+  background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+}
+
+.focus-within\:bg-loginButtonText:focus-within {
+  --tw-bg-opacity: 1;
+  background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
 }
 
 .hover\:bg-transparent:hover {
@@ -3837,7 +3877,7 @@ video {
 
 .hover\:bg-loginButton:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+  background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
 }
 
 .hover\:bg-loginInfoButton:hover {
@@ -3848,6 +3888,16 @@ video {
 .hover\:bg-loginBorders:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+}
+
+.hover\:bg-loginInputText:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+}
+
+.hover\:bg-loginButtonText:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
 }
 
 .focus\:bg-transparent:focus {
@@ -4270,7 +4320,7 @@ video {
 
 .focus\:bg-loginButton:focus {
   --tw-bg-opacity: 1;
-  background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+  background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
 }
 
 .focus\:bg-loginInfoButton:focus {
@@ -4281,6 +4331,16 @@ video {
 .focus\:bg-loginBorders:focus {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+}
+
+.focus\:bg-loginInputText:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+}
+
+.focus\:bg-loginButtonText:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
 }
 
 .bg-none {
@@ -4740,8 +4800,8 @@ video {
 }
 
 .from-loginButton {
-  --tw-gradient-from: #99ffff;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+  --tw-gradient-from: #8df9fc;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
 }
 
 .from-loginInfoButton {
@@ -4752,6 +4812,16 @@ video {
 .from-loginBorders {
   --tw-gradient-from: #006080;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+}
+
+.from-loginInputText {
+  --tw-gradient-from: #828483;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+}
+
+.from-loginButtonText {
+  --tw-gradient-from: #7ea0b9;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
 }
 
 .via-transparent {
@@ -5091,7 +5161,7 @@ video {
 }
 
 .via-loginButton {
-  --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
 }
 
 .via-loginInfoButton {
@@ -5100,6 +5170,14 @@ video {
 
 .via-loginBorders {
   --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+}
+
+.via-loginInputText {
+  --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+}
+
+.via-loginButtonText {
+  --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
 }
 
 .to-transparent {
@@ -5439,7 +5517,7 @@ video {
 }
 
 .to-loginButton {
-  --tw-gradient-to: #99ffff;
+  --tw-gradient-to: #8df9fc;
 }
 
 .to-loginInfoButton {
@@ -5448,6 +5526,14 @@ video {
 
 .to-loginBorders {
   --tw-gradient-to: #006080;
+}
+
+.to-loginInputText {
+  --tw-gradient-to: #828483;
+}
+
+.to-loginButtonText {
+  --tw-gradient-to: #7ea0b9;
 }
 
 .hover\:from-transparent:hover {
@@ -5871,8 +5957,8 @@ video {
 }
 
 .hover\:from-loginButton:hover {
-  --tw-gradient-from: #99ffff;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+  --tw-gradient-from: #8df9fc;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
 }
 
 .hover\:from-loginInfoButton:hover {
@@ -5883,6 +5969,16 @@ video {
 .hover\:from-loginBorders:hover {
   --tw-gradient-from: #006080;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+}
+
+.hover\:from-loginInputText:hover {
+  --tw-gradient-from: #828483;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+}
+
+.hover\:from-loginButtonText:hover {
+  --tw-gradient-from: #7ea0b9;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
 }
 
 .hover\:via-transparent:hover {
@@ -6222,7 +6318,7 @@ video {
 }
 
 .hover\:via-loginButton:hover {
-  --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
 }
 
 .hover\:via-loginInfoButton:hover {
@@ -6231,6 +6327,14 @@ video {
 
 .hover\:via-loginBorders:hover {
   --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+}
+
+.hover\:via-loginInputText:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+}
+
+.hover\:via-loginButtonText:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
 }
 
 .hover\:to-transparent:hover {
@@ -6570,7 +6674,7 @@ video {
 }
 
 .hover\:to-loginButton:hover {
-  --tw-gradient-to: #99ffff;
+  --tw-gradient-to: #8df9fc;
 }
 
 .hover\:to-loginInfoButton:hover {
@@ -6579,6 +6683,14 @@ video {
 
 .hover\:to-loginBorders:hover {
   --tw-gradient-to: #006080;
+}
+
+.hover\:to-loginInputText:hover {
+  --tw-gradient-to: #828483;
+}
+
+.hover\:to-loginButtonText:hover {
+  --tw-gradient-to: #7ea0b9;
 }
 
 .focus\:from-transparent:focus {
@@ -7002,8 +7114,8 @@ video {
 }
 
 .focus\:from-loginButton:focus {
-  --tw-gradient-from: #99ffff;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+  --tw-gradient-from: #8df9fc;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
 }
 
 .focus\:from-loginInfoButton:focus {
@@ -7014,6 +7126,16 @@ video {
 .focus\:from-loginBorders:focus {
   --tw-gradient-from: #006080;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+}
+
+.focus\:from-loginInputText:focus {
+  --tw-gradient-from: #828483;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+}
+
+.focus\:from-loginButtonText:focus {
+  --tw-gradient-from: #7ea0b9;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
 }
 
 .focus\:via-transparent:focus {
@@ -7353,7 +7475,7 @@ video {
 }
 
 .focus\:via-loginButton:focus {
-  --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
 }
 
 .focus\:via-loginInfoButton:focus {
@@ -7362,6 +7484,14 @@ video {
 
 .focus\:via-loginBorders:focus {
   --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+}
+
+.focus\:via-loginInputText:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+}
+
+.focus\:via-loginButtonText:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
 }
 
 .focus\:to-transparent:focus {
@@ -7701,7 +7831,7 @@ video {
 }
 
 .focus\:to-loginButton:focus {
-  --tw-gradient-to: #99ffff;
+  --tw-gradient-to: #8df9fc;
 }
 
 .focus\:to-loginInfoButton:focus {
@@ -7710,6 +7840,14 @@ video {
 
 .focus\:to-loginBorders:focus {
   --tw-gradient-to: #006080;
+}
+
+.focus\:to-loginInputText:focus {
+  --tw-gradient-to: #828483;
+}
+
+.focus\:to-loginButtonText:focus {
+  --tw-gradient-to: #7ea0b9;
 }
 
 .bg-opacity-0 {
@@ -8512,7 +8650,7 @@ video {
 
 .border-loginButton {
   --tw-border-opacity: 1;
-  border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+  border-color: rgba(141, 249, 252, var(--tw-border-opacity));
 }
 
 .border-loginInfoButton {
@@ -8523,6 +8661,16 @@ video {
 .border-loginBorders {
   --tw-border-opacity: 1;
   border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+}
+
+.border-loginInputText {
+  --tw-border-opacity: 1;
+  border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+}
+
+.border-loginButtonText {
+  --tw-border-opacity: 1;
+  border-color: rgba(126, 160, 185, var(--tw-border-opacity));
 }
 
 .group:hover .group-hover\:border-transparent {
@@ -8945,7 +9093,7 @@ video {
 
 .group:hover .group-hover\:border-loginButton {
   --tw-border-opacity: 1;
-  border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+  border-color: rgba(141, 249, 252, var(--tw-border-opacity));
 }
 
 .group:hover .group-hover\:border-loginInfoButton {
@@ -8956,6 +9104,16 @@ video {
 .group:hover .group-hover\:border-loginBorders {
   --tw-border-opacity: 1;
   border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+}
+
+.group:hover .group-hover\:border-loginInputText {
+  --tw-border-opacity: 1;
+  border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+}
+
+.group:hover .group-hover\:border-loginButtonText {
+  --tw-border-opacity: 1;
+  border-color: rgba(126, 160, 185, var(--tw-border-opacity));
 }
 
 .focus-within\:border-transparent:focus-within {
@@ -9378,7 +9536,7 @@ video {
 
 .focus-within\:border-loginButton:focus-within {
   --tw-border-opacity: 1;
-  border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+  border-color: rgba(141, 249, 252, var(--tw-border-opacity));
 }
 
 .focus-within\:border-loginInfoButton:focus-within {
@@ -9389,6 +9547,16 @@ video {
 .focus-within\:border-loginBorders:focus-within {
   --tw-border-opacity: 1;
   border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+}
+
+.focus-within\:border-loginInputText:focus-within {
+  --tw-border-opacity: 1;
+  border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+}
+
+.focus-within\:border-loginButtonText:focus-within {
+  --tw-border-opacity: 1;
+  border-color: rgba(126, 160, 185, var(--tw-border-opacity));
 }
 
 .hover\:border-transparent:hover {
@@ -9811,7 +9979,7 @@ video {
 
 .hover\:border-loginButton:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+  border-color: rgba(141, 249, 252, var(--tw-border-opacity));
 }
 
 .hover\:border-loginInfoButton:hover {
@@ -9822,6 +9990,16 @@ video {
 .hover\:border-loginBorders:hover {
   --tw-border-opacity: 1;
   border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+}
+
+.hover\:border-loginInputText:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+}
+
+.hover\:border-loginButtonText:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(126, 160, 185, var(--tw-border-opacity));
 }
 
 .focus\:border-transparent:focus {
@@ -10244,7 +10422,7 @@ video {
 
 .focus\:border-loginButton:focus {
   --tw-border-opacity: 1;
-  border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+  border-color: rgba(141, 249, 252, var(--tw-border-opacity));
 }
 
 .focus\:border-loginInfoButton:focus {
@@ -10255,6 +10433,16 @@ video {
 .focus\:border-loginBorders:focus {
   --tw-border-opacity: 1;
   border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+}
+
+.focus\:border-loginInputText:focus {
+  --tw-border-opacity: 1;
+  border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+}
+
+.focus\:border-loginButtonText:focus {
+  --tw-border-opacity: 1;
+  border-color: rgba(126, 160, 185, var(--tw-border-opacity));
 }
 
 .border-opacity-0 {
@@ -17108,17 +17296,17 @@ video {
 
 .placeholder-loginButton::-moz-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+  color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
 }
 
 .placeholder-loginButton:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+  color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
 }
 
 .placeholder-loginButton::placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+  color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
 }
 
 .placeholder-loginInfoButton::-moz-placeholder {
@@ -17149,6 +17337,36 @@ video {
 .placeholder-loginBorders::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(0, 96, 128, var(--tw-placeholder-opacity));
+}
+
+.placeholder-loginInputText::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+}
+
+.placeholder-loginInputText:-ms-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+}
+
+.placeholder-loginInputText::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+}
+
+.placeholder-loginButtonText::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+}
+
+.placeholder-loginButtonText:-ms-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+}
+
+.placeholder-loginButtonText::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-transparent:focus::-moz-placeholder {
@@ -18407,17 +18625,17 @@ video {
 
 .focus\:placeholder-loginButton:focus::-moz-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+  color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-loginButton:focus:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+  color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-loginButton:focus::placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+  color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-loginInfoButton:focus::-moz-placeholder {
@@ -18448,6 +18666,36 @@ video {
 .focus\:placeholder-loginBorders:focus::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(0, 96, 128, var(--tw-placeholder-opacity));
+}
+
+.focus\:placeholder-loginInputText:focus::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+}
+
+.focus\:placeholder-loginInputText:focus:-ms-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+}
+
+.focus\:placeholder-loginInputText:focus::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+}
+
+.focus\:placeholder-loginButtonText:focus::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+}
+
+.focus\:placeholder-loginButtonText:focus:-ms-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+}
+
+.focus\:placeholder-loginButtonText:focus::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
 }
 
 .placeholder-opacity-0::-moz-placeholder {
@@ -22329,7 +22577,7 @@ video {
 }
 
 .ring-offset-loginButton {
-  --tw-ring-offset-color: #99ffff;
+  --tw-ring-offset-color: #8df9fc;
 }
 
 .ring-offset-loginInfoButton {
@@ -22338,6 +22586,14 @@ video {
 
 .ring-offset-loginBorders {
   --tw-ring-offset-color: #006080;
+}
+
+.ring-offset-loginInputText {
+  --tw-ring-offset-color: #828483;
+}
+
+.ring-offset-loginButtonText {
+  --tw-ring-offset-color: #7ea0b9;
 }
 
 .focus-within\:ring-offset-transparent:focus-within {
@@ -22677,7 +22933,7 @@ video {
 }
 
 .focus-within\:ring-offset-loginButton:focus-within {
-  --tw-ring-offset-color: #99ffff;
+  --tw-ring-offset-color: #8df9fc;
 }
 
 .focus-within\:ring-offset-loginInfoButton:focus-within {
@@ -22686,6 +22942,14 @@ video {
 
 .focus-within\:ring-offset-loginBorders:focus-within {
   --tw-ring-offset-color: #006080;
+}
+
+.focus-within\:ring-offset-loginInputText:focus-within {
+  --tw-ring-offset-color: #828483;
+}
+
+.focus-within\:ring-offset-loginButtonText:focus-within {
+  --tw-ring-offset-color: #7ea0b9;
 }
 
 .focus\:ring-offset-transparent:focus {
@@ -23025,7 +23289,7 @@ video {
 }
 
 .focus\:ring-offset-loginButton:focus {
-  --tw-ring-offset-color: #99ffff;
+  --tw-ring-offset-color: #8df9fc;
 }
 
 .focus\:ring-offset-loginInfoButton:focus {
@@ -23034,6 +23298,14 @@ video {
 
 .focus\:ring-offset-loginBorders:focus {
   --tw-ring-offset-color: #006080;
+}
+
+.focus\:ring-offset-loginInputText:focus {
+  --tw-ring-offset-color: #828483;
+}
+
+.focus\:ring-offset-loginButtonText:focus {
+  --tw-ring-offset-color: #7ea0b9;
 }
 
 .ring-offset-0 {
@@ -23516,7 +23788,7 @@ video {
 
 .ring-loginButton {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+  --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
 }
 
 .ring-loginInfoButton {
@@ -23527,6 +23799,16 @@ video {
 .ring-loginBorders {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+}
+
+.ring-loginInputText {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+}
+
+.ring-loginButtonText {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
 }
 
 .focus-within\:ring-transparent:focus-within {
@@ -23949,7 +24231,7 @@ video {
 
 .focus-within\:ring-loginButton:focus-within {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+  --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
 }
 
 .focus-within\:ring-loginInfoButton:focus-within {
@@ -23960,6 +24242,16 @@ video {
 .focus-within\:ring-loginBorders:focus-within {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+}
+
+.focus-within\:ring-loginInputText:focus-within {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+}
+
+.focus-within\:ring-loginButtonText:focus-within {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
 }
 
 .focus\:ring-transparent:focus {
@@ -24382,7 +24674,7 @@ video {
 
 .focus\:ring-loginButton:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+  --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
 }
 
 .focus\:ring-loginInfoButton:focus {
@@ -24393,6 +24685,16 @@ video {
 .focus\:ring-loginBorders:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+}
+
+.focus\:ring-loginInputText:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+}
+
+.focus\:ring-loginButtonText:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
 }
 
 .ring-opacity-0 {
@@ -25039,7 +25341,7 @@ video {
 
 .text-loginButton {
   --tw-text-opacity: 1;
-  color: rgba(153, 255, 255, var(--tw-text-opacity));
+  color: rgba(141, 249, 252, var(--tw-text-opacity));
 }
 
 .text-loginInfoButton {
@@ -25050,6 +25352,16 @@ video {
 .text-loginBorders {
   --tw-text-opacity: 1;
   color: rgba(0, 96, 128, var(--tw-text-opacity));
+}
+
+.text-loginInputText {
+  --tw-text-opacity: 1;
+  color: rgba(130, 132, 131, var(--tw-text-opacity));
+}
+
+.text-loginButtonText {
+  --tw-text-opacity: 1;
+  color: rgba(126, 160, 185, var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-transparent {
@@ -25472,7 +25784,7 @@ video {
 
 .group:hover .group-hover\:text-loginButton {
   --tw-text-opacity: 1;
-  color: rgba(153, 255, 255, var(--tw-text-opacity));
+  color: rgba(141, 249, 252, var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-loginInfoButton {
@@ -25483,6 +25795,16 @@ video {
 .group:hover .group-hover\:text-loginBorders {
   --tw-text-opacity: 1;
   color: rgba(0, 96, 128, var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-loginInputText {
+  --tw-text-opacity: 1;
+  color: rgba(130, 132, 131, var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-loginButtonText {
+  --tw-text-opacity: 1;
+  color: rgba(126, 160, 185, var(--tw-text-opacity));
 }
 
 .focus-within\:text-transparent:focus-within {
@@ -25905,7 +26227,7 @@ video {
 
 .focus-within\:text-loginButton:focus-within {
   --tw-text-opacity: 1;
-  color: rgba(153, 255, 255, var(--tw-text-opacity));
+  color: rgba(141, 249, 252, var(--tw-text-opacity));
 }
 
 .focus-within\:text-loginInfoButton:focus-within {
@@ -25916,6 +26238,16 @@ video {
 .focus-within\:text-loginBorders:focus-within {
   --tw-text-opacity: 1;
   color: rgba(0, 96, 128, var(--tw-text-opacity));
+}
+
+.focus-within\:text-loginInputText:focus-within {
+  --tw-text-opacity: 1;
+  color: rgba(130, 132, 131, var(--tw-text-opacity));
+}
+
+.focus-within\:text-loginButtonText:focus-within {
+  --tw-text-opacity: 1;
+  color: rgba(126, 160, 185, var(--tw-text-opacity));
 }
 
 .hover\:text-transparent:hover {
@@ -26338,7 +26670,7 @@ video {
 
 .hover\:text-loginButton:hover {
   --tw-text-opacity: 1;
-  color: rgba(153, 255, 255, var(--tw-text-opacity));
+  color: rgba(141, 249, 252, var(--tw-text-opacity));
 }
 
 .hover\:text-loginInfoButton:hover {
@@ -26349,6 +26681,16 @@ video {
 .hover\:text-loginBorders:hover {
   --tw-text-opacity: 1;
   color: rgba(0, 96, 128, var(--tw-text-opacity));
+}
+
+.hover\:text-loginInputText:hover {
+  --tw-text-opacity: 1;
+  color: rgba(130, 132, 131, var(--tw-text-opacity));
+}
+
+.hover\:text-loginButtonText:hover {
+  --tw-text-opacity: 1;
+  color: rgba(126, 160, 185, var(--tw-text-opacity));
 }
 
 .focus\:text-transparent:focus {
@@ -26771,7 +27113,7 @@ video {
 
 .focus\:text-loginButton:focus {
   --tw-text-opacity: 1;
-  color: rgba(153, 255, 255, var(--tw-text-opacity));
+  color: rgba(141, 249, 252, var(--tw-text-opacity));
 }
 
 .focus\:text-loginInfoButton:focus {
@@ -26782,6 +27124,16 @@ video {
 .focus\:text-loginBorders:focus {
   --tw-text-opacity: 1;
   color: rgba(0, 96, 128, var(--tw-text-opacity));
+}
+
+.focus\:text-loginInputText:focus {
+  --tw-text-opacity: 1;
+  color: rgba(130, 132, 131, var(--tw-text-opacity));
+}
+
+.focus\:text-loginButtonText:focus {
+  --tw-text-opacity: 1;
+  color: rgba(126, 160, 185, var(--tw-text-opacity));
 }
 
 .text-opacity-0 {
@@ -33074,7 +33426,7 @@ video {
 
   .sm\:divide-loginButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-divide-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-divide-opacity));
   }
 
   .sm\:divide-loginInfoButton > :not([hidden]) ~ :not([hidden]) {
@@ -33085,6 +33437,16 @@ video {
   .sm\:divide-loginBorders > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-divide-opacity));
+  }
+
+  .sm\:divide-loginInputText > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-divide-opacity));
+  }
+
+  .sm\:divide-loginButtonText > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-divide-opacity));
   }
 
   .sm\:divide-solid > :not([hidden]) ~ :not([hidden]) {
@@ -33691,7 +34053,7 @@ video {
 
   .sm\:bg-loginButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .sm\:bg-loginInfoButton {
@@ -33702,6 +34064,16 @@ video {
   .sm\:bg-loginBorders {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .sm\:bg-loginInputText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .sm\:bg-loginButtonText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .group:hover .sm\:group-hover\:bg-transparent {
@@ -34124,7 +34496,7 @@ video {
 
   .group:hover .sm\:group-hover\:bg-loginButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .group:hover .sm\:group-hover\:bg-loginInfoButton {
@@ -34135,6 +34507,16 @@ video {
   .group:hover .sm\:group-hover\:bg-loginBorders {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:bg-loginInputText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:bg-loginButtonText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .sm\:focus-within\:bg-transparent:focus-within {
@@ -34557,7 +34939,7 @@ video {
 
   .sm\:focus-within\:bg-loginButton:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .sm\:focus-within\:bg-loginInfoButton:focus-within {
@@ -34568,6 +34950,16 @@ video {
   .sm\:focus-within\:bg-loginBorders:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .sm\:focus-within\:bg-loginInputText:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .sm\:focus-within\:bg-loginButtonText:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .sm\:hover\:bg-transparent:hover {
@@ -34990,7 +35382,7 @@ video {
 
   .sm\:hover\:bg-loginButton:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .sm\:hover\:bg-loginInfoButton:hover {
@@ -35001,6 +35393,16 @@ video {
   .sm\:hover\:bg-loginBorders:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .sm\:hover\:bg-loginInputText:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .sm\:hover\:bg-loginButtonText:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .sm\:focus\:bg-transparent:focus {
@@ -35423,7 +35825,7 @@ video {
 
   .sm\:focus\:bg-loginButton:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .sm\:focus\:bg-loginInfoButton:focus {
@@ -35434,6 +35836,16 @@ video {
   .sm\:focus\:bg-loginBorders:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .sm\:focus\:bg-loginInputText:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .sm\:focus\:bg-loginButtonText:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .sm\:bg-none {
@@ -35893,8 +36305,8 @@ video {
   }
 
   .sm\:from-loginButton {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .sm\:from-loginInfoButton {
@@ -35905,6 +36317,16 @@ video {
   .sm\:from-loginBorders {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .sm\:from-loginInputText {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .sm\:from-loginButtonText {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .sm\:via-transparent {
@@ -36244,7 +36666,7 @@ video {
   }
 
   .sm\:via-loginButton {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .sm\:via-loginInfoButton {
@@ -36253,6 +36675,14 @@ video {
 
   .sm\:via-loginBorders {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .sm\:via-loginInputText {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .sm\:via-loginButtonText {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .sm\:to-transparent {
@@ -36592,7 +37022,7 @@ video {
   }
 
   .sm\:to-loginButton {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .sm\:to-loginInfoButton {
@@ -36601,6 +37031,14 @@ video {
 
   .sm\:to-loginBorders {
     --tw-gradient-to: #006080;
+  }
+
+  .sm\:to-loginInputText {
+    --tw-gradient-to: #828483;
+  }
+
+  .sm\:to-loginButtonText {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .sm\:hover\:from-transparent:hover {
@@ -37024,8 +37462,8 @@ video {
   }
 
   .sm\:hover\:from-loginButton:hover {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .sm\:hover\:from-loginInfoButton:hover {
@@ -37036,6 +37474,16 @@ video {
   .sm\:hover\:from-loginBorders:hover {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .sm\:hover\:from-loginInputText:hover {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .sm\:hover\:from-loginButtonText:hover {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .sm\:hover\:via-transparent:hover {
@@ -37375,7 +37823,7 @@ video {
   }
 
   .sm\:hover\:via-loginButton:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .sm\:hover\:via-loginInfoButton:hover {
@@ -37384,6 +37832,14 @@ video {
 
   .sm\:hover\:via-loginBorders:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .sm\:hover\:via-loginInputText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .sm\:hover\:via-loginButtonText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .sm\:hover\:to-transparent:hover {
@@ -37723,7 +38179,7 @@ video {
   }
 
   .sm\:hover\:to-loginButton:hover {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .sm\:hover\:to-loginInfoButton:hover {
@@ -37732,6 +38188,14 @@ video {
 
   .sm\:hover\:to-loginBorders:hover {
     --tw-gradient-to: #006080;
+  }
+
+  .sm\:hover\:to-loginInputText:hover {
+    --tw-gradient-to: #828483;
+  }
+
+  .sm\:hover\:to-loginButtonText:hover {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .sm\:focus\:from-transparent:focus {
@@ -38155,8 +38619,8 @@ video {
   }
 
   .sm\:focus\:from-loginButton:focus {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .sm\:focus\:from-loginInfoButton:focus {
@@ -38167,6 +38631,16 @@ video {
   .sm\:focus\:from-loginBorders:focus {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .sm\:focus\:from-loginInputText:focus {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .sm\:focus\:from-loginButtonText:focus {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .sm\:focus\:via-transparent:focus {
@@ -38506,7 +38980,7 @@ video {
   }
 
   .sm\:focus\:via-loginButton:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .sm\:focus\:via-loginInfoButton:focus {
@@ -38515,6 +38989,14 @@ video {
 
   .sm\:focus\:via-loginBorders:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .sm\:focus\:via-loginInputText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .sm\:focus\:via-loginButtonText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .sm\:focus\:to-transparent:focus {
@@ -38854,7 +39336,7 @@ video {
   }
 
   .sm\:focus\:to-loginButton:focus {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .sm\:focus\:to-loginInfoButton:focus {
@@ -38863,6 +39345,14 @@ video {
 
   .sm\:focus\:to-loginBorders:focus {
     --tw-gradient-to: #006080;
+  }
+
+  .sm\:focus\:to-loginInputText:focus {
+    --tw-gradient-to: #828483;
+  }
+
+  .sm\:focus\:to-loginButtonText:focus {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .sm\:bg-opacity-0 {
@@ -39665,7 +40155,7 @@ video {
 
   .sm\:border-loginButton {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .sm\:border-loginInfoButton {
@@ -39676,6 +40166,16 @@ video {
   .sm\:border-loginBorders {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .sm\:border-loginInputText {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .sm\:border-loginButtonText {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .group:hover .sm\:group-hover\:border-transparent {
@@ -40098,7 +40598,7 @@ video {
 
   .group:hover .sm\:group-hover\:border-loginButton {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .group:hover .sm\:group-hover\:border-loginInfoButton {
@@ -40109,6 +40609,16 @@ video {
   .group:hover .sm\:group-hover\:border-loginBorders {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:border-loginInputText {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:border-loginButtonText {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .sm\:focus-within\:border-transparent:focus-within {
@@ -40531,7 +41041,7 @@ video {
 
   .sm\:focus-within\:border-loginButton:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .sm\:focus-within\:border-loginInfoButton:focus-within {
@@ -40542,6 +41052,16 @@ video {
   .sm\:focus-within\:border-loginBorders:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .sm\:focus-within\:border-loginInputText:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .sm\:focus-within\:border-loginButtonText:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .sm\:hover\:border-transparent:hover {
@@ -40964,7 +41484,7 @@ video {
 
   .sm\:hover\:border-loginButton:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .sm\:hover\:border-loginInfoButton:hover {
@@ -40975,6 +41495,16 @@ video {
   .sm\:hover\:border-loginBorders:hover {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .sm\:hover\:border-loginInputText:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .sm\:hover\:border-loginButtonText:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .sm\:focus\:border-transparent:focus {
@@ -41397,7 +41927,7 @@ video {
 
   .sm\:focus\:border-loginButton:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .sm\:focus\:border-loginInfoButton:focus {
@@ -41408,6 +41938,16 @@ video {
   .sm\:focus\:border-loginBorders:focus {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .sm\:focus\:border-loginInputText:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .sm\:focus\:border-loginButtonText:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .sm\:border-opacity-0 {
@@ -48261,17 +48801,17 @@ video {
 
   .sm\:placeholder-loginButton::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-loginButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-loginButton::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-loginInfoButton::-moz-placeholder {
@@ -48302,6 +48842,36 @@ video {
   .sm\:placeholder-loginBorders::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:placeholder-loginInputText::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:placeholder-loginInputText:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:placeholder-loginInputText::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:placeholder-loginButtonText::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:placeholder-loginButtonText:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:placeholder-loginButtonText::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-transparent:focus::-moz-placeholder {
@@ -49560,17 +50130,17 @@ video {
 
   .sm\:focus\:placeholder-loginButton:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-loginButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-loginButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-loginInfoButton:focus::-moz-placeholder {
@@ -49601,6 +50171,36 @@ video {
   .sm\:focus\:placeholder-loginBorders:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-loginInputText:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-loginInputText:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-loginInputText:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-loginButtonText:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-loginButtonText:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .sm\:focus\:placeholder-loginButtonText:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-opacity-0::-moz-placeholder {
@@ -53469,7 +54069,7 @@ video {
   }
 
   .sm\:ring-offset-loginButton {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .sm\:ring-offset-loginInfoButton {
@@ -53478,6 +54078,14 @@ video {
 
   .sm\:ring-offset-loginBorders {
     --tw-ring-offset-color: #006080;
+  }
+
+  .sm\:ring-offset-loginInputText {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .sm\:ring-offset-loginButtonText {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .sm\:focus-within\:ring-offset-transparent:focus-within {
@@ -53817,7 +54425,7 @@ video {
   }
 
   .sm\:focus-within\:ring-offset-loginButton:focus-within {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .sm\:focus-within\:ring-offset-loginInfoButton:focus-within {
@@ -53826,6 +54434,14 @@ video {
 
   .sm\:focus-within\:ring-offset-loginBorders:focus-within {
     --tw-ring-offset-color: #006080;
+  }
+
+  .sm\:focus-within\:ring-offset-loginInputText:focus-within {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .sm\:focus-within\:ring-offset-loginButtonText:focus-within {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .sm\:focus\:ring-offset-transparent:focus {
@@ -54165,7 +54781,7 @@ video {
   }
 
   .sm\:focus\:ring-offset-loginButton:focus {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .sm\:focus\:ring-offset-loginInfoButton:focus {
@@ -54174,6 +54790,14 @@ video {
 
   .sm\:focus\:ring-offset-loginBorders:focus {
     --tw-ring-offset-color: #006080;
+  }
+
+  .sm\:focus\:ring-offset-loginInputText:focus {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .sm\:focus\:ring-offset-loginButtonText:focus {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .sm\:ring-offset-0 {
@@ -54656,7 +55280,7 @@ video {
 
   .sm\:ring-loginButton {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .sm\:ring-loginInfoButton {
@@ -54667,6 +55291,16 @@ video {
   .sm\:ring-loginBorders {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .sm\:ring-loginInputText {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .sm\:ring-loginButtonText {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .sm\:focus-within\:ring-transparent:focus-within {
@@ -55089,7 +55723,7 @@ video {
 
   .sm\:focus-within\:ring-loginButton:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .sm\:focus-within\:ring-loginInfoButton:focus-within {
@@ -55100,6 +55734,16 @@ video {
   .sm\:focus-within\:ring-loginBorders:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .sm\:focus-within\:ring-loginInputText:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .sm\:focus-within\:ring-loginButtonText:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .sm\:focus\:ring-transparent:focus {
@@ -55522,7 +56166,7 @@ video {
 
   .sm\:focus\:ring-loginButton:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .sm\:focus\:ring-loginInfoButton:focus {
@@ -55533,6 +56177,16 @@ video {
   .sm\:focus\:ring-loginBorders:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .sm\:focus\:ring-loginInputText:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .sm\:focus\:ring-loginButtonText:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .sm\:ring-opacity-0 {
@@ -56179,7 +56833,7 @@ video {
 
   .sm\:text-loginButton {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .sm\:text-loginInfoButton {
@@ -56190,6 +56844,16 @@ video {
   .sm\:text-loginBorders {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .sm\:text-loginInputText {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .sm\:text-loginButtonText {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .group:hover .sm\:group-hover\:text-transparent {
@@ -56612,7 +57276,7 @@ video {
 
   .group:hover .sm\:group-hover\:text-loginButton {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .group:hover .sm\:group-hover\:text-loginInfoButton {
@@ -56623,6 +57287,16 @@ video {
   .group:hover .sm\:group-hover\:text-loginBorders {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:text-loginInputText {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .group:hover .sm\:group-hover\:text-loginButtonText {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .sm\:focus-within\:text-transparent:focus-within {
@@ -57045,7 +57719,7 @@ video {
 
   .sm\:focus-within\:text-loginButton:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .sm\:focus-within\:text-loginInfoButton:focus-within {
@@ -57056,6 +57730,16 @@ video {
   .sm\:focus-within\:text-loginBorders:focus-within {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .sm\:focus-within\:text-loginInputText:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .sm\:focus-within\:text-loginButtonText:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .sm\:hover\:text-transparent:hover {
@@ -57478,7 +58162,7 @@ video {
 
   .sm\:hover\:text-loginButton:hover {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .sm\:hover\:text-loginInfoButton:hover {
@@ -57489,6 +58173,16 @@ video {
   .sm\:hover\:text-loginBorders:hover {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .sm\:hover\:text-loginInputText:hover {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .sm\:hover\:text-loginButtonText:hover {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .sm\:focus\:text-transparent:focus {
@@ -57911,7 +58605,7 @@ video {
 
   .sm\:focus\:text-loginButton:focus {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .sm\:focus\:text-loginInfoButton:focus {
@@ -57922,6 +58616,16 @@ video {
   .sm\:focus\:text-loginBorders:focus {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .sm\:focus\:text-loginInputText:focus {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .sm\:focus\:text-loginButtonText:focus {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .sm\:text-opacity-0 {
@@ -64149,7 +64853,7 @@ video {
 
   .md\:divide-loginButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-divide-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-divide-opacity));
   }
 
   .md\:divide-loginInfoButton > :not([hidden]) ~ :not([hidden]) {
@@ -64160,6 +64864,16 @@ video {
   .md\:divide-loginBorders > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-divide-opacity));
+  }
+
+  .md\:divide-loginInputText > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-divide-opacity));
+  }
+
+  .md\:divide-loginButtonText > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-divide-opacity));
   }
 
   .md\:divide-solid > :not([hidden]) ~ :not([hidden]) {
@@ -64766,7 +65480,7 @@ video {
 
   .md\:bg-loginButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .md\:bg-loginInfoButton {
@@ -64777,6 +65491,16 @@ video {
   .md\:bg-loginBorders {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .md\:bg-loginInputText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .md\:bg-loginButtonText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .group:hover .md\:group-hover\:bg-transparent {
@@ -65199,7 +65923,7 @@ video {
 
   .group:hover .md\:group-hover\:bg-loginButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .group:hover .md\:group-hover\:bg-loginInfoButton {
@@ -65210,6 +65934,16 @@ video {
   .group:hover .md\:group-hover\:bg-loginBorders {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .group:hover .md\:group-hover\:bg-loginInputText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .group:hover .md\:group-hover\:bg-loginButtonText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .md\:focus-within\:bg-transparent:focus-within {
@@ -65632,7 +66366,7 @@ video {
 
   .md\:focus-within\:bg-loginButton:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .md\:focus-within\:bg-loginInfoButton:focus-within {
@@ -65643,6 +66377,16 @@ video {
   .md\:focus-within\:bg-loginBorders:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .md\:focus-within\:bg-loginInputText:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .md\:focus-within\:bg-loginButtonText:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .md\:hover\:bg-transparent:hover {
@@ -66065,7 +66809,7 @@ video {
 
   .md\:hover\:bg-loginButton:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .md\:hover\:bg-loginInfoButton:hover {
@@ -66076,6 +66820,16 @@ video {
   .md\:hover\:bg-loginBorders:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .md\:hover\:bg-loginInputText:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .md\:hover\:bg-loginButtonText:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .md\:focus\:bg-transparent:focus {
@@ -66498,7 +67252,7 @@ video {
 
   .md\:focus\:bg-loginButton:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .md\:focus\:bg-loginInfoButton:focus {
@@ -66509,6 +67263,16 @@ video {
   .md\:focus\:bg-loginBorders:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .md\:focus\:bg-loginInputText:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .md\:focus\:bg-loginButtonText:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .md\:bg-none {
@@ -66968,8 +67732,8 @@ video {
   }
 
   .md\:from-loginButton {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .md\:from-loginInfoButton {
@@ -66980,6 +67744,16 @@ video {
   .md\:from-loginBorders {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .md\:from-loginInputText {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .md\:from-loginButtonText {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .md\:via-transparent {
@@ -67319,7 +68093,7 @@ video {
   }
 
   .md\:via-loginButton {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .md\:via-loginInfoButton {
@@ -67328,6 +68102,14 @@ video {
 
   .md\:via-loginBorders {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .md\:via-loginInputText {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .md\:via-loginButtonText {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .md\:to-transparent {
@@ -67667,7 +68449,7 @@ video {
   }
 
   .md\:to-loginButton {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .md\:to-loginInfoButton {
@@ -67676,6 +68458,14 @@ video {
 
   .md\:to-loginBorders {
     --tw-gradient-to: #006080;
+  }
+
+  .md\:to-loginInputText {
+    --tw-gradient-to: #828483;
+  }
+
+  .md\:to-loginButtonText {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .md\:hover\:from-transparent:hover {
@@ -68099,8 +68889,8 @@ video {
   }
 
   .md\:hover\:from-loginButton:hover {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .md\:hover\:from-loginInfoButton:hover {
@@ -68111,6 +68901,16 @@ video {
   .md\:hover\:from-loginBorders:hover {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .md\:hover\:from-loginInputText:hover {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .md\:hover\:from-loginButtonText:hover {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .md\:hover\:via-transparent:hover {
@@ -68450,7 +69250,7 @@ video {
   }
 
   .md\:hover\:via-loginButton:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .md\:hover\:via-loginInfoButton:hover {
@@ -68459,6 +69259,14 @@ video {
 
   .md\:hover\:via-loginBorders:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .md\:hover\:via-loginInputText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .md\:hover\:via-loginButtonText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .md\:hover\:to-transparent:hover {
@@ -68798,7 +69606,7 @@ video {
   }
 
   .md\:hover\:to-loginButton:hover {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .md\:hover\:to-loginInfoButton:hover {
@@ -68807,6 +69615,14 @@ video {
 
   .md\:hover\:to-loginBorders:hover {
     --tw-gradient-to: #006080;
+  }
+
+  .md\:hover\:to-loginInputText:hover {
+    --tw-gradient-to: #828483;
+  }
+
+  .md\:hover\:to-loginButtonText:hover {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .md\:focus\:from-transparent:focus {
@@ -69230,8 +70046,8 @@ video {
   }
 
   .md\:focus\:from-loginButton:focus {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .md\:focus\:from-loginInfoButton:focus {
@@ -69242,6 +70058,16 @@ video {
   .md\:focus\:from-loginBorders:focus {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .md\:focus\:from-loginInputText:focus {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .md\:focus\:from-loginButtonText:focus {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .md\:focus\:via-transparent:focus {
@@ -69581,7 +70407,7 @@ video {
   }
 
   .md\:focus\:via-loginButton:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .md\:focus\:via-loginInfoButton:focus {
@@ -69590,6 +70416,14 @@ video {
 
   .md\:focus\:via-loginBorders:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .md\:focus\:via-loginInputText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .md\:focus\:via-loginButtonText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .md\:focus\:to-transparent:focus {
@@ -69929,7 +70763,7 @@ video {
   }
 
   .md\:focus\:to-loginButton:focus {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .md\:focus\:to-loginInfoButton:focus {
@@ -69938,6 +70772,14 @@ video {
 
   .md\:focus\:to-loginBorders:focus {
     --tw-gradient-to: #006080;
+  }
+
+  .md\:focus\:to-loginInputText:focus {
+    --tw-gradient-to: #828483;
+  }
+
+  .md\:focus\:to-loginButtonText:focus {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .md\:bg-opacity-0 {
@@ -70740,7 +71582,7 @@ video {
 
   .md\:border-loginButton {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .md\:border-loginInfoButton {
@@ -70751,6 +71593,16 @@ video {
   .md\:border-loginBorders {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .md\:border-loginInputText {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .md\:border-loginButtonText {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .group:hover .md\:group-hover\:border-transparent {
@@ -71173,7 +72025,7 @@ video {
 
   .group:hover .md\:group-hover\:border-loginButton {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .group:hover .md\:group-hover\:border-loginInfoButton {
@@ -71184,6 +72036,16 @@ video {
   .group:hover .md\:group-hover\:border-loginBorders {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .group:hover .md\:group-hover\:border-loginInputText {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .group:hover .md\:group-hover\:border-loginButtonText {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .md\:focus-within\:border-transparent:focus-within {
@@ -71606,7 +72468,7 @@ video {
 
   .md\:focus-within\:border-loginButton:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .md\:focus-within\:border-loginInfoButton:focus-within {
@@ -71617,6 +72479,16 @@ video {
   .md\:focus-within\:border-loginBorders:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .md\:focus-within\:border-loginInputText:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .md\:focus-within\:border-loginButtonText:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .md\:hover\:border-transparent:hover {
@@ -72039,7 +72911,7 @@ video {
 
   .md\:hover\:border-loginButton:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .md\:hover\:border-loginInfoButton:hover {
@@ -72050,6 +72922,16 @@ video {
   .md\:hover\:border-loginBorders:hover {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .md\:hover\:border-loginInputText:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .md\:hover\:border-loginButtonText:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .md\:focus\:border-transparent:focus {
@@ -72472,7 +73354,7 @@ video {
 
   .md\:focus\:border-loginButton:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .md\:focus\:border-loginInfoButton:focus {
@@ -72483,6 +73365,16 @@ video {
   .md\:focus\:border-loginBorders:focus {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .md\:focus\:border-loginInputText:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .md\:focus\:border-loginButtonText:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .md\:border-opacity-0 {
@@ -79336,17 +80228,17 @@ video {
 
   .md\:placeholder-loginButton::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-loginButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-loginButton::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-loginInfoButton::-moz-placeholder {
@@ -79377,6 +80269,36 @@ video {
   .md\:placeholder-loginBorders::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-placeholder-opacity));
+  }
+
+  .md\:placeholder-loginInputText::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .md\:placeholder-loginInputText:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .md\:placeholder-loginInputText::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .md\:placeholder-loginButtonText::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .md\:placeholder-loginButtonText:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .md\:placeholder-loginButtonText::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-transparent:focus::-moz-placeholder {
@@ -80635,17 +81557,17 @@ video {
 
   .md\:focus\:placeholder-loginButton:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-loginButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-loginButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-loginInfoButton:focus::-moz-placeholder {
@@ -80676,6 +81598,36 @@ video {
   .md\:focus\:placeholder-loginBorders:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-loginInputText:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-loginInputText:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-loginInputText:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-loginButtonText:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-loginButtonText:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .md\:focus\:placeholder-loginButtonText:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-opacity-0::-moz-placeholder {
@@ -84544,7 +85496,7 @@ video {
   }
 
   .md\:ring-offset-loginButton {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .md\:ring-offset-loginInfoButton {
@@ -84553,6 +85505,14 @@ video {
 
   .md\:ring-offset-loginBorders {
     --tw-ring-offset-color: #006080;
+  }
+
+  .md\:ring-offset-loginInputText {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .md\:ring-offset-loginButtonText {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .md\:focus-within\:ring-offset-transparent:focus-within {
@@ -84892,7 +85852,7 @@ video {
   }
 
   .md\:focus-within\:ring-offset-loginButton:focus-within {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .md\:focus-within\:ring-offset-loginInfoButton:focus-within {
@@ -84901,6 +85861,14 @@ video {
 
   .md\:focus-within\:ring-offset-loginBorders:focus-within {
     --tw-ring-offset-color: #006080;
+  }
+
+  .md\:focus-within\:ring-offset-loginInputText:focus-within {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .md\:focus-within\:ring-offset-loginButtonText:focus-within {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .md\:focus\:ring-offset-transparent:focus {
@@ -85240,7 +86208,7 @@ video {
   }
 
   .md\:focus\:ring-offset-loginButton:focus {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .md\:focus\:ring-offset-loginInfoButton:focus {
@@ -85249,6 +86217,14 @@ video {
 
   .md\:focus\:ring-offset-loginBorders:focus {
     --tw-ring-offset-color: #006080;
+  }
+
+  .md\:focus\:ring-offset-loginInputText:focus {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .md\:focus\:ring-offset-loginButtonText:focus {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .md\:ring-offset-0 {
@@ -85731,7 +86707,7 @@ video {
 
   .md\:ring-loginButton {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .md\:ring-loginInfoButton {
@@ -85742,6 +86718,16 @@ video {
   .md\:ring-loginBorders {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .md\:ring-loginInputText {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .md\:ring-loginButtonText {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .md\:focus-within\:ring-transparent:focus-within {
@@ -86164,7 +87150,7 @@ video {
 
   .md\:focus-within\:ring-loginButton:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .md\:focus-within\:ring-loginInfoButton:focus-within {
@@ -86175,6 +87161,16 @@ video {
   .md\:focus-within\:ring-loginBorders:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .md\:focus-within\:ring-loginInputText:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .md\:focus-within\:ring-loginButtonText:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .md\:focus\:ring-transparent:focus {
@@ -86597,7 +87593,7 @@ video {
 
   .md\:focus\:ring-loginButton:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .md\:focus\:ring-loginInfoButton:focus {
@@ -86608,6 +87604,16 @@ video {
   .md\:focus\:ring-loginBorders:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .md\:focus\:ring-loginInputText:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .md\:focus\:ring-loginButtonText:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .md\:ring-opacity-0 {
@@ -87254,7 +88260,7 @@ video {
 
   .md\:text-loginButton {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .md\:text-loginInfoButton {
@@ -87265,6 +88271,16 @@ video {
   .md\:text-loginBorders {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .md\:text-loginInputText {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .md\:text-loginButtonText {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .group:hover .md\:group-hover\:text-transparent {
@@ -87687,7 +88703,7 @@ video {
 
   .group:hover .md\:group-hover\:text-loginButton {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .group:hover .md\:group-hover\:text-loginInfoButton {
@@ -87698,6 +88714,16 @@ video {
   .group:hover .md\:group-hover\:text-loginBorders {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .group:hover .md\:group-hover\:text-loginInputText {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .group:hover .md\:group-hover\:text-loginButtonText {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .md\:focus-within\:text-transparent:focus-within {
@@ -88120,7 +89146,7 @@ video {
 
   .md\:focus-within\:text-loginButton:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .md\:focus-within\:text-loginInfoButton:focus-within {
@@ -88131,6 +89157,16 @@ video {
   .md\:focus-within\:text-loginBorders:focus-within {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .md\:focus-within\:text-loginInputText:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .md\:focus-within\:text-loginButtonText:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .md\:hover\:text-transparent:hover {
@@ -88553,7 +89589,7 @@ video {
 
   .md\:hover\:text-loginButton:hover {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .md\:hover\:text-loginInfoButton:hover {
@@ -88564,6 +89600,16 @@ video {
   .md\:hover\:text-loginBorders:hover {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .md\:hover\:text-loginInputText:hover {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .md\:hover\:text-loginButtonText:hover {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .md\:focus\:text-transparent:focus {
@@ -88986,7 +90032,7 @@ video {
 
   .md\:focus\:text-loginButton:focus {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .md\:focus\:text-loginInfoButton:focus {
@@ -88997,6 +90043,16 @@ video {
   .md\:focus\:text-loginBorders:focus {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .md\:focus\:text-loginInputText:focus {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .md\:focus\:text-loginButtonText:focus {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .md\:text-opacity-0 {
@@ -95224,7 +96280,7 @@ video {
 
   .lg\:divide-loginButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-divide-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-divide-opacity));
   }
 
   .lg\:divide-loginInfoButton > :not([hidden]) ~ :not([hidden]) {
@@ -95235,6 +96291,16 @@ video {
   .lg\:divide-loginBorders > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-divide-opacity));
+  }
+
+  .lg\:divide-loginInputText > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-divide-opacity));
+  }
+
+  .lg\:divide-loginButtonText > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-divide-opacity));
   }
 
   .lg\:divide-solid > :not([hidden]) ~ :not([hidden]) {
@@ -95841,7 +96907,7 @@ video {
 
   .lg\:bg-loginButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .lg\:bg-loginInfoButton {
@@ -95852,6 +96918,16 @@ video {
   .lg\:bg-loginBorders {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .lg\:bg-loginInputText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .lg\:bg-loginButtonText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .group:hover .lg\:group-hover\:bg-transparent {
@@ -96274,7 +97350,7 @@ video {
 
   .group:hover .lg\:group-hover\:bg-loginButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .group:hover .lg\:group-hover\:bg-loginInfoButton {
@@ -96285,6 +97361,16 @@ video {
   .group:hover .lg\:group-hover\:bg-loginBorders {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:bg-loginInputText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:bg-loginButtonText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .lg\:focus-within\:bg-transparent:focus-within {
@@ -96707,7 +97793,7 @@ video {
 
   .lg\:focus-within\:bg-loginButton:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .lg\:focus-within\:bg-loginInfoButton:focus-within {
@@ -96718,6 +97804,16 @@ video {
   .lg\:focus-within\:bg-loginBorders:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .lg\:focus-within\:bg-loginInputText:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .lg\:focus-within\:bg-loginButtonText:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .lg\:hover\:bg-transparent:hover {
@@ -97140,7 +98236,7 @@ video {
 
   .lg\:hover\:bg-loginButton:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .lg\:hover\:bg-loginInfoButton:hover {
@@ -97151,6 +98247,16 @@ video {
   .lg\:hover\:bg-loginBorders:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .lg\:hover\:bg-loginInputText:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .lg\:hover\:bg-loginButtonText:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .lg\:focus\:bg-transparent:focus {
@@ -97573,7 +98679,7 @@ video {
 
   .lg\:focus\:bg-loginButton:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .lg\:focus\:bg-loginInfoButton:focus {
@@ -97584,6 +98690,16 @@ video {
   .lg\:focus\:bg-loginBorders:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .lg\:focus\:bg-loginInputText:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .lg\:focus\:bg-loginButtonText:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .lg\:bg-none {
@@ -98043,8 +99159,8 @@ video {
   }
 
   .lg\:from-loginButton {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .lg\:from-loginInfoButton {
@@ -98055,6 +99171,16 @@ video {
   .lg\:from-loginBorders {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .lg\:from-loginInputText {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .lg\:from-loginButtonText {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .lg\:via-transparent {
@@ -98394,7 +99520,7 @@ video {
   }
 
   .lg\:via-loginButton {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .lg\:via-loginInfoButton {
@@ -98403,6 +99529,14 @@ video {
 
   .lg\:via-loginBorders {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .lg\:via-loginInputText {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .lg\:via-loginButtonText {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .lg\:to-transparent {
@@ -98742,7 +99876,7 @@ video {
   }
 
   .lg\:to-loginButton {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .lg\:to-loginInfoButton {
@@ -98751,6 +99885,14 @@ video {
 
   .lg\:to-loginBorders {
     --tw-gradient-to: #006080;
+  }
+
+  .lg\:to-loginInputText {
+    --tw-gradient-to: #828483;
+  }
+
+  .lg\:to-loginButtonText {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .lg\:hover\:from-transparent:hover {
@@ -99174,8 +100316,8 @@ video {
   }
 
   .lg\:hover\:from-loginButton:hover {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .lg\:hover\:from-loginInfoButton:hover {
@@ -99186,6 +100328,16 @@ video {
   .lg\:hover\:from-loginBorders:hover {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .lg\:hover\:from-loginInputText:hover {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .lg\:hover\:from-loginButtonText:hover {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .lg\:hover\:via-transparent:hover {
@@ -99525,7 +100677,7 @@ video {
   }
 
   .lg\:hover\:via-loginButton:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .lg\:hover\:via-loginInfoButton:hover {
@@ -99534,6 +100686,14 @@ video {
 
   .lg\:hover\:via-loginBorders:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .lg\:hover\:via-loginInputText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .lg\:hover\:via-loginButtonText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .lg\:hover\:to-transparent:hover {
@@ -99873,7 +101033,7 @@ video {
   }
 
   .lg\:hover\:to-loginButton:hover {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .lg\:hover\:to-loginInfoButton:hover {
@@ -99882,6 +101042,14 @@ video {
 
   .lg\:hover\:to-loginBorders:hover {
     --tw-gradient-to: #006080;
+  }
+
+  .lg\:hover\:to-loginInputText:hover {
+    --tw-gradient-to: #828483;
+  }
+
+  .lg\:hover\:to-loginButtonText:hover {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .lg\:focus\:from-transparent:focus {
@@ -100305,8 +101473,8 @@ video {
   }
 
   .lg\:focus\:from-loginButton:focus {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .lg\:focus\:from-loginInfoButton:focus {
@@ -100317,6 +101485,16 @@ video {
   .lg\:focus\:from-loginBorders:focus {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .lg\:focus\:from-loginInputText:focus {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .lg\:focus\:from-loginButtonText:focus {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .lg\:focus\:via-transparent:focus {
@@ -100656,7 +101834,7 @@ video {
   }
 
   .lg\:focus\:via-loginButton:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .lg\:focus\:via-loginInfoButton:focus {
@@ -100665,6 +101843,14 @@ video {
 
   .lg\:focus\:via-loginBorders:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .lg\:focus\:via-loginInputText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .lg\:focus\:via-loginButtonText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .lg\:focus\:to-transparent:focus {
@@ -101004,7 +102190,7 @@ video {
   }
 
   .lg\:focus\:to-loginButton:focus {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .lg\:focus\:to-loginInfoButton:focus {
@@ -101013,6 +102199,14 @@ video {
 
   .lg\:focus\:to-loginBorders:focus {
     --tw-gradient-to: #006080;
+  }
+
+  .lg\:focus\:to-loginInputText:focus {
+    --tw-gradient-to: #828483;
+  }
+
+  .lg\:focus\:to-loginButtonText:focus {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .lg\:bg-opacity-0 {
@@ -101815,7 +103009,7 @@ video {
 
   .lg\:border-loginButton {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .lg\:border-loginInfoButton {
@@ -101826,6 +103020,16 @@ video {
   .lg\:border-loginBorders {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .lg\:border-loginInputText {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .lg\:border-loginButtonText {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .group:hover .lg\:group-hover\:border-transparent {
@@ -102248,7 +103452,7 @@ video {
 
   .group:hover .lg\:group-hover\:border-loginButton {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .group:hover .lg\:group-hover\:border-loginInfoButton {
@@ -102259,6 +103463,16 @@ video {
   .group:hover .lg\:group-hover\:border-loginBorders {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:border-loginInputText {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:border-loginButtonText {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .lg\:focus-within\:border-transparent:focus-within {
@@ -102681,7 +103895,7 @@ video {
 
   .lg\:focus-within\:border-loginButton:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .lg\:focus-within\:border-loginInfoButton:focus-within {
@@ -102692,6 +103906,16 @@ video {
   .lg\:focus-within\:border-loginBorders:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .lg\:focus-within\:border-loginInputText:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .lg\:focus-within\:border-loginButtonText:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .lg\:hover\:border-transparent:hover {
@@ -103114,7 +104338,7 @@ video {
 
   .lg\:hover\:border-loginButton:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .lg\:hover\:border-loginInfoButton:hover {
@@ -103125,6 +104349,16 @@ video {
   .lg\:hover\:border-loginBorders:hover {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .lg\:hover\:border-loginInputText:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .lg\:hover\:border-loginButtonText:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .lg\:focus\:border-transparent:focus {
@@ -103547,7 +104781,7 @@ video {
 
   .lg\:focus\:border-loginButton:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .lg\:focus\:border-loginInfoButton:focus {
@@ -103558,6 +104792,16 @@ video {
   .lg\:focus\:border-loginBorders:focus {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .lg\:focus\:border-loginInputText:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .lg\:focus\:border-loginButtonText:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .lg\:border-opacity-0 {
@@ -110411,17 +111655,17 @@ video {
 
   .lg\:placeholder-loginButton::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-loginButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-loginButton::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-loginInfoButton::-moz-placeholder {
@@ -110452,6 +111696,36 @@ video {
   .lg\:placeholder-loginBorders::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:placeholder-loginInputText::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:placeholder-loginInputText:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:placeholder-loginInputText::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:placeholder-loginButtonText::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:placeholder-loginButtonText:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:placeholder-loginButtonText::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-transparent:focus::-moz-placeholder {
@@ -111710,17 +112984,17 @@ video {
 
   .lg\:focus\:placeholder-loginButton:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-loginButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-loginButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-loginInfoButton:focus::-moz-placeholder {
@@ -111751,6 +113025,36 @@ video {
   .lg\:focus\:placeholder-loginBorders:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-loginInputText:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-loginInputText:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-loginInputText:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-loginButtonText:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-loginButtonText:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .lg\:focus\:placeholder-loginButtonText:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-opacity-0::-moz-placeholder {
@@ -115619,7 +116923,7 @@ video {
   }
 
   .lg\:ring-offset-loginButton {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .lg\:ring-offset-loginInfoButton {
@@ -115628,6 +116932,14 @@ video {
 
   .lg\:ring-offset-loginBorders {
     --tw-ring-offset-color: #006080;
+  }
+
+  .lg\:ring-offset-loginInputText {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .lg\:ring-offset-loginButtonText {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .lg\:focus-within\:ring-offset-transparent:focus-within {
@@ -115967,7 +117279,7 @@ video {
   }
 
   .lg\:focus-within\:ring-offset-loginButton:focus-within {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .lg\:focus-within\:ring-offset-loginInfoButton:focus-within {
@@ -115976,6 +117288,14 @@ video {
 
   .lg\:focus-within\:ring-offset-loginBorders:focus-within {
     --tw-ring-offset-color: #006080;
+  }
+
+  .lg\:focus-within\:ring-offset-loginInputText:focus-within {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .lg\:focus-within\:ring-offset-loginButtonText:focus-within {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .lg\:focus\:ring-offset-transparent:focus {
@@ -116315,7 +117635,7 @@ video {
   }
 
   .lg\:focus\:ring-offset-loginButton:focus {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .lg\:focus\:ring-offset-loginInfoButton:focus {
@@ -116324,6 +117644,14 @@ video {
 
   .lg\:focus\:ring-offset-loginBorders:focus {
     --tw-ring-offset-color: #006080;
+  }
+
+  .lg\:focus\:ring-offset-loginInputText:focus {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .lg\:focus\:ring-offset-loginButtonText:focus {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .lg\:ring-offset-0 {
@@ -116806,7 +118134,7 @@ video {
 
   .lg\:ring-loginButton {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .lg\:ring-loginInfoButton {
@@ -116817,6 +118145,16 @@ video {
   .lg\:ring-loginBorders {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .lg\:ring-loginInputText {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .lg\:ring-loginButtonText {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .lg\:focus-within\:ring-transparent:focus-within {
@@ -117239,7 +118577,7 @@ video {
 
   .lg\:focus-within\:ring-loginButton:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .lg\:focus-within\:ring-loginInfoButton:focus-within {
@@ -117250,6 +118588,16 @@ video {
   .lg\:focus-within\:ring-loginBorders:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .lg\:focus-within\:ring-loginInputText:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .lg\:focus-within\:ring-loginButtonText:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .lg\:focus\:ring-transparent:focus {
@@ -117672,7 +119020,7 @@ video {
 
   .lg\:focus\:ring-loginButton:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .lg\:focus\:ring-loginInfoButton:focus {
@@ -117683,6 +119031,16 @@ video {
   .lg\:focus\:ring-loginBorders:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .lg\:focus\:ring-loginInputText:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .lg\:focus\:ring-loginButtonText:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .lg\:ring-opacity-0 {
@@ -118329,7 +119687,7 @@ video {
 
   .lg\:text-loginButton {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .lg\:text-loginInfoButton {
@@ -118340,6 +119698,16 @@ video {
   .lg\:text-loginBorders {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .lg\:text-loginInputText {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .lg\:text-loginButtonText {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .group:hover .lg\:group-hover\:text-transparent {
@@ -118762,7 +120130,7 @@ video {
 
   .group:hover .lg\:group-hover\:text-loginButton {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .group:hover .lg\:group-hover\:text-loginInfoButton {
@@ -118773,6 +120141,16 @@ video {
   .group:hover .lg\:group-hover\:text-loginBorders {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:text-loginInputText {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .group:hover .lg\:group-hover\:text-loginButtonText {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .lg\:focus-within\:text-transparent:focus-within {
@@ -119195,7 +120573,7 @@ video {
 
   .lg\:focus-within\:text-loginButton:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .lg\:focus-within\:text-loginInfoButton:focus-within {
@@ -119206,6 +120584,16 @@ video {
   .lg\:focus-within\:text-loginBorders:focus-within {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .lg\:focus-within\:text-loginInputText:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .lg\:focus-within\:text-loginButtonText:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .lg\:hover\:text-transparent:hover {
@@ -119628,7 +121016,7 @@ video {
 
   .lg\:hover\:text-loginButton:hover {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .lg\:hover\:text-loginInfoButton:hover {
@@ -119639,6 +121027,16 @@ video {
   .lg\:hover\:text-loginBorders:hover {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .lg\:hover\:text-loginInputText:hover {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .lg\:hover\:text-loginButtonText:hover {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .lg\:focus\:text-transparent:focus {
@@ -120061,7 +121459,7 @@ video {
 
   .lg\:focus\:text-loginButton:focus {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .lg\:focus\:text-loginInfoButton:focus {
@@ -120072,6 +121470,16 @@ video {
   .lg\:focus\:text-loginBorders:focus {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .lg\:focus\:text-loginInputText:focus {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .lg\:focus\:text-loginButtonText:focus {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .lg\:text-opacity-0 {
@@ -126299,7 +127707,7 @@ video {
 
   .xl\:divide-loginButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-divide-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-divide-opacity));
   }
 
   .xl\:divide-loginInfoButton > :not([hidden]) ~ :not([hidden]) {
@@ -126310,6 +127718,16 @@ video {
   .xl\:divide-loginBorders > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-divide-opacity));
+  }
+
+  .xl\:divide-loginInputText > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-divide-opacity));
+  }
+
+  .xl\:divide-loginButtonText > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-divide-opacity));
   }
 
   .xl\:divide-solid > :not([hidden]) ~ :not([hidden]) {
@@ -126916,7 +128334,7 @@ video {
 
   .xl\:bg-loginButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .xl\:bg-loginInfoButton {
@@ -126927,6 +128345,16 @@ video {
   .xl\:bg-loginBorders {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .xl\:bg-loginInputText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .xl\:bg-loginButtonText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .group:hover .xl\:group-hover\:bg-transparent {
@@ -127349,7 +128777,7 @@ video {
 
   .group:hover .xl\:group-hover\:bg-loginButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .group:hover .xl\:group-hover\:bg-loginInfoButton {
@@ -127360,6 +128788,16 @@ video {
   .group:hover .xl\:group-hover\:bg-loginBorders {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:bg-loginInputText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:bg-loginButtonText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .xl\:focus-within\:bg-transparent:focus-within {
@@ -127782,7 +129220,7 @@ video {
 
   .xl\:focus-within\:bg-loginButton:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .xl\:focus-within\:bg-loginInfoButton:focus-within {
@@ -127793,6 +129231,16 @@ video {
   .xl\:focus-within\:bg-loginBorders:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .xl\:focus-within\:bg-loginInputText:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .xl\:focus-within\:bg-loginButtonText:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .xl\:hover\:bg-transparent:hover {
@@ -128215,7 +129663,7 @@ video {
 
   .xl\:hover\:bg-loginButton:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .xl\:hover\:bg-loginInfoButton:hover {
@@ -128226,6 +129674,16 @@ video {
   .xl\:hover\:bg-loginBorders:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .xl\:hover\:bg-loginInputText:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .xl\:hover\:bg-loginButtonText:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .xl\:focus\:bg-transparent:focus {
@@ -128648,7 +130106,7 @@ video {
 
   .xl\:focus\:bg-loginButton:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .xl\:focus\:bg-loginInfoButton:focus {
@@ -128659,6 +130117,16 @@ video {
   .xl\:focus\:bg-loginBorders:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .xl\:focus\:bg-loginInputText:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .xl\:focus\:bg-loginButtonText:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .xl\:bg-none {
@@ -129118,8 +130586,8 @@ video {
   }
 
   .xl\:from-loginButton {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .xl\:from-loginInfoButton {
@@ -129130,6 +130598,16 @@ video {
   .xl\:from-loginBorders {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .xl\:from-loginInputText {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .xl\:from-loginButtonText {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .xl\:via-transparent {
@@ -129469,7 +130947,7 @@ video {
   }
 
   .xl\:via-loginButton {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .xl\:via-loginInfoButton {
@@ -129478,6 +130956,14 @@ video {
 
   .xl\:via-loginBorders {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .xl\:via-loginInputText {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .xl\:via-loginButtonText {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .xl\:to-transparent {
@@ -129817,7 +131303,7 @@ video {
   }
 
   .xl\:to-loginButton {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .xl\:to-loginInfoButton {
@@ -129826,6 +131312,14 @@ video {
 
   .xl\:to-loginBorders {
     --tw-gradient-to: #006080;
+  }
+
+  .xl\:to-loginInputText {
+    --tw-gradient-to: #828483;
+  }
+
+  .xl\:to-loginButtonText {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .xl\:hover\:from-transparent:hover {
@@ -130249,8 +131743,8 @@ video {
   }
 
   .xl\:hover\:from-loginButton:hover {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .xl\:hover\:from-loginInfoButton:hover {
@@ -130261,6 +131755,16 @@ video {
   .xl\:hover\:from-loginBorders:hover {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .xl\:hover\:from-loginInputText:hover {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .xl\:hover\:from-loginButtonText:hover {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .xl\:hover\:via-transparent:hover {
@@ -130600,7 +132104,7 @@ video {
   }
 
   .xl\:hover\:via-loginButton:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .xl\:hover\:via-loginInfoButton:hover {
@@ -130609,6 +132113,14 @@ video {
 
   .xl\:hover\:via-loginBorders:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .xl\:hover\:via-loginInputText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .xl\:hover\:via-loginButtonText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .xl\:hover\:to-transparent:hover {
@@ -130948,7 +132460,7 @@ video {
   }
 
   .xl\:hover\:to-loginButton:hover {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .xl\:hover\:to-loginInfoButton:hover {
@@ -130957,6 +132469,14 @@ video {
 
   .xl\:hover\:to-loginBorders:hover {
     --tw-gradient-to: #006080;
+  }
+
+  .xl\:hover\:to-loginInputText:hover {
+    --tw-gradient-to: #828483;
+  }
+
+  .xl\:hover\:to-loginButtonText:hover {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .xl\:focus\:from-transparent:focus {
@@ -131380,8 +132900,8 @@ video {
   }
 
   .xl\:focus\:from-loginButton:focus {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .xl\:focus\:from-loginInfoButton:focus {
@@ -131392,6 +132912,16 @@ video {
   .xl\:focus\:from-loginBorders:focus {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .xl\:focus\:from-loginInputText:focus {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .xl\:focus\:from-loginButtonText:focus {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .xl\:focus\:via-transparent:focus {
@@ -131731,7 +133261,7 @@ video {
   }
 
   .xl\:focus\:via-loginButton:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .xl\:focus\:via-loginInfoButton:focus {
@@ -131740,6 +133270,14 @@ video {
 
   .xl\:focus\:via-loginBorders:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .xl\:focus\:via-loginInputText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .xl\:focus\:via-loginButtonText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .xl\:focus\:to-transparent:focus {
@@ -132079,7 +133617,7 @@ video {
   }
 
   .xl\:focus\:to-loginButton:focus {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .xl\:focus\:to-loginInfoButton:focus {
@@ -132088,6 +133626,14 @@ video {
 
   .xl\:focus\:to-loginBorders:focus {
     --tw-gradient-to: #006080;
+  }
+
+  .xl\:focus\:to-loginInputText:focus {
+    --tw-gradient-to: #828483;
+  }
+
+  .xl\:focus\:to-loginButtonText:focus {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .xl\:bg-opacity-0 {
@@ -132890,7 +134436,7 @@ video {
 
   .xl\:border-loginButton {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .xl\:border-loginInfoButton {
@@ -132901,6 +134447,16 @@ video {
   .xl\:border-loginBorders {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .xl\:border-loginInputText {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .xl\:border-loginButtonText {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .group:hover .xl\:group-hover\:border-transparent {
@@ -133323,7 +134879,7 @@ video {
 
   .group:hover .xl\:group-hover\:border-loginButton {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .group:hover .xl\:group-hover\:border-loginInfoButton {
@@ -133334,6 +134890,16 @@ video {
   .group:hover .xl\:group-hover\:border-loginBorders {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:border-loginInputText {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:border-loginButtonText {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .xl\:focus-within\:border-transparent:focus-within {
@@ -133756,7 +135322,7 @@ video {
 
   .xl\:focus-within\:border-loginButton:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .xl\:focus-within\:border-loginInfoButton:focus-within {
@@ -133767,6 +135333,16 @@ video {
   .xl\:focus-within\:border-loginBorders:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .xl\:focus-within\:border-loginInputText:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .xl\:focus-within\:border-loginButtonText:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .xl\:hover\:border-transparent:hover {
@@ -134189,7 +135765,7 @@ video {
 
   .xl\:hover\:border-loginButton:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .xl\:hover\:border-loginInfoButton:hover {
@@ -134200,6 +135776,16 @@ video {
   .xl\:hover\:border-loginBorders:hover {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .xl\:hover\:border-loginInputText:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .xl\:hover\:border-loginButtonText:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .xl\:focus\:border-transparent:focus {
@@ -134622,7 +136208,7 @@ video {
 
   .xl\:focus\:border-loginButton:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .xl\:focus\:border-loginInfoButton:focus {
@@ -134633,6 +136219,16 @@ video {
   .xl\:focus\:border-loginBorders:focus {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .xl\:focus\:border-loginInputText:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .xl\:focus\:border-loginButtonText:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .xl\:border-opacity-0 {
@@ -141486,17 +143082,17 @@ video {
 
   .xl\:placeholder-loginButton::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-loginButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-loginButton::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-loginInfoButton::-moz-placeholder {
@@ -141527,6 +143123,36 @@ video {
   .xl\:placeholder-loginBorders::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:placeholder-loginInputText::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:placeholder-loginInputText:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:placeholder-loginInputText::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:placeholder-loginButtonText::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:placeholder-loginButtonText:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:placeholder-loginButtonText::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-transparent:focus::-moz-placeholder {
@@ -142785,17 +144411,17 @@ video {
 
   .xl\:focus\:placeholder-loginButton:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-loginButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-loginButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-loginInfoButton:focus::-moz-placeholder {
@@ -142826,6 +144452,36 @@ video {
   .xl\:focus\:placeholder-loginBorders:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-loginInputText:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-loginInputText:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-loginInputText:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-loginButtonText:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-loginButtonText:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .xl\:focus\:placeholder-loginButtonText:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-opacity-0::-moz-placeholder {
@@ -146694,7 +148350,7 @@ video {
   }
 
   .xl\:ring-offset-loginButton {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .xl\:ring-offset-loginInfoButton {
@@ -146703,6 +148359,14 @@ video {
 
   .xl\:ring-offset-loginBorders {
     --tw-ring-offset-color: #006080;
+  }
+
+  .xl\:ring-offset-loginInputText {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .xl\:ring-offset-loginButtonText {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .xl\:focus-within\:ring-offset-transparent:focus-within {
@@ -147042,7 +148706,7 @@ video {
   }
 
   .xl\:focus-within\:ring-offset-loginButton:focus-within {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .xl\:focus-within\:ring-offset-loginInfoButton:focus-within {
@@ -147051,6 +148715,14 @@ video {
 
   .xl\:focus-within\:ring-offset-loginBorders:focus-within {
     --tw-ring-offset-color: #006080;
+  }
+
+  .xl\:focus-within\:ring-offset-loginInputText:focus-within {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .xl\:focus-within\:ring-offset-loginButtonText:focus-within {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .xl\:focus\:ring-offset-transparent:focus {
@@ -147390,7 +149062,7 @@ video {
   }
 
   .xl\:focus\:ring-offset-loginButton:focus {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .xl\:focus\:ring-offset-loginInfoButton:focus {
@@ -147399,6 +149071,14 @@ video {
 
   .xl\:focus\:ring-offset-loginBorders:focus {
     --tw-ring-offset-color: #006080;
+  }
+
+  .xl\:focus\:ring-offset-loginInputText:focus {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .xl\:focus\:ring-offset-loginButtonText:focus {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .xl\:ring-offset-0 {
@@ -147881,7 +149561,7 @@ video {
 
   .xl\:ring-loginButton {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .xl\:ring-loginInfoButton {
@@ -147892,6 +149572,16 @@ video {
   .xl\:ring-loginBorders {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .xl\:ring-loginInputText {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .xl\:ring-loginButtonText {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .xl\:focus-within\:ring-transparent:focus-within {
@@ -148314,7 +150004,7 @@ video {
 
   .xl\:focus-within\:ring-loginButton:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .xl\:focus-within\:ring-loginInfoButton:focus-within {
@@ -148325,6 +150015,16 @@ video {
   .xl\:focus-within\:ring-loginBorders:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .xl\:focus-within\:ring-loginInputText:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .xl\:focus-within\:ring-loginButtonText:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .xl\:focus\:ring-transparent:focus {
@@ -148747,7 +150447,7 @@ video {
 
   .xl\:focus\:ring-loginButton:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .xl\:focus\:ring-loginInfoButton:focus {
@@ -148758,6 +150458,16 @@ video {
   .xl\:focus\:ring-loginBorders:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .xl\:focus\:ring-loginInputText:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .xl\:focus\:ring-loginButtonText:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .xl\:ring-opacity-0 {
@@ -149404,7 +151114,7 @@ video {
 
   .xl\:text-loginButton {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .xl\:text-loginInfoButton {
@@ -149415,6 +151125,16 @@ video {
   .xl\:text-loginBorders {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .xl\:text-loginInputText {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .xl\:text-loginButtonText {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .group:hover .xl\:group-hover\:text-transparent {
@@ -149837,7 +151557,7 @@ video {
 
   .group:hover .xl\:group-hover\:text-loginButton {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .group:hover .xl\:group-hover\:text-loginInfoButton {
@@ -149848,6 +151568,16 @@ video {
   .group:hover .xl\:group-hover\:text-loginBorders {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:text-loginInputText {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .group:hover .xl\:group-hover\:text-loginButtonText {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .xl\:focus-within\:text-transparent:focus-within {
@@ -150270,7 +152000,7 @@ video {
 
   .xl\:focus-within\:text-loginButton:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .xl\:focus-within\:text-loginInfoButton:focus-within {
@@ -150281,6 +152011,16 @@ video {
   .xl\:focus-within\:text-loginBorders:focus-within {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .xl\:focus-within\:text-loginInputText:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .xl\:focus-within\:text-loginButtonText:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .xl\:hover\:text-transparent:hover {
@@ -150703,7 +152443,7 @@ video {
 
   .xl\:hover\:text-loginButton:hover {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .xl\:hover\:text-loginInfoButton:hover {
@@ -150714,6 +152454,16 @@ video {
   .xl\:hover\:text-loginBorders:hover {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .xl\:hover\:text-loginInputText:hover {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .xl\:hover\:text-loginButtonText:hover {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .xl\:focus\:text-transparent:focus {
@@ -151136,7 +152886,7 @@ video {
 
   .xl\:focus\:text-loginButton:focus {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .xl\:focus\:text-loginInfoButton:focus {
@@ -151147,6 +152897,16 @@ video {
   .xl\:focus\:text-loginBorders:focus {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .xl\:focus\:text-loginInputText:focus {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .xl\:focus\:text-loginButtonText:focus {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .xl\:text-opacity-0 {
@@ -157374,7 +159134,7 @@ video {
 
   .\32xl\:divide-loginButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-divide-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-divide-opacity));
   }
 
   .\32xl\:divide-loginInfoButton > :not([hidden]) ~ :not([hidden]) {
@@ -157385,6 +159145,16 @@ video {
   .\32xl\:divide-loginBorders > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-divide-opacity));
+  }
+
+  .\32xl\:divide-loginInputText > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-divide-opacity));
+  }
+
+  .\32xl\:divide-loginButtonText > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-divide-opacity));
   }
 
   .\32xl\:divide-solid > :not([hidden]) ~ :not([hidden]) {
@@ -157991,7 +159761,7 @@ video {
 
   .\32xl\:bg-loginButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .\32xl\:bg-loginInfoButton {
@@ -158002,6 +159772,16 @@ video {
   .\32xl\:bg-loginBorders {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:bg-loginInputText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:bg-loginButtonText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:bg-transparent {
@@ -158424,7 +160204,7 @@ video {
 
   .group:hover .\32xl\:group-hover\:bg-loginButton {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:bg-loginInfoButton {
@@ -158435,6 +160215,16 @@ video {
   .group:hover .\32xl\:group-hover\:bg-loginBorders {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-loginInputText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:bg-loginButtonText {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus-within\:bg-transparent:focus-within {
@@ -158857,7 +160647,7 @@ video {
 
   .\32xl\:focus-within\:bg-loginButton:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus-within\:bg-loginInfoButton:focus-within {
@@ -158868,6 +160658,16 @@ video {
   .\32xl\:focus-within\:bg-loginBorders:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:focus-within\:bg-loginInputText:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:focus-within\:bg-loginButtonText:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .\32xl\:hover\:bg-transparent:hover {
@@ -159290,7 +161090,7 @@ video {
 
   .\32xl\:hover\:bg-loginButton:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .\32xl\:hover\:bg-loginInfoButton:hover {
@@ -159301,6 +161101,16 @@ video {
   .\32xl\:hover\:bg-loginBorders:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:hover\:bg-loginInputText:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:hover\:bg-loginButtonText:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus\:bg-transparent:focus {
@@ -159723,7 +161533,7 @@ video {
 
   .\32xl\:focus\:bg-loginButton:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(153, 255, 255, var(--tw-bg-opacity));
+    background-color: rgba(141, 249, 252, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus\:bg-loginInfoButton:focus {
@@ -159734,6 +161544,16 @@ video {
   .\32xl\:focus\:bg-loginBorders:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 96, 128, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:focus\:bg-loginInputText:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(130, 132, 131, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:focus\:bg-loginButtonText:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(126, 160, 185, var(--tw-bg-opacity));
   }
 
   .\32xl\:bg-none {
@@ -160193,8 +162013,8 @@ video {
   }
 
   .\32xl\:from-loginButton {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .\32xl\:from-loginInfoButton {
@@ -160205,6 +162025,16 @@ video {
   .\32xl\:from-loginBorders {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .\32xl\:from-loginInputText {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .\32xl\:from-loginButtonText {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .\32xl\:via-transparent {
@@ -160544,7 +162374,7 @@ video {
   }
 
   .\32xl\:via-loginButton {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .\32xl\:via-loginInfoButton {
@@ -160553,6 +162383,14 @@ video {
 
   .\32xl\:via-loginBorders {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .\32xl\:via-loginInputText {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .\32xl\:via-loginButtonText {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .\32xl\:to-transparent {
@@ -160892,7 +162730,7 @@ video {
   }
 
   .\32xl\:to-loginButton {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .\32xl\:to-loginInfoButton {
@@ -160901,6 +162739,14 @@ video {
 
   .\32xl\:to-loginBorders {
     --tw-gradient-to: #006080;
+  }
+
+  .\32xl\:to-loginInputText {
+    --tw-gradient-to: #828483;
+  }
+
+  .\32xl\:to-loginButtonText {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .\32xl\:hover\:from-transparent:hover {
@@ -161324,8 +163170,8 @@ video {
   }
 
   .\32xl\:hover\:from-loginButton:hover {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .\32xl\:hover\:from-loginInfoButton:hover {
@@ -161336,6 +163182,16 @@ video {
   .\32xl\:hover\:from-loginBorders:hover {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .\32xl\:hover\:from-loginInputText:hover {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .\32xl\:hover\:from-loginButtonText:hover {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .\32xl\:hover\:via-transparent:hover {
@@ -161675,7 +163531,7 @@ video {
   }
 
   .\32xl\:hover\:via-loginButton:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .\32xl\:hover\:via-loginInfoButton:hover {
@@ -161684,6 +163540,14 @@ video {
 
   .\32xl\:hover\:via-loginBorders:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .\32xl\:hover\:via-loginInputText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .\32xl\:hover\:via-loginButtonText:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .\32xl\:hover\:to-transparent:hover {
@@ -162023,7 +163887,7 @@ video {
   }
 
   .\32xl\:hover\:to-loginButton:hover {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .\32xl\:hover\:to-loginInfoButton:hover {
@@ -162032,6 +163896,14 @@ video {
 
   .\32xl\:hover\:to-loginBorders:hover {
     --tw-gradient-to: #006080;
+  }
+
+  .\32xl\:hover\:to-loginInputText:hover {
+    --tw-gradient-to: #828483;
+  }
+
+  .\32xl\:hover\:to-loginButtonText:hover {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .\32xl\:focus\:from-transparent:focus {
@@ -162455,8 +164327,8 @@ video {
   }
 
   .\32xl\:focus\:from-loginButton:focus {
-    --tw-gradient-from: #99ffff;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-from: #8df9fc;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .\32xl\:focus\:from-loginInfoButton:focus {
@@ -162467,6 +164339,16 @@ video {
   .\32xl\:focus\:from-loginBorders:focus {
     --tw-gradient-from: #006080;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .\32xl\:focus\:from-loginInputText:focus {
+    --tw-gradient-from: #828483;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .\32xl\:focus\:from-loginButtonText:focus {
+    --tw-gradient-from: #7ea0b9;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .\32xl\:focus\:via-transparent:focus {
@@ -162806,7 +164688,7 @@ video {
   }
 
   .\32xl\:focus\:via-loginButton:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #99ffff, var(--tw-gradient-to, rgba(153, 255, 255, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #8df9fc, var(--tw-gradient-to, rgba(141, 249, 252, 0));
   }
 
   .\32xl\:focus\:via-loginInfoButton:focus {
@@ -162815,6 +164697,14 @@ video {
 
   .\32xl\:focus\:via-loginBorders:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #006080, var(--tw-gradient-to, rgba(0, 96, 128, 0));
+  }
+
+  .\32xl\:focus\:via-loginInputText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #828483, var(--tw-gradient-to, rgba(130, 132, 131, 0));
+  }
+
+  .\32xl\:focus\:via-loginButtonText:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #7ea0b9, var(--tw-gradient-to, rgba(126, 160, 185, 0));
   }
 
   .\32xl\:focus\:to-transparent:focus {
@@ -163154,7 +165044,7 @@ video {
   }
 
   .\32xl\:focus\:to-loginButton:focus {
-    --tw-gradient-to: #99ffff;
+    --tw-gradient-to: #8df9fc;
   }
 
   .\32xl\:focus\:to-loginInfoButton:focus {
@@ -163163,6 +165053,14 @@ video {
 
   .\32xl\:focus\:to-loginBorders:focus {
     --tw-gradient-to: #006080;
+  }
+
+  .\32xl\:focus\:to-loginInputText:focus {
+    --tw-gradient-to: #828483;
+  }
+
+  .\32xl\:focus\:to-loginButtonText:focus {
+    --tw-gradient-to: #7ea0b9;
   }
 
   .\32xl\:bg-opacity-0 {
@@ -163965,7 +165863,7 @@ video {
 
   .\32xl\:border-loginButton {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .\32xl\:border-loginInfoButton {
@@ -163976,6 +165874,16 @@ video {
   .\32xl\:border-loginBorders {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .\32xl\:border-loginInputText {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .\32xl\:border-loginButtonText {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:border-transparent {
@@ -164398,7 +166306,7 @@ video {
 
   .group:hover .\32xl\:group-hover\:border-loginButton {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:border-loginInfoButton {
@@ -164409,6 +166317,16 @@ video {
   .group:hover .\32xl\:group-hover\:border-loginBorders {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:border-loginInputText {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:border-loginButtonText {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .\32xl\:focus-within\:border-transparent:focus-within {
@@ -164831,7 +166749,7 @@ video {
 
   .\32xl\:focus-within\:border-loginButton:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .\32xl\:focus-within\:border-loginInfoButton:focus-within {
@@ -164842,6 +166760,16 @@ video {
   .\32xl\:focus-within\:border-loginBorders:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .\32xl\:focus-within\:border-loginInputText:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .\32xl\:focus-within\:border-loginButtonText:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .\32xl\:hover\:border-transparent:hover {
@@ -165264,7 +167192,7 @@ video {
 
   .\32xl\:hover\:border-loginButton:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .\32xl\:hover\:border-loginInfoButton:hover {
@@ -165275,6 +167203,16 @@ video {
   .\32xl\:hover\:border-loginBorders:hover {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .\32xl\:hover\:border-loginInputText:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .\32xl\:hover\:border-loginButtonText:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .\32xl\:focus\:border-transparent:focus {
@@ -165697,7 +167635,7 @@ video {
 
   .\32xl\:focus\:border-loginButton:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(153, 255, 255, var(--tw-border-opacity));
+    border-color: rgba(141, 249, 252, var(--tw-border-opacity));
   }
 
   .\32xl\:focus\:border-loginInfoButton:focus {
@@ -165708,6 +167646,16 @@ video {
   .\32xl\:focus\:border-loginBorders:focus {
     --tw-border-opacity: 1;
     border-color: rgba(0, 96, 128, var(--tw-border-opacity));
+  }
+
+  .\32xl\:focus\:border-loginInputText:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(130, 132, 131, var(--tw-border-opacity));
+  }
+
+  .\32xl\:focus\:border-loginButtonText:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(126, 160, 185, var(--tw-border-opacity));
   }
 
   .\32xl\:border-opacity-0 {
@@ -172561,17 +174509,17 @@ video {
 
   .\32xl\:placeholder-loginButton::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-loginButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-loginButton::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-loginInfoButton::-moz-placeholder {
@@ -172602,6 +174550,36 @@ video {
   .\32xl\:placeholder-loginBorders::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:placeholder-loginInputText::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:placeholder-loginInputText:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:placeholder-loginInputText::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:placeholder-loginButtonText::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:placeholder-loginButtonText:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:placeholder-loginButtonText::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-transparent:focus::-moz-placeholder {
@@ -173860,17 +175838,17 @@ video {
 
   .\32xl\:focus\:placeholder-loginButton:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-loginButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-loginButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-placeholder-opacity));
+    color: rgba(141, 249, 252, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-loginInfoButton:focus::-moz-placeholder {
@@ -173901,6 +175879,36 @@ video {
   .\32xl\:focus\:placeholder-loginBorders:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:focus\:placeholder-loginInputText:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:focus\:placeholder-loginInputText:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:focus\:placeholder-loginInputText:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:focus\:placeholder-loginButtonText:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:focus\:placeholder-loginButtonText:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
+  }
+
+  .\32xl\:focus\:placeholder-loginButtonText:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-opacity-0::-moz-placeholder {
@@ -177769,7 +179777,7 @@ video {
   }
 
   .\32xl\:ring-offset-loginButton {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .\32xl\:ring-offset-loginInfoButton {
@@ -177778,6 +179786,14 @@ video {
 
   .\32xl\:ring-offset-loginBorders {
     --tw-ring-offset-color: #006080;
+  }
+
+  .\32xl\:ring-offset-loginInputText {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .\32xl\:ring-offset-loginButtonText {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .\32xl\:focus-within\:ring-offset-transparent:focus-within {
@@ -178117,7 +180133,7 @@ video {
   }
 
   .\32xl\:focus-within\:ring-offset-loginButton:focus-within {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .\32xl\:focus-within\:ring-offset-loginInfoButton:focus-within {
@@ -178126,6 +180142,14 @@ video {
 
   .\32xl\:focus-within\:ring-offset-loginBorders:focus-within {
     --tw-ring-offset-color: #006080;
+  }
+
+  .\32xl\:focus-within\:ring-offset-loginInputText:focus-within {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .\32xl\:focus-within\:ring-offset-loginButtonText:focus-within {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .\32xl\:focus\:ring-offset-transparent:focus {
@@ -178465,7 +180489,7 @@ video {
   }
 
   .\32xl\:focus\:ring-offset-loginButton:focus {
-    --tw-ring-offset-color: #99ffff;
+    --tw-ring-offset-color: #8df9fc;
   }
 
   .\32xl\:focus\:ring-offset-loginInfoButton:focus {
@@ -178474,6 +180498,14 @@ video {
 
   .\32xl\:focus\:ring-offset-loginBorders:focus {
     --tw-ring-offset-color: #006080;
+  }
+
+  .\32xl\:focus\:ring-offset-loginInputText:focus {
+    --tw-ring-offset-color: #828483;
+  }
+
+  .\32xl\:focus\:ring-offset-loginButtonText:focus {
+    --tw-ring-offset-color: #7ea0b9;
   }
 
   .\32xl\:ring-offset-0 {
@@ -178956,7 +180988,7 @@ video {
 
   .\32xl\:ring-loginButton {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .\32xl\:ring-loginInfoButton {
@@ -178967,6 +180999,16 @@ video {
   .\32xl\:ring-loginBorders {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .\32xl\:ring-loginInputText {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .\32xl\:ring-loginButtonText {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .\32xl\:focus-within\:ring-transparent:focus-within {
@@ -179389,7 +181431,7 @@ video {
 
   .\32xl\:focus-within\:ring-loginButton:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .\32xl\:focus-within\:ring-loginInfoButton:focus-within {
@@ -179400,6 +181442,16 @@ video {
   .\32xl\:focus-within\:ring-loginBorders:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .\32xl\:focus-within\:ring-loginInputText:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .\32xl\:focus-within\:ring-loginButtonText:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .\32xl\:focus\:ring-transparent:focus {
@@ -179822,7 +181874,7 @@ video {
 
   .\32xl\:focus\:ring-loginButton:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(153, 255, 255, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(141, 249, 252, var(--tw-ring-opacity));
   }
 
   .\32xl\:focus\:ring-loginInfoButton:focus {
@@ -179833,6 +181885,16 @@ video {
   .\32xl\:focus\:ring-loginBorders:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(0, 96, 128, var(--tw-ring-opacity));
+  }
+
+  .\32xl\:focus\:ring-loginInputText:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(130, 132, 131, var(--tw-ring-opacity));
+  }
+
+  .\32xl\:focus\:ring-loginButtonText:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(126, 160, 185, var(--tw-ring-opacity));
   }
 
   .\32xl\:ring-opacity-0 {
@@ -180479,7 +182541,7 @@ video {
 
   .\32xl\:text-loginButton {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .\32xl\:text-loginInfoButton {
@@ -180490,6 +182552,16 @@ video {
   .\32xl\:text-loginBorders {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .\32xl\:text-loginInputText {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .\32xl\:text-loginButtonText {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:text-transparent {
@@ -180912,7 +182984,7 @@ video {
 
   .group:hover .\32xl\:group-hover\:text-loginButton {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:text-loginInfoButton {
@@ -180923,6 +182995,16 @@ video {
   .group:hover .\32xl\:group-hover\:text-loginBorders {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:text-loginInputText {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .group:hover .\32xl\:group-hover\:text-loginButtonText {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .\32xl\:focus-within\:text-transparent:focus-within {
@@ -181345,7 +183427,7 @@ video {
 
   .\32xl\:focus-within\:text-loginButton:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .\32xl\:focus-within\:text-loginInfoButton:focus-within {
@@ -181356,6 +183438,16 @@ video {
   .\32xl\:focus-within\:text-loginBorders:focus-within {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .\32xl\:focus-within\:text-loginInputText:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .\32xl\:focus-within\:text-loginButtonText:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .\32xl\:hover\:text-transparent:hover {
@@ -181778,7 +183870,7 @@ video {
 
   .\32xl\:hover\:text-loginButton:hover {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .\32xl\:hover\:text-loginInfoButton:hover {
@@ -181789,6 +183881,16 @@ video {
   .\32xl\:hover\:text-loginBorders:hover {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .\32xl\:hover\:text-loginInputText:hover {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .\32xl\:hover\:text-loginButtonText:hover {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .\32xl\:focus\:text-transparent:focus {
@@ -182211,7 +184313,7 @@ video {
 
   .\32xl\:focus\:text-loginButton:focus {
     --tw-text-opacity: 1;
-    color: rgba(153, 255, 255, var(--tw-text-opacity));
+    color: rgba(141, 249, 252, var(--tw-text-opacity));
   }
 
   .\32xl\:focus\:text-loginInfoButton:focus {
@@ -182222,6 +184324,16 @@ video {
   .\32xl\:focus\:text-loginBorders:focus {
     --tw-text-opacity: 1;
     color: rgba(0, 96, 128, var(--tw-text-opacity));
+  }
+
+  .\32xl\:focus\:text-loginInputText:focus {
+    --tw-text-opacity: 1;
+    color: rgba(130, 132, 131, var(--tw-text-opacity));
+  }
+
+  .\32xl\:focus\:text-loginButtonText:focus {
+    --tw-text-opacity: 1;
+    color: rgba(126, 160, 185, var(--tw-text-opacity));
   }
 
   .\32xl\:text-opacity-0 {

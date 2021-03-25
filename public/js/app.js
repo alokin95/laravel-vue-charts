@@ -60,8 +60,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "LoginPage"
+  name: "LoginPage",
+  data: function data() {
+    return {
+      showInformationPopup: false
+    };
+  },
+  methods: {
+    toggleInformationPopup: function toggleInformationPopup() {
+      this.showInformationPopup = !this.showInformationPopup;
+    }
+  }
 });
 
 /***/ }),
@@ -135,7 +151,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.see-password-icon[data-v-29a807bd] {\n    float: right;\n    right: 10px;\n    font-size: 15px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.see-password-icon[data-v-29a807bd] {\n    float: right;\n    right: 10px;\n    font-size: 15px;\n}\n.fa-info-circle[data-v-29a807bd] {\n    cursor: pointer;\n}\n.popup[data-v-29a807bd] {\n    position: absolute;\n    left: 0;\n    top: -60px;\n    transform: translate3d(0, -50%, 0);\n    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);\n    background: none;\n    border-radius: 100px;\n    width: 100%;\n}\n.popup[data-v-29a807bd]:after {\n    content: \"\";\n    width: 20px;\n    height: 20px;\n    transform: rotate(-45deg);\n    background: #fff;\n    position: absolute;\n    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n    z-index: -1;\n    bottom: -10px;\n    left: calc(50% - 10px);\n}\n.inner[data-v-29a807bd] {\n    padding: 30px 0;\n    background: #fff;\n    border-radius: 100px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -727,71 +743,106 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    { staticClass: "flex items-center justify-center h-screen" },
+    [
+      _c("div", { staticClass: "font-bold" }, [
+        _c("form", { staticClass: "w-full max-w-sm" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _vm._m(2),
+          _vm._v(" "),
+          _c("div", { staticClass: "text-center m-auto relative" }, [
+            _c("i", {
+              staticClass: "fa fa-info-circle text-loginInfoButton",
+              staticStyle: { "font-size": "24px" },
+              on: { click: _vm.toggleInformationPopup }
+            }),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.showInformationPopup,
+                    expression: "showInformationPopup"
+                  }
+                ],
+                staticClass: "popup"
+              },
+              [_vm._m(3)]
+            )
+          ])
+        ])
+      ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "flex items-center justify-center h-screen" },
-      [
-        _c("div", { staticClass: "font-bold" }, [
-          _c("form", { staticClass: "w-full max-w-sm" }, [
-            _c("div", { staticClass: "md:flex md:items-center mb-4" }, [
-              _c("div", [
-                _c("input", {
-                  staticClass:
-                    "text-center shadow-xl appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none",
-                  attrs: {
-                    id: "username",
-                    type: "text",
-                    placeholder: "Username"
-                  }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "flex items-center mb-4 relative" }, [
-              _c("div", [
-                _c("input", {
-                  staticClass:
-                    "shadow-xl text-center appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none",
-                  attrs: {
-                    id: "inline-password",
-                    type: "password",
-                    placeholder: "Password"
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _c("i", { staticClass: "fa fa-eye see-password-icon absolute" })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "md:flex md:items-center mb-4" }, [
-              _c(
-                "button",
-                {
-                  staticClass:
-                    "text-center shadow-xl bg-loginButton appearance-none border-2 border-loginButton rounded-full w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none",
-                  attrs: { type: "button" }
-                },
-                [_vm._v("\n                    Login\n                ")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-center m-auto" }, [
-              _c("i", {
-                staticClass: "fa fa-info-circle text-loginInfoButton",
-                staticStyle: { "font-size": "24px" }
-              })
-            ])
-          ])
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "md:flex md:items-center mb-4" }, [
+      _c("div", [
+        _c("input", {
+          staticClass:
+            "text-center shadow-xl appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none",
+          attrs: { id: "username", type: "text", placeholder: "Username" }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "flex items-center mb-4 relative" }, [
+      _c("div", [
+        _c("input", {
+          staticClass:
+            "shadow-xl text-center appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none",
+          attrs: {
+            id: "inline-password",
+            type: "password",
+            placeholder: "Password"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("i", { staticClass: "fa fa-eye see-password-icon absolute" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "md:flex md:items-center mb-4" }, [
+      _c(
+        "button",
+        {
+          staticClass:
+            "text-center shadow-xl bg-loginButton appearance-none border-2 border-loginButton rounded-full w-full py-2 px-4 text-loginButtonText leading-tight focus:outline-none",
+          attrs: { type: "button" }
+        },
+        [_vm._v("\n                    Login\n                ")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "inner" }, [
+      _c("div", [_vm._v("Username: admin")]),
+      _vm._v(" "),
+      _c("div", [_vm._v("Password: admin")])
+    ])
   }
 ]
 render._withStripped = true
