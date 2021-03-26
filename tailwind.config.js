@@ -13,7 +13,8 @@ module.exports = {
                 loginInfoButton: '#24bdcd',
                 loginBorders: '#006080',
                 loginInputText: '#828483',
-                loginButtonText: '#7ea0b9'
+                loginButtonText: '#7ea0b9',
+                tabsText: '#006080'
             }
         },
     },

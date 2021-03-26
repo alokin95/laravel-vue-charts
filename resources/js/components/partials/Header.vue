@@ -30,12 +30,22 @@
                 <i v-show="!isSpinning" class="fa fa-refresh lg:float-right absolute" style="font-size:24px"></i>
             </div>
 
-            <div class="lg:items-center mb-4 lg:w-1/6 w-1/2">
+            <div class="lg:items-center mb-4 lg:w-2/6 w-1/2">
                 <button @click="applyFilters" class="text-center shadow-xl bg-loginButton appearance-none border-2 border-loginButton rounded-full w-full py-2 px-4 text-black leading-tight focus:outline-none" type="button">
                     Apply filters
                 </button>
             </div>
         </form>
+    </div>
+
+
+    <div class="tabs">
+        <div class="w-1/2 lg:w-full m-auto">
+            <ul>
+                <li class="lg:mr-4 lg:ml-6 w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"><a>Tables</a></li>
+                <li class="w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"><a>Graphs</a></li>
+            </ul>
+        </div>
     </div>
 
 </div>
@@ -64,5 +74,7 @@ export default {
 </script>
 
 <style scoped>
-
+.tab-top-border {
+    border-color: aqua #dbdbdb #dbdbdb #dbdbdb;
+}
 </style>
