@@ -24,6 +24,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "App",
@@ -962,7 +974,18 @@ var render = function() {
       staticClass: "w-full bg-sidebarLeft flex-1 lg:h-screen lg:p-0 p-6"
     }),
     _vm._v(" "),
-    _c("div", { staticClass: "flex-12 w-full" }, [_c("Header")], 1)
+    _c(
+      "div",
+      { staticClass: "flex-12 w-full h-screen" },
+      [
+        _c("Header"),
+        _vm._v(" "),
+        _c("div", { staticClass: "w-full ml-4" }, [
+          _vm._v("\n            aaa\n        ")
+        ])
+      ],
+      1
+    )
   ])
 }
 var staticRenderFns = []
@@ -1111,7 +1134,7 @@ var render = function() {
   return _c("div", [
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "p-4" }, [
+    _c("div", { staticClass: "m-4" }, [
       _c(
         "form",
         {
@@ -1263,7 +1286,7 @@ var staticRenderFns = [
               "h1",
               {
                 staticClass:
-                  "lg:w-1/6 lg:float-left text-lg font-medium lg:relative top-1/2 text-3xl"
+                  "lg:w-1/6 lg:float-left text-lg font-medium lg:relative top-1 text-3xl"
               },
               [_vm._v("Report")]
             )
