@@ -13,7 +13,7 @@ class CreateMacAddressesTable extends Migration
      */
     public function up()
     {
-        Schema::create('mac_addresses', function (Blueprint $table) {
+        Schema::create('mac_address', function (Blueprint $table) {
             $table->id();
             $table->foreignId('contract_id')->constrained();
             $table->string('mac');

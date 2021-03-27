@@ -200,6 +200,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Header",
@@ -209,7 +221,9 @@ __webpack_require__.r(__webpack_exports__);
       filters: {
         macAddress: "",
         contractId: ""
-      }
+      },
+      suggestedContracts: [],
+      showSuggestedContracts: false
     };
   },
   methods: {
@@ -2991,7 +3005,7 @@ var render = function() {
             "div",
             { staticClass: "lg:items-center ml-4 mb-4 lg:w-2/6 w-1/2" },
             [
-              _c("div", [
+              _c("div", { staticClass: "relative" }, [
                 _c("input", {
                   directives: [
                     {
@@ -3010,6 +3024,9 @@ var render = function() {
                   },
                   domProps: { value: _vm.filters.contractId },
                   on: {
+                    focus: function($event) {
+                      _vm.showSuggestedContracts = true
+                    },
                     input: function($event) {
                       if ($event.target.composing) {
                         return
@@ -3017,7 +3034,18 @@ var render = function() {
                       _vm.$set(_vm.filters, "contractId", $event.target.value)
                     }
                   }
-                })
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "absolute h-28" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown",
+                      class: { "is-active": _vm.showSuggestedContracts }
+                    },
+                    [_vm._m(1)]
+                  )
+                ])
               ])
             ]
           ),
@@ -3073,7 +3101,7 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _vm._m(1)
+    _vm._m(2)
   ])
 }
 var staticRenderFns = [
@@ -3091,6 +3119,27 @@ var staticRenderFns = [
         [_vm._v("Report")]
       )
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "dropdown-menu",
+        attrs: { id: "dropdown-menu", role: "menu" }
+      },
+      [
+        _c("div", { staticClass: "dropdown-content" }, [
+          _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+            _vm._v(
+              "\n                                        Dropdown item\n                                    "
+            )
+          ])
+        ])
+      ]
+    )
   },
   function() {
     var _vm = this

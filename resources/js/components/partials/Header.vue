@@ -23,8 +23,20 @@
                 </div>
 
                 <div class="lg:items-center ml-4 mb-4 lg:w-2/6 w-1/2">
-                    <div>
-                        <input v-model="filters.contractId" class="text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="contractId" type="text" placeholder="Contract ID">
+                    <div class="relative">
+                        <input @focus="showSuggestedContracts = true" v-model="filters.contractId" class="text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="contractId" type="text" placeholder="Contract ID">
+                        <div class="absolute h-28">
+                            <div :class="{'is-active': showSuggestedContracts}" class="dropdown">
+                                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                                    <div class="dropdown-content">
+                                        <a href="#" class="dropdown-item">
+                                            Dropdown item
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -66,7 +78,9 @@ export default {
             filters: {
                 macAddress: "",
                 contractId: ""
-            }
+            },
+            suggestedContracts: [],
+            showSuggestedContracts: false
         }
     },
 

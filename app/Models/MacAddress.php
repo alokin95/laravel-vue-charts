@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class MacAddress extends Model
 {
     use HasFactory;
+
+    protected $table = 'mac_address';
 }
