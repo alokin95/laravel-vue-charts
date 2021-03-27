@@ -1319,7 +1319,7 @@ var staticRenderFns = [
             "li",
             {
               staticClass:
-                "is-active-custom lg:mr-4 -mb-1.5  lg:ml-6 w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"
+                "lg:mr-4 lg:ml-4 -mb-1.5 w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"
             },
             [_c("a", [_vm._v("Tables")])]
           ),

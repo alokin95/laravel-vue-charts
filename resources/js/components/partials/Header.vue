@@ -45,7 +45,7 @@
         <div class="tabs">
             <div class="w-1/2 lg:w-full m-auto">
                 <ul>
-                    <li class="is-active-custom lg:mr-4 -mb-1.5  lg:ml-6 w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"><a>Tables</a></li>
+                    <li class="lg:mr-4 lg:ml-4 -mb-1.5 w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"><a>Tables</a></li>
                     <li class="w-1/2 lg:w-1/12 -mb-1.5 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"><a>Graphs</a></li>
                 </ul>
             </div>
