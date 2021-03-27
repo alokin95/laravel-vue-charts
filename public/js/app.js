@@ -1261,7 +1261,10 @@ var staticRenderFns = [
           [
             _c(
               "h1",
-              { staticClass: "lg:w-1/6 lg:float-left text-lg font-medium" },
+              {
+                staticClass:
+                  "lg:w-1/6 lg:float-left text-lg font-medium lg:relative top-1/2 text-3xl"
+              },
               [_vm._v("Report")]
             )
           ]

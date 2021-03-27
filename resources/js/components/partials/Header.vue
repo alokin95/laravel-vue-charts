@@ -3,7 +3,7 @@
 
     <div class="lg:flex w-full lg:justify-between p-4 border-b-2">
         <div class="lg:flex-1 lg:ml-4 mx-auto w-full justify-around text-center">
-            <h1 class="lg:w-1/6 lg:float-left text-lg font-medium">Report</h1>
+            <h1 class="lg:w-1/6 lg:float-left text-lg font-medium lg:relative top-1/2 text-3xl">Report</h1>
         </div>
         <div class="lg:flex-1 lg:mr-4 mx-auto w-full text-center">
             <button class="lg:w-1/4 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none" >Logout</button>
