@@ -1,7 +1,7 @@
 <template>
 <div>
 
-    <div class="lg:flex lg:justify-between p-4 border-b-2">
+    <div class="lg:flex w-full lg:justify-between p-4 border-b-2">
         <div class="lg:flex-1 lg:ml-4 mx-auto w-full justify-around text-center">
             <h1 class="lg:w-1/6 lg:float-left text-lg font-medium">Report</h1>
         </div>

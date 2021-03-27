@@ -1,7 +1,12 @@
 <template>
-        <div class="lg:w-11/12 w-full float-right">
+    <div class="lg:flex">
+        <div class="w-full bg-sidebarLeft flex-1 lg:h-screen lg:p-0 p-6">
+
+        </div>
+        <div class="flex-12 w-full">
             <Header></Header>
         </div>
+    </div>
 </template>
 
 <script>

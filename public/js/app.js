@@ -19,6 +19,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "App",
@@ -952,12 +957,13 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "lg:w-11/12 w-full float-right" },
-    [_c("Header")],
-    1
-  )
+  return _c("div", { staticClass: "lg:flex" }, [
+    _c("div", {
+      staticClass: "w-full bg-sidebarLeft flex-1 lg:h-screen lg:p-0 p-6"
+    }),
+    _vm._v(" "),
+    _c("div", { staticClass: "flex-12 w-full" }, [_c("Header")], 1)
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -1244,7 +1250,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "lg:flex lg:justify-between p-4 border-b-2" },
+      { staticClass: "lg:flex w-full lg:justify-between p-4 border-b-2" },
       [
         _c(
           "div",
