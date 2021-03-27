@@ -1,17 +1,20 @@
 <template>
     <div>
 
-        <div class="lg:flex w-full lg:justify-between p-4 border-b-2">
-            <div class="lg:flex-1 lg:ml-4 mx-auto w-full justify-around text-center">
-                <h1 class="lg:w-1/6 lg:float-left text-lg font-medium lg:relative top-1 text-3xl">Report</h1>
-            </div>
-            <div class="lg:flex-1 lg:mr-4 mx-auto w-full text-center">
-                <button class="lg:w-1/4 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none" >Logout</button>
+        <div class="lg:flex w-full lg:justify-between border-b-2">
+            <div class="w-full m-auto p-4">
+                <div class="w-full lg:text-left text-center">
+                    <h1 class="lg:w-1/12 lg:float-left text-lg font-medium lg:relative top-1 text-3xl">Report</h1>
+                </div>
+
+                <div class="mx-auto w-full text-center">
+                    <button class="lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none" >Logout</button>
+                </div>
             </div>
         </div>
 
-    <div class="m-4">
-        <form class="lg:flex lg:w-1/2 w-2/3 text-center ml-4 lg:justify-between">
+        <div class="lg:w-full">
+            <form class="lg:flex lg:w-1/2 w-2/3 text-center lg:justify-between">
 
                 <div class="lg:items-center mb-4 ml-4 lg:w-2/6 w-1/2">
                     <div>
@@ -39,14 +42,14 @@
         </div>
 
 
-    <div class="tabs">
-        <div class="w-1/2 lg:w-full m-auto">
-            <ul>
-                <li class="lg:mr-4 lg:ml-6 w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"><a>Tables</a></li>
-                <li class="w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"><a>Graphs</a></li>
-            </ul>
+        <div class="tabs">
+            <div class="w-1/2 lg:w-full m-auto">
+                <ul>
+                    <li class="is-active-custom lg:mr-4 -mb-1.5  lg:ml-6 w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"><a>Tables</a></li>
+                    <li class="w-1/2 lg:w-1/12 -mb-1.5 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"><a>Graphs</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
     </div>
 </template>
@@ -76,5 +79,9 @@ export default {
 <style scoped>
 .tab-top-border {
     border-color: aqua #dbdbdb #dbdbdb #dbdbdb;
+}
+
+.is-active-custom {
+    background-color: #f2f2f2 !important;
 }
 </style>

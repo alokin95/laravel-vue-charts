@@ -8,13 +8,13 @@
         <!--    Left end   -->
 
         <!--    Right start   -->
-        <div class="flex-12 w-full h-screen">
+        <div class="flex-12 w-full lg:h-screen">
             <Header></Header>
 
-            <div class="w-full ml-4">
-                aaa
+            <div class="bg-mainContent" style="height: 1000px;">
+                <div class="w-11/12 m-auto">
+                </div>
             </div>
-
         </div>
         <!--    Right end   -->
 

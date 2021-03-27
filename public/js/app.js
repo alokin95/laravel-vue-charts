@@ -171,6 +171,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Header",
   data: function data() {
@@ -289,7 +292,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.tab-top-border[data-v-79cec062] {\n    border-color: aqua #dbdbdb #dbdbdb #dbdbdb;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.tab-top-border[data-v-79cec062] {\n    border-color: aqua #dbdbdb #dbdbdb #dbdbdb;\n}\n.is-active-custom[data-v-79cec062] {\n    background-color: #f2f2f2 !important;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -976,19 +979,24 @@ var render = function() {
     _vm._v(" "),
     _c(
       "div",
-      { staticClass: "flex-12 w-full h-screen" },
-      [
-        _c("Header"),
-        _vm._v(" "),
-        _c("div", { staticClass: "w-full ml-4" }, [
-          _vm._v("\n            aaa\n        ")
-        ])
-      ],
+      { staticClass: "flex-12 w-full lg:h-screen" },
+      [_c("Header"), _vm._v(" "), _vm._m(0)],
       1
     )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "bg-mainContent", staticStyle: { height: "1000px" } },
+      [_c("div", { staticClass: "w-11/12 m-auto" })]
+    )
+  }
+]
 render._withStripped = true
 
 
@@ -1134,12 +1142,11 @@ var render = function() {
   return _c("div", [
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "m-4" }, [
+    _c("div", { staticClass: "lg:w-full" }, [
       _c(
         "form",
         {
-          staticClass:
-            "lg:flex lg:w-1/2 w-2/3 text-center ml-4 lg:justify-between"
+          staticClass: "lg:flex lg:w-1/2 w-2/3 text-center lg:justify-between"
         },
         [
           _c(
@@ -1273,40 +1280,31 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "lg:flex w-full lg:justify-between p-4 border-b-2" },
+      { staticClass: "lg:flex w-full lg:justify-between border-b-2" },
       [
-        _c(
-          "div",
-          {
-            staticClass:
-              "lg:flex-1 lg:ml-4 mx-auto w-full justify-around text-center"
-          },
-          [
+        _c("div", { staticClass: "w-full m-auto p-4" }, [
+          _c("div", { staticClass: "w-full lg:text-left text-center" }, [
             _c(
               "h1",
               {
                 staticClass:
-                  "lg:w-1/6 lg:float-left text-lg font-medium lg:relative top-1 text-3xl"
+                  "lg:w-1/12 lg:float-left text-lg font-medium lg:relative top-1 text-3xl"
               },
               [_vm._v("Report")]
             )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "lg:flex-1 lg:mr-4 mx-auto w-full text-center" },
-          [
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "mx-auto w-full text-center" }, [
             _c(
               "button",
               {
                 staticClass:
-                  "lg:w-1/4 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none"
+                  "lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none"
               },
               [_vm._v("Logout")]
             )
-          ]
-        )
+          ])
+        ])
       ]
     )
   },
@@ -1321,7 +1319,7 @@ var staticRenderFns = [
             "li",
             {
               staticClass:
-                "lg:mr-4 lg:ml-6 w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"
+                "is-active-custom lg:mr-4 -mb-1.5  lg:ml-6 w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"
             },
             [_c("a", [_vm._v("Tables")])]
           ),
@@ -1330,7 +1328,7 @@ var staticRenderFns = [
             "li",
             {
               staticClass:
-                "w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"
+                "w-1/2 lg:w-1/12 -mb-1.5 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"
             },
             [_c("a", [_vm._v("Graphs")])]
           )

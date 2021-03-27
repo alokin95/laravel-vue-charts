@@ -20,7 +20,11 @@ module.exports = {
                 sidebarLeft: '#0c1361',
 
                 //Header colors
-                tabsText: '#006080'
+                tabsText: '#006080',
+
+                //Right side colors
+                bodyColor: '#e6e6e6',
+                mainContent: '#f2f2f2'
             }
         },
     },
