@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Contract extends Model
 {
     use HasFactory;
+
+    protected $guarded = [];
+
+    public function macAddress()
+    {
+        return $this->hasOne(MacAddress::class);
+    }
 }

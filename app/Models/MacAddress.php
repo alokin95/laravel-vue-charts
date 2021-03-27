@@ -10,4 +10,10 @@ class MacAddress extends Model
     use HasFactory;
 
     protected $table = 'mac_address';
+    protected $guarded = [];
+
+    public function contract()
+    {
+        return $this->belongsTo(Contract::class);
+    }
 }
