@@ -2,20 +2,20 @@
     <div class="container mx-auto">
         <div class="flex items-center justify-center h-screen">
             <div class="font-bold">
-                <form class="w-full max-w-sm">
+                <form class="w-full max-w-sm" @submit.prevent="">
                     <div class="md:flex md:items-center mb-4">
                         <div>
-                            <input class="text-center shadow-xl appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="username" type="text" placeholder="Username">
+                            <input v-model="login.username" class="text-center shadow-xl appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="username" type="text" placeholder="Username">
                         </div>
                     </div>
                     <div class="flex items-center mb-4 relative">
                         <div>
-                            <input class="shadow-xl text-center appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="inline-password" type="password" placeholder="Password">
+                            <input v-model="login.password" :type="showPassword ? 'text' : 'password'" class="shadow-xl text-center appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="inline-password" placeholder="Password">
                         </div>
-                        <i class="fa fa-eye see-password-icon absolute"></i>
+                        <i @click="togglePasswordVisibility" class="fa fa-eye see-password-icon absolute"></i>
                     </div>
                     <div class="md:flex md:items-center mb-4">
-                        <button class="text-center shadow-xl bg-loginButton appearance-none border-2 border-loginButton rounded-full w-full py-2 px-4 text-loginButtonText leading-tight focus:outline-none" type="button">
+                        <button @click="submitLogin" type="submit" class="text-center shadow-xl bg-loginButton appearance-none border-2 border-loginButton rounded-full w-full py-2 px-4 text-loginButtonText leading-tight focus:outline-none">
                             Login
                         </button>
                     </div>
@@ -35,16 +35,31 @@
 </template>
 
 <script>
+import {authenticationService} from "../_services/authentication.service";
+
 export default {
     name: "LoginPage",
 
     data() {
         return {
-            showInformationPopup: false
+            showPassword: false,
+            showInformationPopup: false,
+            login: {
+                username: "",
+                password: ""
+            }
         }
     },
 
     methods: {
+        submitLogin() {
+            authenticationService.login(this.login.username, this.login.password);
+        },
+
+        togglePasswordVisibility() {
+            this.showPassword = !this.showPassword;
+        },
+
         toggleInformationPopup() {
             this.showInformationPopup = !this.showInformationPopup;
         }
@@ -57,6 +72,7 @@ export default {
     float: right;
     right: 10px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .fa-info-circle {
