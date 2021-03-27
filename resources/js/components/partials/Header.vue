@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <div class="lg:flex w-full lg:justify-between border-b-2">
+        <div class="lg:flex w-full lg:justify-between border-b border-loginInputText mb-5">
             <div class="w-full m-auto p-4">
                 <div class="w-full lg:text-left text-center">
                     <h1 class="lg:w-1/12 lg:float-left text-lg font-medium lg:relative top-1 text-3xl">Report</h1>
@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <div class="lg:w-full">
+        <div class="lg:w-full mb-5">
             <form class="lg:flex lg:w-1/2 w-2/3 text-center lg:justify-between">
 
                 <div class="lg:items-center mb-4 ml-4 lg:w-2/6 w-1/2">

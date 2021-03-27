@@ -2920,25 +2920,32 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "lg:flex w-full lg:justify-between border-b-2" }, [
-      _c("div", { staticClass: "w-full m-auto p-4" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "mx-auto w-full text-center" }, [
-          _c(
-            "button",
-            {
-              staticClass:
-                "lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none",
-              on: { click: _vm.logout }
-            },
-            [_vm._v("Logout")]
-          )
+    _c(
+      "div",
+      {
+        staticClass:
+          "lg:flex w-full lg:justify-between border-b border-loginInputText mb-5"
+      },
+      [
+        _c("div", { staticClass: "w-full m-auto p-4" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "mx-auto w-full text-center" }, [
+            _c(
+              "button",
+              {
+                staticClass:
+                  "lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none",
+                on: { click: _vm.logout }
+              },
+              [_vm._v("Logout")]
+            )
+          ])
         ])
-      ])
-    ]),
+      ]
+    ),
     _vm._v(" "),
-    _c("div", { staticClass: "lg:w-full" }, [
+    _c("div", { staticClass: "lg:w-full mb-5" }, [
       _c(
         "form",
         {
