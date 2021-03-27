@@ -143,6 +143,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _services_authentication_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../_services/authentication.service */ "./resources/js/_services/authentication.service.js");
 //
 //
 //
@@ -199,6 +200,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Header",
   data: function data() {
@@ -213,6 +215,10 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     applyFilters: function applyFilters() {
       this.isSpinning = true;
+    },
+    logout: function logout() {
+      _services_authentication_service__WEBPACK_IMPORTED_MODULE_0__.authenticationService.logout();
+      this.$router.push('/');
     }
   }
 });
@@ -373,7 +379,7 @@ router.beforeEach(function (to, from, next) {
       });
     }
 
-    if (!currentUser.access_token) {
+    if (!currentUser.token) {
       //no token in localstorage so redirect to login with return url
       _services_authentication_service__WEBPACK_IMPORTED_MODULE_0__.authenticationService.logout();
       return next({
@@ -2914,7 +2920,23 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._m(0),
+    _c("div", { staticClass: "lg:flex w-full lg:justify-between border-b-2" }, [
+      _c("div", { staticClass: "w-full m-auto p-4" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "mx-auto w-full text-center" }, [
+          _c(
+            "button",
+            {
+              staticClass:
+                "lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none",
+              on: { click: _vm.logout }
+            },
+            [_vm._v("Logout")]
+          )
+        ])
+      ])
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "lg:w-full" }, [
       _c(
@@ -3052,35 +3074,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "lg:flex w-full lg:justify-between border-b-2" },
-      [
-        _c("div", { staticClass: "w-full m-auto p-4" }, [
-          _c("div", { staticClass: "w-full lg:text-left text-center" }, [
-            _c(
-              "h1",
-              {
-                staticClass:
-                  "lg:w-1/12 lg:float-left text-lg font-medium lg:relative top-1 text-3xl"
-              },
-              [_vm._v("Report")]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "mx-auto w-full text-center" }, [
-            _c(
-              "button",
-              {
-                staticClass:
-                  "lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none"
-              },
-              [_vm._v("Logout")]
-            )
-          ])
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "w-full lg:text-left text-center" }, [
+      _c(
+        "h1",
+        {
+          staticClass:
+            "lg:w-1/12 lg:float-left text-lg font-medium lg:relative top-1 text-3xl"
+        },
+        [_vm._v("Report")]
+      )
+    ])
   },
   function() {
     var _vm = this

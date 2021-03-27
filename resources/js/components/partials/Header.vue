@@ -8,7 +8,7 @@
                 </div>
 
                 <div class="mx-auto w-full text-center">
-                    <button class="lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none" >Logout</button>
+                    <button @click="logout" class="lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none" >Logout</button>
                 </div>
             </div>
         </div>
@@ -55,6 +55,8 @@
 </template>
 
 <script>
+import {authenticationService} from "../../_services/authentication.service";
+
 export default {
     name: "Header",
 
@@ -71,6 +73,11 @@ export default {
     methods: {
         applyFilters() {
             this.isSpinning = true;
+        },
+
+        logout() {
+            authenticationService.logout();
+            this.$router.push('/');
         }
     }
 }

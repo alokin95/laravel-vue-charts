@@ -39,7 +39,7 @@ router.beforeEach((to, from, next) => {
             return next({ path: '/', query: { returnUrl: to.path } });
         }
 
-        if (!currentUser.access_token) {
+        if (!currentUser.token) {
             //no token in localstorage so redirect to login with return url
             authenticationService.logout();
             return next({ path: '/', query: { returnUrl: to.path } });
