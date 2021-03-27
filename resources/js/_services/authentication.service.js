@@ -14,7 +14,7 @@ export const authenticationService = {
 };
 
 function login(username, password) {
-    return fetch(Config.apiUrl + 'api/login', requestOptions.post({ username, password }))
+    return fetch(Config.apiUrl + 'api/login', requestOptions.post({ email:username, password }))
         .then(handleResponse)
         .then(user => {
             // store user details and jwt token in local storage to keep user logged in between page refreshes

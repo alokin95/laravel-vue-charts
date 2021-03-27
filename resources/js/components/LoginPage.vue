@@ -47,13 +47,25 @@ export default {
             login: {
                 username: "",
                 password: ""
-            }
+            },
+            returnUrl: '/reports'
         }
+    },
+
+    created() {
+        if (authenticationService.currentUserValue) {
+            return this.$router.push('/reports')
+        }
+
+        this.returnUrl = this.$route.query.returnUrl || '/reports';
     },
 
     methods: {
         submitLogin() {
-            authenticationService.login(this.login.username, this.login.password);
+            authenticationService.login(this.login.username, this.login.password)
+                .then(response => {
+                    this.$router.push(this.returnUrl);
+                });
         },
 
         togglePasswordVisibility() {

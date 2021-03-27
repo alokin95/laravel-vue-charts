@@ -103,12 +103,24 @@ __webpack_require__.r(__webpack_exports__);
       login: {
         username: "",
         password: ""
-      }
+      },
+      returnUrl: '/reports'
     };
+  },
+  created: function created() {
+    if (_services_authentication_service__WEBPACK_IMPORTED_MODULE_0__.authenticationService.currentUserValue) {
+      return this.$router.push('/reports');
+    }
+
+    this.returnUrl = this.$route.query.returnUrl || '/reports';
   },
   methods: {
     submitLogin: function submitLogin() {
-      _services_authentication_service__WEBPACK_IMPORTED_MODULE_0__.authenticationService.login(this.login.username, this.login.password);
+      var _this = this;
+
+      _services_authentication_service__WEBPACK_IMPORTED_MODULE_0__.authenticationService.login(this.login.username, this.login.password).then(function (response) {
+        _this.$router.push(_this.returnUrl);
+      });
     },
     togglePasswordVisibility: function togglePasswordVisibility() {
       this.showPassword = !this.showPassword;
@@ -296,7 +308,8 @@ function headers() {
   } : {};
   return {
     headers: _objectSpread(_objectSpread({}, authHeader), {}, {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
     })
   };
 }
@@ -360,7 +373,7 @@ router.beforeEach(function (to, from, next) {
       });
     }
 
-    if (!currentUser.token) {
+    if (!currentUser.access_token) {
       //no token in localstorage so redirect to login with return url
       _services_authentication_service__WEBPACK_IMPORTED_MODULE_0__.authenticationService.logout();
       return next({
@@ -409,7 +422,7 @@ var authenticationService = {
 
 function login(username, password) {
   return fetch(_config_config__WEBPACK_IMPORTED_MODULE_2__.Config.apiUrl + 'api/login', _helpers_request_options__WEBPACK_IMPORTED_MODULE_0__.requestOptions.post({
-    username: username,
+    email: username,
     password: password
   })).then(_helpers_handle_response__WEBPACK_IMPORTED_MODULE_1__.handleResponse).then(function (user) {
     // store user details and jwt token in local storage to keep user logged in between page refreshes
