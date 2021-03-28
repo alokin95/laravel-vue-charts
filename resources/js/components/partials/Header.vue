@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="lg:items-center mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative">
-                    <i  v-show="isSpinning"class="fa fa-refresh fa-spin lg:float-rightabsolute" style="font-size:24px"></i>
+                    <i  v-show="isSpinning"class="fa fa-refresh fa-spin lg:float-right absolute" style="font-size:24px"></i>
                     <i v-show="!isSpinning" class="fa fa-refresh lg:float-right absolute" style="font-size:24px"></i>
                 </div>
 

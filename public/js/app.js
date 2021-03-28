@@ -3066,7 +3066,7 @@ var render = function() {
                     expression: "isSpinning"
                   }
                 ],
-                staticClass: "fa fa-refresh fa-spin lg:float-rightabsolute",
+                staticClass: "fa fa-refresh fa-spin lg:float-right absolute",
                 staticStyle: { "font-size": "24px" }
               }),
               _vm._v(" "),
