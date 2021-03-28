@@ -17,9 +17,9 @@
             <form class="lg:flex lg:w-1/2 w-2/3 text-center lg:justify-between">
 
                 <div class="lg:items-center mb-4 ml-4 lg:w-2/6 w-1/2">
-                    <div>
+                    <div class="relative">
                         <input v-validate="{ required: true, regex: regex.macAddress }" name="Mac Address" v-model="filters.macAddress" class="text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="macAddress" type="text" placeholder="Mac: address">
-                        <div class="text-sm">
+                        <div class="text-sm text-red-500">
                             {{ errors.first('Mac Address') }}
                         </div>
                     </div>
@@ -135,7 +135,8 @@ export default {
         },
 
         contractSearch() {
-            if (this.filters.contractId.length < 1) {
+            if (this.filters.contractId.length < 1 || this.filters.contractId === '') {
+                this.suggestedContracts = [];
                 return false;
             }
 
@@ -153,6 +154,7 @@ export default {
         setMacAddress(contract) {
             if (contract.mac_address) {
                 this.filters.macAddress = contract.mac_address.mac;
+                this.filters.contractId = contract.contract_number;
             }
             this.showSuggestedContracts = false;
         }

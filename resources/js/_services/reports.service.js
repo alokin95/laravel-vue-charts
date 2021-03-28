@@ -3,7 +3,8 @@ import {requestOptions} from "../_helpers/request-options";
 import {handleResponse} from "../_helpers/handle-response";
 
 export const reportsService = {
-    getContracts
+    getContracts,
+    getMacAddresses
 };
 
 
@@ -13,8 +14,8 @@ function getContracts(contractId)
         .then(handleResponse);
 }
 
-function sendSelfInquiry(inquiry)
+function getMacAddresses(macAddress)
 {
-    return fetch(Config.apiUrl + 'api/inquiry_self', requestOptions.post(inquiry))
+    return fetch(Config.apiUrl + 'api/macAddress/' + macAddress, requestOptions.get(inquiry))
         .then(handleResponse);
 }

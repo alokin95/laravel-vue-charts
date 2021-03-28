@@ -276,7 +276,8 @@ __webpack_require__.r(__webpack_exports__);
     contractSearch: function contractSearch() {
       var _this = this;
 
-      if (this.filters.contractId.length < 1) {
+      if (this.filters.contractId.length < 1 || this.filters.contractId === '') {
+        this.suggestedContracts = [];
         return false;
       }
 
@@ -290,6 +291,7 @@ __webpack_require__.r(__webpack_exports__);
     setMacAddress: function setMacAddress(contract) {
       if (contract.mac_address) {
         this.filters.macAddress = contract.mac_address.mac;
+        this.filters.contractId = contract.contract_number;
       }
 
       this.showSuggestedContracts = false;
@@ -537,15 +539,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var reportsService = {
-  getContracts: getContracts
+  getContracts: getContracts,
+  getMacAddresses: getMacAddresses
 };
 
 function getContracts(contractId) {
   return fetch(_config_config__WEBPACK_IMPORTED_MODULE_0__.Config.apiUrl + 'api/contracts/' + contractId, _helpers_request_options__WEBPACK_IMPORTED_MODULE_1__.requestOptions.get()).then(_helpers_handle_response__WEBPACK_IMPORTED_MODULE_2__.handleResponse);
 }
 
-function sendSelfInquiry(inquiry) {
-  return fetch(_config_config__WEBPACK_IMPORTED_MODULE_0__.Config.apiUrl + 'api/inquiry_self', _helpers_request_options__WEBPACK_IMPORTED_MODULE_1__.requestOptions.post(inquiry)).then(_helpers_handle_response__WEBPACK_IMPORTED_MODULE_2__.handleResponse);
+function getMacAddresses(macAddress) {
+  return fetch(_config_config__WEBPACK_IMPORTED_MODULE_0__.Config.apiUrl + 'api/macAddress/' + macAddress, _helpers_request_options__WEBPACK_IMPORTED_MODULE_1__.requestOptions.get(inquiry)).then(_helpers_handle_response__WEBPACK_IMPORTED_MODULE_2__.handleResponse);
 }
 
 /***/ }),
@@ -14178,7 +14181,7 @@ var render = function() {
             "div",
             { staticClass: "lg:items-center mb-4 ml-4 lg:w-2/6 w-1/2" },
             [
-              _c("div", [
+              _c("div", { staticClass: "relative" }, [
                 _c("input", {
                   directives: [
                     {
@@ -14213,7 +14216,7 @@ var render = function() {
                   }
                 }),
                 _vm._v(" "),
-                _c("div", { staticClass: "text-sm" }, [
+                _c("div", { staticClass: "text-sm text-red-500" }, [
                   _vm._v(
                     "\n                        " +
                       _vm._s(_vm.errors.first("Mac Address")) +
