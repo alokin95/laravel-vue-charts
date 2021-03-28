@@ -20,5 +20,6 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::middleware('jwt.auth')->group(function()
 {
     Route::get('/contracts/{contractId}', [ReportsController::class, 'contractSearch']);
+    Route::get('/reports/{macAddress}', [ReportsController::class, 'getReports']);
 });
 

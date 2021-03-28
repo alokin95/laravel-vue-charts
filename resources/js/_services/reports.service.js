@@ -4,7 +4,7 @@ import {handleResponse} from "../_helpers/handle-response";
 
 export const reportsService = {
     getContracts,
-    getMacAddresses
+    getReports
 };
 
 
@@ -14,8 +14,8 @@ function getContracts(contractId)
         .then(handleResponse);
 }
 
-function getMacAddresses(macAddress)
+function getReports(macAddress)
 {
-    return fetch(Config.apiUrl + 'api/macAddress/' + macAddress, requestOptions.get(inquiry))
+    return fetch(Config.apiUrl + 'api/reports/' + macAddress, requestOptions.get())
         .then(handleResponse);
 }

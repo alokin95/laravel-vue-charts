@@ -117,6 +117,8 @@ export default {
                 return false;
             }
             this.isSpinning = true;
+
+            reportsService.getReports(this.filters.macAddress);
         },
 
         logout() {

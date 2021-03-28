@@ -261,6 +261,7 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       this.isSpinning = true;
+      _services_reports_service__WEBPACK_IMPORTED_MODULE_1__.reportsService.getReports(this.filters.macAddress);
     },
     logout: function logout() {
       _services_authentication_service__WEBPACK_IMPORTED_MODULE_0__.authenticationService.logout();
@@ -543,15 +544,15 @@ __webpack_require__.r(__webpack_exports__);
 
 var reportsService = {
   getContracts: getContracts,
-  getMacAddresses: getMacAddresses
+  getReports: getReports
 };
 
 function getContracts(contractId) {
   return fetch(_config_config__WEBPACK_IMPORTED_MODULE_0__.Config.apiUrl + 'api/contracts/' + contractId, _helpers_request_options__WEBPACK_IMPORTED_MODULE_1__.requestOptions.get()).then(_helpers_handle_response__WEBPACK_IMPORTED_MODULE_2__.handleResponse);
 }
 
-function getMacAddresses(macAddress) {
-  return fetch(_config_config__WEBPACK_IMPORTED_MODULE_0__.Config.apiUrl + 'api/macAddress/' + macAddress, _helpers_request_options__WEBPACK_IMPORTED_MODULE_1__.requestOptions.get(inquiry)).then(_helpers_handle_response__WEBPACK_IMPORTED_MODULE_2__.handleResponse);
+function getReports(macAddress) {
+  return fetch(_config_config__WEBPACK_IMPORTED_MODULE_0__.Config.apiUrl + 'api/reports/' + macAddress, _helpers_request_options__WEBPACK_IMPORTED_MODULE_1__.requestOptions.get()).then(_helpers_handle_response__WEBPACK_IMPORTED_MODULE_2__.handleResponse);
 }
 
 /***/ }),
