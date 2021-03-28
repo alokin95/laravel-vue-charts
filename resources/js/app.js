@@ -1,8 +1,11 @@
 import Vue from 'vue';
 import { router } from './_helpers/router';
+import VeeValidate from 'vee-validate';
 
 //Main component
 import App from "./components/App";
+
+Vue.use(VeeValidate);
 
 new Vue({
     router,
