@@ -13,8 +13,40 @@
             </div>
         </div>
 
-        <div class="lg:w-full mb-5">
-            <form class="lg:flex lg:w-1/2 w-2/3 text-center lg:justify-between">
+        <div class="lg:w-full mb-5 relative">
+
+            <div v-if="filtersApplied" class="lg:flex p-4 lg:w-full w-2/3 text-center lg:justify-between m-auto">
+                <div class="flex-1">
+                    <div class="bg-white w-1/2 text-sm">
+                        <p class="text-blue-800">Currently viewing data:</p>
+
+                        <div class="flex justify-around">
+                            <p>MAC Address:</p><span class="text-blue-800">{{macAddressData.mac}}</span>
+                        </div>
+
+                        <div class="flex justify-around">
+                            <p>ContractID:</p><span class="text-blue-800">{{macAddressData.contract.contract_number}}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1">
+                    <div class="flex lg:w-full h-20 text-center p-4 justify-center">
+                        <div class="selected-period-filter lg:w-1/3 p-2 border-sidebarLeft border rounded-l-2xl font-bold cursor-pointer">1 Day</div>
+                        <div class="lg:w-1/3 p-2 border-sidebarLeft border rounded-r-2xl font-bold cursor-pointer">7 Days</div>
+                    </div>
+                </div>
+
+                <div class="flex-1">
+                    <div class=" w-1/2 lg:w-full h-20">
+                        <button class="lg:float-right lg:w-1/3 text-center appearance-none border-2 border-black rounded-full w-1/2 py-2 px-4 text-loginButtonText leading-tight focus:outline-none" >
+                            Reset filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <form v-if="!filtersApplied" class="lg:flex lg:w-1/2 w-2/3 text-center lg:justify-between">
 
                 <div class="lg:items-center mb-4 ml-4 lg:w-2/6 w-1/2">
                     <div class="relative">
@@ -106,7 +138,8 @@ export default {
             showSuggestedContracts: false,
             regex: {
                 macAddress: /^([0-9A-Fa-f]{2}[\.:-]){5}([0-9A-Fa-f]{2})$/
-            }
+            },
+            macAddressData: {}
         }
     },
 
@@ -124,6 +157,7 @@ export default {
             reportsService.getReports(this.filters.macAddress)
                 .then(response => {
                     Event.$emit('report-created', response);
+                    this.macAddressData = response;
                     this.filtersApplied = true;
                     this.showGraphs = true;
                     this.showTables = false;
@@ -203,5 +237,10 @@ export default {
 
 .is-active-custom {
     background-color: #f2f2f2 !important;
+}
+
+.selected-period-filter {
+    background-color: #0c1361;
+    color: white;
 }
 </style>

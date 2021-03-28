@@ -350,6 +350,38 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -368,7 +400,8 @@ __webpack_require__.r(__webpack_exports__);
       showSuggestedContracts: false,
       regex: {
         macAddress: /^([0-9A-Fa-f]{2}[\.:-]){5}([0-9A-Fa-f]{2})$/
-      }
+      },
+      macAddressData: {}
     };
   },
   methods: {
@@ -386,6 +419,7 @@ __webpack_require__.r(__webpack_exports__);
       this.isSpinning = true;
       _services_reports_service__WEBPACK_IMPORTED_MODULE_1__.reportsService.getReports(this.filters.macAddress).then(function (response) {
         Event.$emit('report-created', response);
+        _this.macAddressData = response;
         _this.filtersApplied = true;
         _this.showGraphs = true;
         _this.showTables = false;
@@ -17003,7 +17037,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.tab-top-border[data-v-79cec062] {\n    border-color: aqua #dbdbdb #dbdbdb #dbdbdb;\n}\n.is-active-custom[data-v-79cec062] {\n    background-color: #f2f2f2 !important;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.tab-top-border[data-v-79cec062] {\n    border-color: aqua #dbdbdb #dbdbdb #dbdbdb;\n}\n.is-active-custom[data-v-79cec062] {\n    background-color: #f2f2f2 !important;\n}\n.selected-period-filter[data-v-79cec062] {\n    background-color: #0c1361;\n    color: white;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -52604,265 +52638,338 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _c("div", { staticClass: "lg:w-full mb-5" }, [
-      _c(
-        "form",
-        {
-          staticClass: "lg:flex lg:w-1/2 w-2/3 text-center lg:justify-between"
-        },
-        [
-          _c(
+    _c("div", { staticClass: "lg:w-full mb-5 relative" }, [
+      _vm.filtersApplied
+        ? _c(
             "div",
-            { staticClass: "lg:items-center mb-4 ml-4 lg:w-2/6 w-1/2" },
+            {
+              staticClass:
+                "lg:flex p-4 lg:w-full w-2/3 text-center lg:justify-between m-auto"
+            },
             [
-              _c("div", { staticClass: "relative" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "validate",
-                      rawName: "v-validate",
-                      value: { required: true, regex: _vm.regex.macAddress },
-                      expression: "{ required: true, regex: regex.macAddress }"
-                    },
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.filters.macAddress,
-                      expression: "filters.macAddress"
-                    }
-                  ],
-                  staticClass:
-                    "text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none",
-                  attrs: {
-                    name: "Mac Address",
-                    id: "macAddress",
-                    type: "text",
-                    placeholder: "Mac: address"
-                  },
-                  domProps: { value: _vm.filters.macAddress },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.filters, "macAddress", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "text-sm text-red-500" }, [
-                  _vm._v(
-                    "\n                        " +
-                      _vm._s(_vm.errors.first("Mac Address")) +
-                      "\n                    "
-                  )
+              _c("div", { staticClass: "flex-1" }, [
+                _c("div", { staticClass: "bg-white w-1/2 text-sm" }, [
+                  _c("p", { staticClass: "text-blue-800" }, [
+                    _vm._v("Currently viewing data:")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "flex justify-around" }, [
+                    _c("p", [_vm._v("MAC Address:")]),
+                    _c("span", { staticClass: "text-blue-800" }, [
+                      _vm._v(_vm._s(_vm.macAddressData.mac))
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "flex justify-around" }, [
+                    _c("p", [_vm._v("ContractID:")]),
+                    _c("span", { staticClass: "text-blue-800" }, [
+                      _vm._v(
+                        _vm._s(_vm.macAddressData.contract.contract_number)
+                      )
+                    ])
+                  ])
                 ])
-              ])
+              ]),
+              _vm._v(" "),
+              _vm._m(1),
+              _vm._v(" "),
+              _vm._m(2)
             ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "lg:items-center ml-4 mb-4 lg:w-2/6 w-1/2" },
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      !_vm.filtersApplied
+        ? _c(
+            "form",
+            {
+              staticClass:
+                "lg:flex lg:w-1/2 w-2/3 text-center lg:justify-between"
+            },
             [
-              _c("div", { staticClass: "relative" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.filters.contractId,
-                      expression: "filters.contractId"
-                    }
-                  ],
-                  staticClass:
-                    "text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none",
-                  attrs: {
-                    id: "contractId",
-                    type: "text",
-                    placeholder: "Contract ID"
-                  },
-                  domProps: { value: _vm.filters.contractId },
-                  on: {
-                    keyup: _vm.contractSearch,
-                    focus: _vm.contractSearch,
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+              _c(
+                "div",
+                { staticClass: "lg:items-center mb-4 ml-4 lg:w-2/6 w-1/2" },
+                [
+                  _c("div", { staticClass: "relative" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "validate",
+                          rawName: "v-validate",
+                          value: {
+                            required: true,
+                            regex: _vm.regex.macAddress
+                          },
+                          expression:
+                            "{ required: true, regex: regex.macAddress }"
+                        },
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.filters.macAddress,
+                          expression: "filters.macAddress"
+                        }
+                      ],
+                      staticClass:
+                        "text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none",
+                      attrs: {
+                        name: "Mac Address",
+                        id: "macAddress",
+                        type: "text",
+                        placeholder: "Mac: address"
+                      },
+                      domProps: { value: _vm.filters.macAddress },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.filters,
+                            "macAddress",
+                            $event.target.value
+                          )
+                        }
                       }
-                      _vm.$set(_vm.filters, "contractId", $event.target.value)
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "absolute h-28" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass: "dropdown",
-                      class: { "is-active": _vm.showSuggestedContracts }
-                    },
-                    [
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-sm text-red-500" }, [
+                      _vm._v(
+                        "\n                        " +
+                          _vm._s(_vm.errors.first("Mac Address")) +
+                          "\n                    "
+                      )
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "lg:items-center ml-4 mb-4 lg:w-2/6 w-1/2" },
+                [
+                  _c("div", { staticClass: "relative" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.filters.contractId,
+                          expression: "filters.contractId"
+                        }
+                      ],
+                      staticClass:
+                        "text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none",
+                      attrs: {
+                        id: "contractId",
+                        type: "text",
+                        placeholder: "Contract ID"
+                      },
+                      domProps: { value: _vm.filters.contractId },
+                      on: {
+                        keyup: _vm.contractSearch,
+                        focus: _vm.contractSearch,
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.filters,
+                            "contractId",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "absolute h-28" }, [
                       _c(
                         "div",
                         {
-                          staticClass: "dropdown-menu",
-                          attrs: { id: "dropdown-menu", role: "menu" }
+                          staticClass: "dropdown",
+                          class: { "is-active": _vm.showSuggestedContracts }
                         },
                         [
-                          _vm.suggestedContracts.length
-                            ? _c(
-                                "div",
-                                { staticClass: "dropdown-content" },
-                                _vm._l(_vm.suggestedContracts, function(
-                                  contract
-                                ) {
-                                  return _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.setMacAddress(contract)
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _c("div", [
-                                        _c(
-                                          "p",
-                                          {
-                                            staticClass: "text-loginInputText"
-                                          },
-                                          [
-                                            _vm._v(
-                                              "\n                                                Contract No.\n                                                "
-                                            ),
+                          _c(
+                            "div",
+                            {
+                              staticClass: "dropdown-menu",
+                              attrs: { id: "dropdown-menu", role: "menu" }
+                            },
+                            [
+                              _vm.suggestedContracts.length
+                                ? _c(
+                                    "div",
+                                    { staticClass: "dropdown-content" },
+                                    _vm._l(_vm.suggestedContracts, function(
+                                      contract
+                                    ) {
+                                      return _c(
+                                        "a",
+                                        {
+                                          staticClass: "dropdown-item",
+                                          attrs: { href: "#" },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.setMacAddress(contract)
+                                            }
+                                          }
+                                        },
+                                        [
+                                          _c("div", [
                                             _c(
-                                              "span",
+                                              "p",
                                               {
                                                 staticClass:
-                                                  "text-black font-weight-bold"
+                                                  "text-loginInputText"
                                               },
                                               [
                                                 _vm._v(
-                                                  _vm._s(
-                                                    contract.contract_number
-                                                  )
+                                                  "\n                                                Contract No.\n                                                "
+                                                ),
+                                                _c(
+                                                  "span",
+                                                  {
+                                                    staticClass:
+                                                      "text-black font-weight-bold"
+                                                  },
+                                                  [
+                                                    _vm._v(
+                                                      _vm._s(
+                                                        contract.contract_number
+                                                      )
+                                                    )
+                                                  ]
                                                 )
                                               ]
                                             )
-                                          ]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "text-loginInputText font-weight-light"
-                                        },
-                                        [
+                                          ]),
+                                          _vm._v(" "),
                                           _c(
-                                            "p",
+                                            "div",
                                             {
-                                              staticClass: "text-loginInputText"
+                                              staticClass:
+                                                "text-loginInputText font-weight-light"
                                             },
                                             [
-                                              _vm._v(
-                                                "\n                                                Contract owner\n                                                "
-                                              ),
                                               _c(
-                                                "span",
+                                                "p",
                                                 {
                                                   staticClass:
-                                                    "text-black font-weight-bold"
+                                                    "text-loginInputText"
                                                 },
-                                                [_vm._v(_vm._s(contract.name))]
+                                                [
+                                                  _vm._v(
+                                                    "\n                                                Contract owner\n                                                "
+                                                  ),
+                                                  _c(
+                                                    "span",
+                                                    {
+                                                      staticClass:
+                                                        "text-black font-weight-bold"
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        _vm._s(contract.name)
+                                                      )
+                                                    ]
+                                                  )
+                                                ]
                                               )
                                             ]
                                           )
                                         ]
                                       )
+                                    }),
+                                    0
+                                  )
+                                : _c(
+                                    "div",
+                                    { staticClass: "dropdown-content" },
+                                    [
+                                      _c(
+                                        "a",
+                                        {
+                                          staticClass: "dropdown-item",
+                                          attrs: { href: "#" }
+                                        },
+                                        [
+                                          _vm._v(
+                                            "\n                                        No contracts found\n                                    "
+                                          )
+                                        ]
+                                      )
                                     ]
                                   )
-                                }),
-                                0
-                              )
-                            : _c("div", { staticClass: "dropdown-content" }, [
-                                _c(
-                                  "a",
-                                  {
-                                    staticClass: "dropdown-item",
-                                    attrs: { href: "#" }
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                                        No contracts found\n                                    "
-                                    )
-                                  ]
-                                )
-                              ])
+                            ]
+                          )
                         ]
+                      )
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "lg:items-center mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative"
+                },
+                [
+                  _c("i", {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: _vm.isSpinning,
+                        expression: "isSpinning"
+                      }
+                    ],
+                    staticClass:
+                      "fa fa-refresh fa-spin lg:float-right absolute",
+                    staticStyle: { "font-size": "24px" }
+                  }),
+                  _vm._v(" "),
+                  _c("i", {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: !_vm.isSpinning,
+                        expression: "!isSpinning"
+                      }
+                    ],
+                    staticClass: "fa fa-refresh lg:float-right absolute",
+                    staticStyle: { "font-size": "24px" },
+                    on: { click: _vm.emptyFilters }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "lg:items-center mb-4 lg:w-2/6 w-1/2" },
+                [
+                  _c(
+                    "button",
+                    {
+                      staticClass:
+                        "text-center shadow-xl bg-loginButton appearance-none border-2 border-loginButton rounded-full w-full py-2 px-4 text-black leading-tight focus:outline-none",
+                      attrs: { type: "button" },
+                      on: { click: _vm.applyFilters }
+                    },
+                    [
+                      _vm._v(
+                        "\n                    Apply filters\n                "
                       )
                     ]
                   )
-                ])
-              ])
+                ]
+              )
             ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "lg:items-center mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative"
-            },
-            [
-              _c("i", {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.isSpinning,
-                    expression: "isSpinning"
-                  }
-                ],
-                staticClass: "fa fa-refresh fa-spin lg:float-right absolute",
-                staticStyle: { "font-size": "24px" }
-              }),
-              _vm._v(" "),
-              _c("i", {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: !_vm.isSpinning,
-                    expression: "!isSpinning"
-                  }
-                ],
-                staticClass: "fa fa-refresh lg:float-right absolute",
-                staticStyle: { "font-size": "24px" },
-                on: { click: _vm.emptyFilters }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "lg:items-center mb-4 lg:w-2/6 w-1/2" }, [
-            _c(
-              "button",
-              {
-                staticClass:
-                  "text-center shadow-xl bg-loginButton appearance-none border-2 border-loginButton rounded-full w-full py-2 px-4 text-black leading-tight focus:outline-none",
-                attrs: { type: "button" },
-                on: { click: _vm.applyFilters }
-              },
-              [_vm._v("\n                    Apply filters\n                ")]
-            )
-          ])
-        ]
-      )
+          )
+        : _vm._e()
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "tabs" }, [
@@ -52908,6 +53015,57 @@ var staticRenderFns = [
         },
         [_vm._v("Report")]
       )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "flex-1" }, [
+      _c(
+        "div",
+        { staticClass: "flex lg:w-full h-20 text-center p-4 justify-center" },
+        [
+          _c(
+            "div",
+            {
+              staticClass:
+                "selected-period-filter lg:w-1/3 p-2 border-sidebarLeft border rounded-l-2xl font-bold cursor-pointer"
+            },
+            [_vm._v("1 Day")]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "lg:w-1/3 p-2 border-sidebarLeft border rounded-r-2xl font-bold cursor-pointer"
+            },
+            [_vm._v("7 Days")]
+          )
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "flex-1" }, [
+      _c("div", { staticClass: " w-1/2 lg:w-full h-20" }, [
+        _c(
+          "button",
+          {
+            staticClass:
+              "lg:float-right lg:w-1/3 text-center appearance-none border-2 border-black rounded-full w-1/2 py-2 px-4 text-loginButtonText leading-tight focus:outline-none"
+          },
+          [
+            _vm._v(
+              "\n                        Reset filters\n                    "
+            )
+          ]
+        )
+      ])
     ])
   }
 ]
