@@ -16,4 +16,19 @@ class MacAddress extends Model
     {
         return $this->belongsTo(Contract::class);
     }
+
+    public function bitrate()
+    {
+        return $this->hasMany(Bitrate::class, 'mac_address_id', 'id');
+    }
+
+    public function interference()
+    {
+        return $this->hasMany(Interference::class, 'mac_address_id', 'id');
+    }
+
+    public function rss()
+    {
+        return $this->hasMany(Rss::class, 'mac_address_id', 'id');
+    }
 }

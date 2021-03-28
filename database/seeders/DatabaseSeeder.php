@@ -15,7 +15,8 @@ class DatabaseSeeder extends Seeder
     {
        $this->call([
            MacAddressSeeder::class,
-           UserSeeder::class
+           UserSeeder::class,
+           ReportDataSeeder::class
        ]);
     }
 }
