@@ -5,6 +5,7 @@ namespace App\Repository\MacAddress;
 use App\Models\MacAddress;
 use App\Repository\BaseRepository;
 use App\Service\MacAddress\MacAddressServiceInterface;
+use Carbon\Carbon;
 
 class MacAddressRepository extends BaseRepository implements MacAddressRepositoryInterface
 {
@@ -15,6 +16,23 @@ class MacAddressRepository extends BaseRepository implements MacAddressRepositor
 
     public function getReportsByMacAddress(string $macAddress)
     {
-        // TODO: Implement getReportsByMacAddress() method.
+        return $this->model
+                ->with(
+                [
+                    'rss' => function($query) {
+                        $query->where('created_at', '>', Carbon::parse('-24 hours'));
+                    },
+                    'interference' => function($query) {
+                        $query->where('created_at', '>', Carbon::parse('-24 hours'));
+                    },
+                    'bitrate' => function($query) {
+                        $query->where('created_at', '>', Carbon::parse('-24 hours'));
+                    },
+                    'contract'
+                ])
+                ->where([
+                    'mac'   => $macAddress,
+                ])
+                ->first();
     }
 }

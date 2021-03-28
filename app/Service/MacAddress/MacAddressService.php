@@ -26,6 +26,12 @@ class MacAddressService implements MacAddressServiceInterface
             throw new DomainException('Please enter correct format for Mac Address', 422);
         }
 
-        return $this->macAddressRepository->getReportsByMacAddress($macAddress);
+        $reports = $this->macAddressRepository->getReportsByMacAddress($macAddress);
+
+        if (!$reports) {
+            throw new DomainException("No reports found", 404);
+        }
+
+        return $reports;
     }
 }

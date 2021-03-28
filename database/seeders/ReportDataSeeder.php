@@ -42,6 +42,14 @@ class ReportDataSeeder extends Seeder
             $bitrate->created_at = $day;
             $bitrate->save();
         }
+
+        for ($i = 1; $i < 5; $i++) {
+            $dateTime = new \DateTime("-$i hour");
+            $bitrate = Bitrate::factory()->make();
+            $bitrate->mac_address_id = $macAddress->id;
+            $bitrate->created_at = $dateTime;
+            $bitrate->save();
+        }
     }
 
     private function createInterference(MacAddress $macAddress, \DatePeriod $period)
@@ -53,6 +61,14 @@ class ReportDataSeeder extends Seeder
             $bitrate->created_at = $day;
             $bitrate->save();
         }
+
+        for ($i = 1; $i < 5; $i++) {
+            $dateTime = new \DateTime("-$i hour");
+            $bitrate = Interference::factory()->make();
+            $bitrate->mac_address_id = $macAddress->id;
+            $bitrate->created_at = $dateTime;
+            $bitrate->save();
+        }
     }
 
     private function createRss(MacAddress $macAddress, \DatePeriod $period)
@@ -62,6 +78,14 @@ class ReportDataSeeder extends Seeder
             $bitrate = Rss::factory()->make();
             $bitrate->mac_address_id = $macAddress->id;
             $bitrate->created_at = $day;
+            $bitrate->save();
+        }
+
+        for ($i = 1; $i < 5; $i++) {
+            $dateTime = new \DateTime("-$i hour");
+            $bitrate = Rss::factory()->make();
+            $bitrate->mac_address_id = $macAddress->id;
+            $bitrate->created_at = $dateTime;
             $bitrate->save();
         }
     }

@@ -37,6 +37,7 @@ class ReportsController extends Controller
     public function getReports(Request $request, $macAddress)
     {
         $reports = $this->macAddressService->getReportsByMacAddress($macAddress);
-        dd($reports);
+
+        return new JsonResponse($reports);
     }
 }

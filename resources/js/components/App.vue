@@ -15,7 +15,7 @@
                 <div class="w-full h-5 bg-blue-900 mb-4">
                     HGw Info
                 </div>
-                <Charts v-if="showCharts"></Charts>
+                <Charts></Charts>
             </div>
         </div>
         <!--    Right end   -->
@@ -33,12 +33,13 @@ export default {
 
     data() {
         return {
-            showCharts: true,
+            showCharts: false,
             showTables: false
         }
     },
 
     mounted() {
+
     }
 }
 </script>
