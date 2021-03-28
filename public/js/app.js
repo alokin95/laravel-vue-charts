@@ -295,6 +295,9 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       this.showSuggestedContracts = false;
+    },
+    proba: function proba(e) {
+      console.log(e);
     }
   }
 });
@@ -14251,6 +14254,8 @@ var render = function() {
                   domProps: { value: _vm.filters.contractId },
                   on: {
                     keyup: _vm.contractSearch,
+                    focus: _vm.contractSearch,
+                    blur: _vm.proba,
                     input: function($event) {
                       if ($event.target.composing) {
                         return
