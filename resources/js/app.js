@@ -7,6 +7,8 @@ import App from "./components/App";
 
 Vue.use(VeeValidate);
 
+window.Event = new Vue();
+
 new Vue({
     router,
     // render: h => h(App)

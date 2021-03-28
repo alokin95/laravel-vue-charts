@@ -11,9 +11,11 @@
         <div class="flex-12 w-full lg:h-screen">
             <Header></Header>
 
-            <div class="bg-mainContent" style="height: 1000px;">
-                <div class="w-11/12 m-auto">
+            <div class="bg-mainContent p-4">
+                <div class="w-full h-5 bg-blue-900 mb-4">
+                    HGw Info
                 </div>
+                <Charts v-if="showCharts"></Charts>
             </div>
         </div>
         <!--    Right end   -->
@@ -23,10 +25,21 @@
 
 <script>
 import Header from "./partials/Header";
+import Charts from "./partials/Charts";
 
 export default {
     name: "App",
-    components: {Header}
+    components: {Charts, Header},
+
+    data() {
+        return {
+            showCharts: true,
+            showTables: false
+        }
+    },
+
+    mounted() {
+    }
 }
 </script>
 
