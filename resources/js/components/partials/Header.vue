@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-bodyColor">
 
         <div class="lg:flex w-full lg:justify-between border-b border-loginInputText mb-5">
             <div class="w-full m-auto p-4">

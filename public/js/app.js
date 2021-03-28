@@ -39,6 +39,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -179,22 +180,33 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
+      chartOptions: {
+        responsive: true,
+        maintainAspectRatio: false
+      },
       rssData: {}
     };
   },
   mounted: function mounted() {
+    var self = this;
     Event.$on('report-created', function (response) {
-      console.log(response);
+      self.fillData(response);
     });
-    this.fillData();
   },
   methods: {
-    fillData: function fillData() {
+    fillData: function fillData(data) {
+      this.fillRssData(data.rss);
+    },
+    fillRssData: function fillRssData(rssData) {
       this.rssData = {
-        labels: [12, 13],
+        labels: rssData.map(function (rss) {
+          return rss.created_at;
+        }),
         datasets: [{
-          label: 'Data One',
-          data: [17, 1]
+          label: 'HGw - RSS',
+          data: rssData.map(function (rss) {
+            return rss.value;
+          })
         }]
       };
     }
@@ -52034,7 +52046,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "lg:flex" }, [
+  return _c("div", { staticClass: "lg:flex lg:h-screen bg-mainContent" }, [
     _c("div", {
       staticClass: "w-full bg-sidebarLeft flex-1 lg:h-screen lg:p-0 p-6"
     }),
@@ -52049,11 +52061,11 @@ var render = function() {
           "div",
           { staticClass: "bg-mainContent p-4" },
           [
-            _c("div", { staticClass: "w-full h-5 bg-blue-900 mb-4" }, [
+            _c("div", { staticClass: "w-full h-5 mb-4 text-right" }, [
               _vm._v("\n                HGw Info\n            ")
             ]),
             _vm._v(" "),
-            _c("Charts")
+            _vm.showCharts ? _c("Charts") : _vm._e()
           ],
           1
         )
@@ -52325,11 +52337,21 @@ var render = function() {
     _c(
       "div",
       { staticClass: "lg:flex-1" },
-      [_c("line-chart", { attrs: { "chart-data": _vm.rssData } })],
+      [
+        _c("line-chart", {
+          staticClass: "h-60",
+          attrs: { "chart-data": _vm.rssData, options: _vm.chartOptions }
+        })
+      ],
       1
     ),
     _vm._v(" "),
-    _c("div", { staticClass: "lg:flex-1" })
+    _c(
+      "div",
+      { staticClass: "lg:flex-1" },
+      [_c("line-chart", { attrs: { "chart-data": _vm.rssData } })],
+      1
+    )
   ])
 }
 var staticRenderFns = []
@@ -52355,7 +52377,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { staticClass: "bg-bodyColor" }, [
     _c(
       "div",
       {

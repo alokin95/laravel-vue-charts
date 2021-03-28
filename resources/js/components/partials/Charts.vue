@@ -2,11 +2,11 @@
     <div class="lg:flex p-4">
 
         <div class="lg:flex-1">
-            <line-chart :chart-data="rssData"></line-chart>
+            <line-chart class="h-60" :chart-data="rssData" :options="chartOptions"></line-chart>
         </div>
 
         <div class="lg:flex-1">
-
+            <line-chart :chart-data="rssData"></line-chart>
         </div>
 
     </div>
@@ -21,23 +21,31 @@ export default {
     },
     data () {
         return {
+            chartOptions: {
+                responsive: true,
+                maintainAspectRatio: false
+            },
             rssData: {}
         }
     },
     mounted () {
+        let self = this;
         Event.$on('report-created', function(response) {
-            console.log(response);
+            self.fillData(response)
         })
-        this.fillData()
     },
     methods: {
-        fillData () {
+        fillData(data) {
+            this.fillRssData(data.rss);
+        },
+
+        fillRssData (rssData) {
             this.rssData = {
-                labels: [12, 13],
+                labels: rssData.map(rss => rss.created_at),
                 datasets: [
                     {
-                        label: 'Data One',
-                        data: [17, 1]
+                        label: 'HGw - RSS',
+                        data: rssData.map(rss => rss.value)
                     },
                 ]
             }

@@ -1,5 +1,5 @@
 <template>
-    <div class="lg:flex">
+    <div class="lg:flex lg:h-screen bg-mainContent">
 
         <!--    Left start   -->
         <div class="w-full bg-sidebarLeft flex-1 lg:h-screen lg:p-0 p-6">
@@ -12,10 +12,11 @@
             <Header></Header>
 
             <div class="bg-mainContent p-4">
-                <div class="w-full h-5 bg-blue-900 mb-4">
+                <div class="w-full h-5 mb-4 text-right">
                     HGw Info
                 </div>
-                <Charts></Charts>
+
+                <Charts v-if="showCharts"></Charts>
             </div>
         </div>
         <!--    Right end   -->
