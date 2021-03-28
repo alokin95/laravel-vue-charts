@@ -76,8 +76,8 @@
         <div class="tabs">
             <div class="w-1/2 lg:w-full m-auto">
                 <ul>
-                    <li class="lg:mr-4 lg:ml-4 -mb-1.5 w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"><a>Tables</a></li>
-                    <li class="w-1/2 lg:w-1/12 -mb-1.5 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"><a>Graphs</a></li>
+                    <li @click="showTablesTab" :class="{'is-active-custom': showTables}" class="lg:mr-4 lg:ml-4 -mb-1.5 w-1/2 lg:w-1/12 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"><a>Tables</a></li>
+                    <li @click="showGraphsTab" :class="{'is-active-custom': showGraphs}" class="w-1/2 lg:w-1/12 -mb-1.5 border-r-2 border-l-2 border-t-4 tab-top-border text-tabsText font-medium"><a>Graphs</a></li>
                 </ul>
             </div>
         </div>
@@ -94,6 +94,9 @@ export default {
 
     data() {
         return {
+            filtersApplied: false,
+            showGraphs: false,
+            showTables: false,
             isSpinning: false,
             filters: {
                 macAddress: "",
@@ -121,10 +124,15 @@ export default {
             reportsService.getReports(this.filters.macAddress)
                 .then(response => {
                     Event.$emit('report-created', response);
+                    this.filtersApplied = true;
+                    this.showGraphs = true;
+                    this.showTables = false;
                 })
                 .catch(err => {
                     alert("No reports found.")
                 })
+
+            this.isSpinning = false;
         },
 
         logout() {
@@ -165,6 +173,24 @@ export default {
                 this.filters.contractId = contract.contract_number;
             }
             this.showSuggestedContracts = false;
+        },
+
+        showTablesTab() {
+            if (!this.filtersApplied) {
+                return false;
+            }
+            this.showTables = true;
+            this.showGraphs = false
+            Event.$emit('show-tables');
+        },
+
+        showGraphsTab() {
+            if (!this.filtersApplied) {
+                return false;
+            }
+            this.showTables = false;
+            this.showGraphs = true
+            Event.$emit('show-charts');
         }
     }
 }

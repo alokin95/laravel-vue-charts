@@ -16,7 +16,8 @@
                     HGw Info
                 </div>
 
-                <Charts v-if="showCharts"></Charts>
+                <Charts v-show="showCharts"></Charts>
+                <Tables v-show="showTables"></Tables>
             </div>
         </div>
         <!--    Right end   -->
@@ -27,10 +28,16 @@
 <script>
 import Header from "./partials/Header";
 import Charts from "./partials/Charts";
+import Tables from "./partials/Tables";
 
 export default {
     name: "App",
-    components: {Charts, Header},
+
+    components: {
+        Charts,
+        Header,
+        Tables
+    },
 
     data() {
         return {
@@ -40,7 +47,20 @@ export default {
     },
 
     mounted() {
+        let self = this;
+        Event.$on('report-created', function (data) {
+            self.showCharts = true;
+        })
 
+        Event.$on('show-tables', function () {
+            self.showTables = true;
+            self.showCharts = false;
+        })
+
+        Event.$on('show-charts', function () {
+            self.showCharts = true;
+            self.showTables = false;
+        })
     }
 }
 </script>
