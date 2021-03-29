@@ -44,7 +44,9 @@ export default {
     data() {
         return {
             showCharts: false,
-            showTables: false
+            showTables: false,
+            showInfo: false,
+            info: null
         }
     },
 
@@ -54,6 +56,7 @@ export default {
             if (!self.showCharts && !self.showTables) {
                 self.showCharts = true;
             }
+            self.info = data;
         })
 
         Event.$on('show-tables', function () {

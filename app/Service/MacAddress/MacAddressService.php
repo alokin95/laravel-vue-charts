@@ -64,17 +64,17 @@ class MacAddressService implements MacAddressServiceInterface
 
     private function getAggregateData($reports) {
         $rss['max']     = $reports->rss->max('value');
-        $rss['avg']     = $reports->rss->avg('value');
+        $rss['avg']     = round($reports->rss->avg('value'));
         $rss['min']     = $reports->rss->min('value');
         $rss['last']    = $reports->rss->last()->value;
 
         $bitrate['max']     = $reports->bitrate->max('value');
-        $bitrate['avg']     = $reports->bitrate->avg('value');
+        $bitrate['avg']     = round($reports->bitrate->avg('value'));
         $bitrate['min']     = $reports->bitrate->min('value');
         $bitrate['last']    = $reports->bitrate->last()->value;
 
         $interference['max']     = $reports->interference->max('value');
-        $interference['avg']     = $reports->interference->avg('value');
+        $interference['avg']     = round($reports->interference->avg('value'));
         $interference['min']     = $reports->interference->min('value');
         $interference['last']    = $reports->interference->last()->value;
 

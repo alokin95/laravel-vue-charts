@@ -57,7 +57,9 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       showCharts: false,
-      showTables: false
+      showTables: false,
+      showInfo: false,
+      info: null
     };
   },
   mounted: function mounted() {
@@ -66,6 +68,8 @@ __webpack_require__.r(__webpack_exports__);
       if (!self.showCharts && !self.showTables) {
         self.showCharts = true;
       }
+
+      self.info = data;
     });
     Event.$on('show-tables', function () {
       self.showTables = true;
