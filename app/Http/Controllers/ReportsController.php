@@ -28,7 +28,7 @@ class ReportsController extends Controller
         $this->macAddressService = $macAddressService;
     }
 
-    public function contractSearch(Request $request, $contractNumber)
+    public function contractSearch($contractNumber)
     {
         $contracts = $this->contractService->getContractByNumber($contractNumber);
 

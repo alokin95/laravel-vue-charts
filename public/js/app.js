@@ -54166,14 +54166,14 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "lg:flex lg:h-screen bg-mainContent" }, [
+  return _c("div", { staticClass: "lg:flex min-h-full bg-mainContent" }, [
     _c("div", {
-      staticClass: "w-full bg-sidebarLeft flex-1 lg:h-screen lg:p-0 p-6"
+      staticClass: "w-full bg-sidebarLeft flex-1 min-h-screen lg:p-0 p-6"
     }),
     _vm._v(" "),
     _c(
       "div",
-      { staticClass: "flex-12 w-full lg:h-screen" },
+      { staticClass: "flex-12 w-full" },
       [
         _c("Header"),
         _vm._v(" "),

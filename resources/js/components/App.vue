@@ -1,14 +1,14 @@
 <template>
-    <div class="lg:flex lg:h-screen bg-mainContent">
+    <div class="lg:flex min-h-full bg-mainContent">
 
         <!--    Left start   -->
-        <div class="w-full bg-sidebarLeft flex-1 lg:h-screen lg:p-0 p-6">
+        <div class="w-full bg-sidebarLeft flex-1 min-h-screen lg:p-0 p-6">
 
         </div>
         <!--    Left end   -->
 
         <!--    Right start   -->
-        <div class="flex-12 w-full lg:h-screen">
+        <div class="flex-12 w-full">
             <Header></Header>
 
             <div class="bg-mainContent p-4">
