@@ -57,7 +57,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       showCharts: false,
-      showTables: true
+      showTables: false
     };
   },
   mounted: function mounted() {
@@ -737,8 +737,79 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Tables"
+  name: "Tables",
+  data: function data() {
+    return {
+      sections: [{
+        label: 'Low',
+        value: 18,
+        color: '#db1b18'
+      }, {
+        label: 'Medium',
+        value: 36,
+        color: '#dee610'
+      }, {
+        label: 'High',
+        value: 46,
+        color: '#36e0a5 '
+      }]
+    };
+  }
 });
 
 /***/ }),
@@ -1014,20 +1085,26 @@ function getReportsWithDateRange(macAddress, range) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var _helpers_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_helpers/router */ "./resources/js/_helpers/router.js");
 /* harmony import */ var vee_validate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vee-validate */ "./node_modules/vee-validate/dist/vee-validate.esm.js");
 /* harmony import */ var vue2_datepicker_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue2-datepicker/index.css */ "./node_modules/vue2-datepicker/index.css");
-/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/App */ "./resources/js/components/App.vue");
+/* harmony import */ var vue_css_donut_chart__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-css-donut-chart */ "./node_modules/vue-css-donut-chart/dist/vcdonut.common.js");
+/* harmony import */ var vue_css_donut_chart__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue_css_donut_chart__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var vue_css_donut_chart_dist_vcdonut_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-css-donut-chart/dist/vcdonut.css */ "./node_modules/vue-css-donut-chart/dist/vcdonut.css");
+/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/App */ "./resources/js/components/App.vue");
+
+
 
 
 
  //Main component
 
 
-vue__WEBPACK_IMPORTED_MODULE_4__.default.use(vee_validate__WEBPACK_IMPORTED_MODULE_1__.default);
-window.Event = new vue__WEBPACK_IMPORTED_MODULE_4__.default();
-new vue__WEBPACK_IMPORTED_MODULE_4__.default({
+vue__WEBPACK_IMPORTED_MODULE_6__.default.use(vee_validate__WEBPACK_IMPORTED_MODULE_1__.default);
+vue__WEBPACK_IMPORTED_MODULE_6__.default.use((vue_css_donut_chart__WEBPACK_IMPORTED_MODULE_3___default()));
+window.Event = new vue__WEBPACK_IMPORTED_MODULE_6__.default();
+new vue__WEBPACK_IMPORTED_MODULE_6__.default({
   router: _helpers_router__WEBPACK_IMPORTED_MODULE_0__.router // render: h => h(App)
 
 }).$mount('#app');
@@ -17211,6 +17288,30 @@ core_controller.helpers.each(
 return src;
 
 })));
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-css-donut-chart/dist/vcdonut.css":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-css-donut-chart/dist/vcdonut.css ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".cdc-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.cdc{height:auto;position:relative;-ms-flex-negative:0;flex-shrink:0}.cdc,.cdc-overlay{border-radius:50%;overflow:hidden}.cdc-overlay{opacity:1;position:absolute;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.cdc-text{text-align:center}.cdc-legend{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:1em;-ms-flex-wrap:wrap;flex-wrap:wrap}.cdc-legend-item{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:.5em}.cdc-legend-item-color{height:1.25em;width:1.25em;border-radius:2px;margin-right:.5em}.cdc-sections{position:absolute;height:auto;width:100%;padding-bottom:100%;border-radius:50%}.cdc-section{width:50%;overflow:hidden;background-color:transparent;-webkit-transform-origin:0 50%;transform-origin:0 50%;pointer-events:none}.cdc-filler,.cdc-section{position:absolute;height:100%}.cdc-filler{width:100%;pointer-events:all}.cdc-section.cdc-section-right{left:50%}.cdc-section.cdc-section-right .cdc-filler{-webkit-transform-origin:0 50%;transform-origin:0 50%}.cdc-section.cdc-section-left{left:0}.cdc-section.cdc-section-left,.cdc-section.cdc-section-left .cdc-filler{-webkit-transform-origin:100% 50%;transform-origin:100% 50%}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
@@ -40985,6 +41086,36 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 /***/ }),
 
+/***/ "./node_modules/vue-css-donut-chart/dist/vcdonut.css":
+/*!***********************************************************!*\
+  !*** ./node_modules/vue-css-donut-chart/dist/vcdonut.css ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vcdonut_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./vcdonut.css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-css-donut-chart/dist/vcdonut.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vcdonut_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vcdonut_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/vue2-datepicker/index.css":
 /*!************************************************!*\
   !*** ./node_modules/vue2-datepicker/index.css ***!
@@ -52750,6 +52881,831 @@ var reactiveProp = {
 
 /***/ }),
 
+/***/ "./node_modules/vue-css-donut-chart/dist/vcdonut.common.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/vue-css-donut-chart/dist/vcdonut.common.js ***!
+  \*****************************************************************/
+/***/ ((module) => {
+
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __nested_webpack_require_187__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __nested_webpack_require_187__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__nested_webpack_require_187__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__nested_webpack_require_187__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__nested_webpack_require_187__.d = function(exports, name, getter) {
+/******/ 		if(!__nested_webpack_require_187__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__nested_webpack_require_187__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__nested_webpack_require_187__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __nested_webpack_require_187__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__nested_webpack_require_187__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __nested_webpack_require_187__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__nested_webpack_require_187__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__nested_webpack_require_187__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__nested_webpack_require_187__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__nested_webpack_require_187__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __nested_webpack_require_187__(__nested_webpack_require_187__.s = "fb15");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "7e79":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "f6fd":
+/***/ (function(module, exports) {
+
+// document.currentScript polyfill by Adam Miller
+
+// MIT license
+
+(function(document){
+  var currentScript = "currentScript",
+      scripts = document.getElementsByTagName('script'); // Live NodeList collection
+
+  // If browser needs currentScript polyfill, add get currentScript() to the document object
+  if (!(currentScript in document)) {
+    Object.defineProperty(document, currentScript, {
+      get: function(){
+
+        // IE 6-10 supports script readyState
+        // IE 10+ support stack trace
+        try { throw new Error(); }
+        catch (err) {
+
+          // Find the second match for the "at" string to get file src url from stack.
+          // Specifically works with the format of stack traces in IE.
+          var i, res = ((/.*at [^\(]*\((.*):.+:.+\)$/ig).exec(err.stack) || [false])[1];
+
+          // For all scripts on the page, if src matches or if ready state is interactive, return the script tag
+          for(i in scripts){
+            if(scripts[i].src == res || scripts[i].readyState == "interactive"){
+              return scripts[i];
+            }
+          }
+
+          // If no match, return null
+          return null;
+        }
+      }
+    });
+  }
+})(document);
+
+
+/***/ }),
+
+/***/ "fb15":
+/***/ (function(module, __webpack_exports__, __nested_webpack_require_5060__) {
+
+"use strict";
+__nested_webpack_require_5060__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
+// This file is imported into lib/wc client bundles.
+
+if (typeof window !== 'undefined') {
+  if (true) {
+    __nested_webpack_require_5060__("f6fd")
+  }
+
+  var setPublicPath_i
+  if ((setPublicPath_i = window.document.currentScript) && (setPublicPath_i = setPublicPath_i.src.match(/(.+\/)[^/]+\.js(\?.*)?$/))) {
+    __nested_webpack_require_5060__.p = setPublicPath_i[1] // eslint-disable-line
+  }
+}
+
+// Indicate to webpack that this file can be concatenated
+/* harmony default export */ var setPublicPath = (null);
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"43923ff6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Donut.vue?vue&type=template&id=185716cb&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"cdc-container",style:(_vm.placementStyles.container)},[_c('div',{ref:"donut",staticClass:"cdc",style:(_vm.donutStyles)},[_c('donut-sections',_vm._g({attrs:{"sections":_vm.donutSections,"start-angle":_vm.startAngle}},_vm.sectionListeners)),_c('div',{staticClass:"cdc-overlay",style:(_vm.overlayStyles)},[_c('div',{staticClass:"cdc-text",style:(_vm.donutTextStyles)},[_vm._t("default",[_vm._v(_vm._s(_vm.text))])],2)])],1),_vm._t("legend",[(_vm.hasLegend)?_c('div',{staticClass:"cdc-legend",style:(_vm.placementStyles.legend)},_vm._l((_vm.legend),function(item,idx){return _c('span',{key:idx,staticClass:"cdc-legend-item",attrs:{"title":item.percent}},[_c('span',{staticClass:"cdc-legend-item-color",style:(item.styles)}),_c('span',[_vm._v(_vm._s(item.label))])])}),0):_vm._e()])],2)}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/Donut.vue?vue&type=template&id=185716cb&
+
+// CONCATENATED MODULE: ./src/utils/events.js
+var nativeSectionEvents = ['click', 'mouseenter', 'mouseleave', 'mouseover', 'mouseout', 'mousemove'].map(function (nativeEventName) {
+  return {
+    nativeEventName: nativeEventName,
+    sectionEventName: "section-".concat(nativeEventName)
+  };
+});
+// CONCATENATED MODULE: ./src/utils/colors.js
+var colors = ['#FF6384', '#36A2EB', '#FFCE56', '#F58231', '#46F0F0', '#D2F53C', '#911EB4', '#F032E6', '#3CB44B', '#FFE119', '#E6194B', '#FABEBE', '#008080', '#E6BEFF', '#0082C8', '#AA6E28', '#FFFAC8', '#800000', '#AAFFC3', '#808000', '#FFD8B1', '#000080', '#808080', '#000000'];
+/* harmony default export */ var utils_colors = (colors);
+// CONCATENATED MODULE: ./src/utils/misc.js
+var _placementStyles;
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var legendGap = '1em';
+var defaultColor = 'dodgerblue';
+var placement = {
+  TOP: 'top',
+  RIGHT: 'right',
+  BOTTOM: 'bottom',
+  LEFT: 'left'
+};
+var misc_placementStyles = (_placementStyles = {}, _defineProperty(_placementStyles, placement.TOP, {
+  container: {
+    flexDirection: 'column'
+  },
+  legend: {
+    order: -1,
+    margin: 0,
+    marginBottom: legendGap
+  }
+}), _defineProperty(_placementStyles, placement.RIGHT, {
+  container: {},
+  legend: {
+    flexDirection: 'column',
+    margin: 0,
+    marginLeft: legendGap
+  }
+}), _defineProperty(_placementStyles, placement.BOTTOM, {
+  container: {
+    flexDirection: 'column'
+  },
+  legend: {}
+}), _defineProperty(_placementStyles, placement.LEFT, {
+  container: {},
+  legend: {
+    flexDirection: 'column',
+    order: -1,
+    margin: 0,
+    marginRight: legendGap
+  }
+}), _placementStyles);
+
+var isObject = function isObject(obj) {
+  return !!obj && obj.constructor === Object;
+};
+
+var sectionKeys = [{
+  type: 'number',
+  key: 'value',
+  required: true
+}, {
+  key: 'label'
+}, {
+  key: 'color'
+}];
+function sectionValidator(section) {
+  if (!isObject(section)) return false;
+  return sectionKeys.reduce(function (acc, curr) {
+    if (!acc) return false;
+    var valid = true;
+    if (curr.required) valid = valid && Object.hasOwnProperty.call(section, curr.key);
+    if (curr.type) valid = valid && _typeof(section[curr.key]) === curr.type;
+    return acc && valid;
+  }, true);
+}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"43923ff6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DonutSections.vue?vue&type=template&id=cafc83a2&
+var DonutSectionsvue_type_template_id_cafc83a2_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"cdc-sections",style:(_vm.containerStyles)},_vm._l((_vm.donutSections),function(section,idx){return _c('div',_vm._g({key:idx,staticClass:"cdc-section",class:section.className,style:(section.sectionStyles)},section.listeners),[_c('div',{staticClass:"cdc-filler",style:(section.fillerStyles),attrs:{"title":section.label}})])}),0)}
+var DonutSectionsvue_type_template_id_cafc83a2_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/DonutSections.vue?vue&type=template&id=cafc83a2&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DonutSections.vue?vue&type=script&lang=js&
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { DonutSectionsvue_type_script_lang_js_defineProperty(target, key, source[key]); }); } return target; }
+
+function DonutSectionsvue_type_script_lang_js_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+var sectionClass = {
+  LEFT: 'cdc-section-left',
+  RIGHT: 'cdc-section-right'
+};
+/* harmony default export */ var DonutSectionsvue_type_script_lang_js_ = ({
+  props: {
+    startAngle: {
+      type: Number,
+      default: 0
+    },
+    sections: {
+      type: Array,
+      default: function _default() {
+        return [];
+      }
+    }
+  },
+  computed: {
+    containerStyles: function containerStyles() {
+      return {
+        transform: "rotate(".concat(this.startAngle, "deg)")
+      };
+    },
+    donutSections: function donutSections() {
+      var _this = this;
+
+      var maxDegreesPerSection = 180;
+      var degreesConsumed = 0;
+      var offsetBy = 0;
+      var sections = this.sections.map(function (section) {
+        var _ref = [sectionClass.RIGHT, -180],
+            className = _ref[0],
+            offset = _ref[1];
+
+        if (degreesConsumed >= maxDegreesPerSection) {
+          var _ref2 = [sectionClass.LEFT, 180];
+          className = _ref2[0];
+          offset = _ref2[1];
+        }
+
+        var degree = offset + section.degree;
+        var fillerStyles = {
+          backgroundColor: section.color || defaultColor,
+          transform: "rotate(".concat(degree, "deg)")
+        };
+        var sectionStyles = {
+          transform: "rotate(".concat(offsetBy, "deg)")
+        };
+        degreesConsumed += section.degree;
+        if (degreesConsumed === 180) offsetBy = 0;else offsetBy += section.degree;
+        var listeners = nativeSectionEvents.reduce(function (acc, _ref3) {
+          var nativeEventName = _ref3.nativeEventName,
+              sectionEventName = _ref3.sectionEventName;
+          return _objectSpread({}, acc, DonutSectionsvue_type_script_lang_js_defineProperty({}, nativeEventName, function (event) {
+            return _this.emitEvent(sectionEventName, section, event);
+          }));
+        }, {});
+        return {
+          label: section.label,
+          className: className,
+          fillerStyles: fillerStyles,
+          sectionStyles: sectionStyles,
+          listeners: listeners
+        };
+      });
+      return sections;
+    }
+  },
+  methods: {
+    emitEvent: function emitEvent(sectionEventName, section, event) {
+      if (section.value === 0) return;
+      this.$emit(sectionEventName, section.$section, event);
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/DonutSections.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_DonutSectionsvue_type_script_lang_js_ = (DonutSectionsvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode /* vue-cli only */
+) {
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = 'data-v-' + scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
+      : injectStyles
+  }
+
+  if (hook) {
+    if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functioal component in vue file
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
+    } else {
+      // inject component registration as beforeCreate hook
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    }
+  }
+
+  return {
+    exports: scriptExports,
+    options: options
+  }
+}
+
+// CONCATENATED MODULE: ./src/components/DonutSections.vue
+
+
+
+
+
+/* normalize component */
+
+var component = normalizeComponent(
+  components_DonutSectionsvue_type_script_lang_js_,
+  DonutSectionsvue_type_template_id_cafc83a2_render,
+  DonutSectionsvue_type_template_id_cafc83a2_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var DonutSections = (component.exports);
+// EXTERNAL MODULE: ./src/styles/main.css
+var main = __nested_webpack_require_5060__("7e79");
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Donut.vue?vue&type=script&lang=js&
+function Donutvue_type_script_lang_js_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { Donutvue_type_script_lang_js_defineProperty(target, key, source[key]); }); } return target; }
+
+function Donutvue_type_script_lang_js_defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+/* harmony default export */ var Donutvue_type_script_lang_js_ = ({
+  name: 'vc-donut',
+  props: {
+    // diameter of the donut
+    size: {
+      type: Number,
+      default: 250,
+      validator: function validator(v) {
+        return v > 0;
+      }
+    },
+    // unit to use for `size`
+    unit: {
+      type: String,
+      default: 'px'
+    },
+    // percentage of donut ring's thickness
+    thickness: {
+      type: Number,
+      default: 20,
+      validator: function validator(v) {
+        return v >= 0 && v <= 100;
+      }
+    },
+    // text in the middle of the donut, this can also be passed using the default slot
+    text: {
+      type: String,
+      default: null
+    },
+    autoAdjustTextSize: {
+      type: Boolean,
+      default: true
+    },
+    // color to use for the middle of the donut
+    // set this to `transparent` or `thickness` to 100 to make a pie chart instead
+    background: {
+      type: String,
+      default: '#ffffff'
+    },
+    // color to use for the empty ring areas
+    foreground: {
+      type: String,
+      default: '#eeeeee'
+    },
+    // sections of the donut, must have a `value` property
+    // other valid properties are `label` and `color` (default is `dodgerblue`)
+    sections: {
+      type: Array,
+      default: function _default() {
+        return [];
+      },
+      validator: function validator(sections) {
+        for (var i = 0; i < sections.length; ++i) {
+          /* istanbul ignore if - already covered by unit tests for sectionValidator */
+          if (!sectionValidator(sections[i])) return false;
+        }
+
+        return true;
+      }
+    },
+    total: {
+      type: Number,
+      default: 100,
+      validator: function validator(v) {
+        return v > 0;
+      }
+    },
+    hasLegend: {
+      type: Boolean,
+      default: false
+    },
+    legendPlacement: {
+      type: String,
+      default: placement.BOTTOM,
+      validator: function validator(val) {
+        return !!placement[val.toUpperCase()];
+      }
+    },
+    // degree angle at which the first section begins
+    startAngle: {
+      type: Number,
+      default: 0
+    }
+  },
+  watch: {
+    autoAdjustTextSize: function autoAdjustTextSize(val) {
+      if (val) window.addEventListener('resize', this.resizeListener);else window.removeEventListener('resize', this.resizeListener);
+      this.recalcFontSize();
+    },
+    size: function size() {
+      this.recalcFontSize();
+    },
+    unit: function unit() {
+      this.recalcFontSize();
+    }
+  },
+  data: function data() {
+    return {
+      donutEl: null,
+      fontSize: '1em',
+      resizeListener: null
+    };
+  },
+  computed: {
+    donutSections: function donutSections() {
+      var _this = this;
+
+      var valueTotal = this.sections.reduce(function (a, c) {
+        return a + c.value;
+      }, 0);
+      if (typeof valueTotal !== 'number') return [];
+      valueTotal = Number(valueTotal.toFixed(2));
+
+      if (valueTotal > this.total) {
+        var err = "Sum of all the sections' values (".concat(valueTotal, ") should not exceed `total` (").concat(this.total, ")");
+        throw new Error(err);
+      }
+
+      var degreesInACircle = 360;
+      var degreesInASection = 180;
+      var consumedDegrees = 0;
+      var currentDefaultColorIdx = 0;
+      var sections = [];
+      this.sections.forEach(function (section) {
+        var valToDeg = degreesInACircle * (section.value / _this.total);
+        var degreeArr = [valToDeg];
+
+        if (valToDeg > degreesInASection) {
+          degreeArr = [degreesInASection, valToDeg - degreesInASection];
+        }
+
+        var color = section.color || utils_colors[currentDefaultColorIdx++];
+        degreeArr.forEach(function (degree) {
+          // limit to 2 decimal digits to avoid floating point arithmetic issues
+          var consumedWithCurrent = Number((consumedDegrees + degree).toFixed(2));
+
+          if (consumedWithCurrent > degreesInASection) {
+            var remainingDegreesInCurrentSection = degreesInASection - consumedDegrees;
+            sections.push(Donutvue_type_script_lang_js_objectSpread({}, section, {
+              degree: remainingDegreesInCurrentSection,
+              color: color,
+              $section: section
+            }), Donutvue_type_script_lang_js_objectSpread({}, section, {
+              degree: degree - remainingDegreesInCurrentSection,
+              color: color,
+              $section: section
+            }));
+          } else {
+            sections.push(Donutvue_type_script_lang_js_objectSpread({}, section, {
+              degree: degree,
+              color: color,
+              $section: section
+            }));
+          }
+
+          consumedDegrees += degree;
+
+          if (consumedDegrees >= degreesInASection) {
+            consumedDegrees -= degreesInASection;
+          }
+        });
+      });
+      return sections;
+    },
+    legend: function legend() {
+      var _this2 = this;
+
+      /* istanbul ignore if - legend isn't rendered at all because of v-if="hasLegend" */
+      if (!this.hasLegend) return null;
+      var currentDefaultColorIdx = 0;
+      return this.sections.map(function (section, idx) {
+        return {
+          label: section.label || "Section ".concat(idx + 1),
+          percent: "".concat(section.value, " (").concat(section.value / _this2.total * 100, "%)"),
+          styles: {
+            backgroundColor: section.color || utils_colors[currentDefaultColorIdx++]
+          }
+        };
+      });
+    },
+    placementStyles: function placementStyles() {
+      if (!this.hasLegend) return {};
+      return misc_placementStyles[this.legendPlacement];
+    },
+    donutStyles: function donutStyles() {
+      var size = "".concat(this.size).concat(this.unit);
+      var styles = {
+        width: size,
+        paddingBottom: size,
+        backgroundColor: this.foreground
+      };
+      return styles;
+    },
+    overlayStyles: function overlayStyles() {
+      var availablePercent = 100;
+      var size = availablePercent - this.thickness;
+      var sizePercent = "".concat(size, "%");
+      var pos = "calc(50% - ".concat(size / 2, "%)");
+      return {
+        height: sizePercent,
+        width: sizePercent,
+        top: pos,
+        left: pos,
+        backgroundColor: this.background
+      };
+    },
+    donutTextStyles: function donutTextStyles() {
+      var fontSize = this.fontSize;
+      return {
+        fontSize: fontSize
+      };
+    },
+    sectionListeners: function sectionListeners() {
+      var _this3 = this;
+
+      return nativeSectionEvents.reduce(function (acc, _ref) {
+        var sectionEventName = _ref.sectionEventName;
+        return Donutvue_type_script_lang_js_objectSpread({}, acc, Donutvue_type_script_lang_js_defineProperty({}, sectionEventName, function () {
+          for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+          }
+
+          return _this3.emitSectionEvent.apply(_this3, [sectionEventName].concat(args));
+        }));
+      }, {});
+    }
+  },
+  methods: {
+    recalcFontSize: function recalcFontSize() {
+      var _this4 = this;
+
+      if (!this.autoAdjustTextSize) {
+        this.fontSize = '1em';
+        return;
+      }
+
+      var scaleDownBy = 0.08;
+      var widthInPx = this.size;
+      this.$nextTick(function () {
+        if (_this4.unit !== 'px') {
+          /* istanbul ignore else */
+          if (_this4.donutEl) widthInPx = _this4.donutEl.clientWidth;else widthInPx = null;
+        }
+
+        _this4.fontSize = widthInPx ? "".concat((widthInPx * scaleDownBy).toFixed(2), "px") : '1em';
+      });
+    },
+    emitSectionEvent: function emitSectionEvent(sectionEventName) {
+      for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+        args[_key2 - 1] = arguments[_key2];
+      }
+
+      this.$emit.apply(this, [sectionEventName].concat(args));
+    }
+  },
+  created: function created() {
+    this.resizeListener = this.recalcFontSize.bind(this);
+  },
+  mounted: function mounted() {
+    this.donutEl = this.$refs.donut;
+
+    if (this.autoAdjustTextSize) {
+      this.recalcFontSize();
+      window.addEventListener('resize', this.resizeListener);
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    window.removeEventListener('resize', this.resizeListener);
+  },
+  components: {
+    DonutSections: DonutSections
+  }
+});
+// CONCATENATED MODULE: ./src/components/Donut.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_Donutvue_type_script_lang_js_ = (Donutvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/Donut.vue
+
+
+
+
+
+/* normalize component */
+
+var Donut_component = normalizeComponent(
+  components_Donutvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var Donut = (Donut_component.exports);
+// CONCATENATED MODULE: ./src/index.js
+
+var DonutPlugin = {
+  install: function install(Vue) {
+    Vue.component(Donut.name, Donut);
+  }
+};
+/* harmony default export */ var src = (DonutPlugin);
+// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
+
+
+/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (src);
+
+
+
+/***/ })
+
+/******/ });
+
+/***/ }),
+
 /***/ "./resources/js/components/App.vue":
 /*!*****************************************!*\
   !*** ./resources/js/components/App.vue ***!
@@ -54122,283 +55078,540 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "lg:flex p-4" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
+      _c(
+        "div",
+        { staticClass: "bg-white shadow-xl p-4 mb-4" },
+        [
+          _c("h1", { staticClass: "text-blue-800 w-1/2 m-auto text-xl" }, [
+            _vm._v("HGw Channel")
+          ]),
+          _vm._v(" "),
+          _c(
+            "vc-donut",
+            {
+              attrs: {
+                size: 130,
+                sections: _vm.sections,
+                thickness: 50,
+                "has-legend": "",
+                "legend-placement": "left"
+              }
+            },
+            [_vm._v("46%")]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "bg-white shadow-xl p-4 mb-4" },
+        [
+          _c("h1", { staticClass: "text-blue-800 w-1/2 m-auto text-xl" }, [
+            _vm._v("HGw Channel")
+          ]),
+          _vm._v(" "),
+          _c(
+            "vc-donut",
+            {
+              attrs: {
+                size: 130,
+                sections: _vm.sections,
+                thickness: 50,
+                "has-legend": "",
+                "legend-placement": "left"
+              }
+            },
+            [_vm._v("46%")]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "bg-white shadow-xl p-4 mb-4" },
+        [
+          _c("h1", { staticClass: "text-blue-800 w-1/2 m-auto text-xl" }, [
+            _vm._v("HGw Channel")
+          ]),
+          _vm._v(" "),
+          _c(
+            "vc-donut",
+            {
+              attrs: {
+                size: 130,
+                sections: _vm.sections,
+                thickness: 50,
+                "has-legend": "",
+                "legend-placement": "left"
+              }
+            },
+            [_vm._v("46%")]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "bg-white shadow-xl p-4 mb-4" },
+        [
+          _c("h1", { staticClass: "text-blue-800 w-1/2 m-auto text-xl" }, [
+            _vm._v("HGw Channel")
+          ]),
+          _vm._v(" "),
+          _c(
+            "vc-donut",
+            {
+              attrs: {
+                size: 130,
+                sections: _vm.sections,
+                thickness: 50,
+                "has-legend": "",
+                "legend-placement": "left"
+              }
+            },
+            [_vm._v("46%")]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
+      _c(
+        "div",
+        { staticClass: "bg-white shadow-xl p-4 mb-4" },
+        [
+          _c("h1", { staticClass: "text-blue-800 w-1/2 m-auto text-xl" }, [
+            _vm._v("HGw Channel")
+          ]),
+          _vm._v(" "),
+          _c(
+            "vc-donut",
+            {
+              attrs: {
+                size: 130,
+                sections: _vm.sections,
+                thickness: 50,
+                "has-legend": "",
+                "legend-placement": "left"
+              }
+            },
+            [_vm._v("46%")]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "bg-white shadow-xl p-4 mb-4" },
+        [
+          _c("h1", { staticClass: "text-blue-800 w-1/2 m-auto text-xl" }, [
+            _vm._v("HGw Channel")
+          ]),
+          _vm._v(" "),
+          _c(
+            "vc-donut",
+            {
+              attrs: {
+                size: 130,
+                sections: _vm.sections,
+                thickness: 50,
+                "has-legend": "",
+                "legend-placement": "left"
+              }
+            },
+            [_vm._v("46%")]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "bg-white shadow-xl p-4 mb-4" },
+        [
+          _c("h1", { staticClass: "text-blue-800 w-1/2 m-auto text-xl" }, [
+            _vm._v("HGw Channel")
+          ]),
+          _vm._v(" "),
+          _c(
+            "vc-donut",
+            {
+              attrs: {
+                size: 130,
+                sections: _vm.sections,
+                thickness: 50,
+                "has-legend": "",
+                "legend-placement": "left"
+              }
+            },
+            [_vm._v("46%")]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "bg-white shadow-xl p-4 mb-4" },
+        [
+          _c("h1", { staticClass: "text-blue-800 w-1/2 m-auto text-xl" }, [
+            _vm._v("HGw Channel")
+          ]),
+          _vm._v(" "),
+          _c(
+            "vc-donut",
+            {
+              attrs: {
+                size: 130,
+                sections: _vm.sections,
+                thickness: 50,
+                "has-legend": "",
+                "legend-placement": "left"
+              }
+            },
+            [_vm._v("46%")]
+          )
+        ],
+        1
+      )
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "lg:flex p-4" }, [
-      _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "flex bg-white shadow-xl justify-between rounded p-4 mb-4"
-          },
-          [
-            _c("span", { staticClass: "font-medium text-blue-800" }, [
-              _vm._v("Overall Status")
-            ]),
-            _vm._v(" "),
-            _c("span", { staticClass: "w-2/6 tag is-warning" }, [
-              _vm._v("Medium")
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "flex bg-white shadow-xl justify-between rounded p-4 mb-4"
-          },
-          [
-            _c("span", { staticClass: "font-medium text-blue-800" }, [
-              _vm._v("RSS Status")
-            ]),
-            _vm._v(" "),
-            _c("span", { staticClass: "w-2/6 tag is-danger" }, [_vm._v("Bad")])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "flex bg-white shadow-xl justify-between rounded p-4 mb-4"
-          },
-          [
-            _c("span", { staticClass: "font-medium text-blue-800" }, [
-              _vm._v("Client RSS Status")
-            ]),
-            _vm._v(" "),
-            _c("span", { staticClass: "w-2/6 tag is-warning" }, [
-              _vm._v("Medium")
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "flex bg-white shadow-xl justify-between rounded p-4 mb-4"
-          },
-          [
-            _c("span", { staticClass: "font-medium text-blue-800" }, [
-              _vm._v("Sticky Client Status")
-            ]),
-            _vm._v(" "),
-            _c("span", { staticClass: "w-2/6 tag is-success" }, [
-              _vm._v("Good")
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "flex bg-white shadow-xl justify-between rounded p-4"
-          },
-          [
-            _c("span", { staticClass: "font-medium text-blue-800" }, [
-              _vm._v("Interference status - overall")
-            ]),
-            _vm._v(" "),
-            _c("span", { staticClass: "w-2/6 tag is-warning" }, [
-              _vm._v("Medium")
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "flex bg-white shadow-xl justify-between rounded p-4"
-          },
-          [
-            _c("span", { staticClass: "font-medium text-blue-800" }, [
-              _vm._v("Interference status Co- Channel")
-            ]),
-            _vm._v(" "),
-            _c("span", { staticClass: "w-2/6 tag is-success" }, [
-              _vm._v("Good")
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "flex bg-white shadow-xl justify-between rounded p-4"
-          },
-          [
-            _c("span", { staticClass: "font-medium text-blue-800" }, [
-              _vm._v("Sticky Client Status")
-            ]),
-            _vm._v(" "),
-            _c("span", { staticClass: "w-2/6 tag is-danger" }, [_vm._v("Bad")])
-          ]
-        )
-      ]),
+    return _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "flex bg-white shadow-xl justify-between rounded p-4 mb-4"
+        },
+        [
+          _c("span", { staticClass: "font-medium text-blue-800" }, [
+            _vm._v("Overall Status")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "w-2/6 tag is-warning" }, [
+            _vm._v("Medium")
+          ])
+        ]
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
-        _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
-          _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
-            _vm._v("HGw Bitrate [Mbps]")
+      _c(
+        "div",
+        {
+          staticClass:
+            "flex bg-white shadow-xl justify-between rounded p-4 mb-4"
+        },
+        [
+          _c("span", { staticClass: "font-medium text-blue-800" }, [
+            _vm._v("RSS Status")
           ]),
           _vm._v(" "),
-          _c("table", { staticClass: "table w-full p-4" }, [
-            _c("thead", [
-              _c("tr", [
-                _c("th", [
-                  _c("abbr", { attrs: { title: "KPI Name" } }, [
-                    _vm._v("KPI Name")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("th", [
-                  _c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])
-                ]),
-                _vm._v(" "),
-                _c("th", [
-                  _c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])
-                ]),
-                _vm._v(" "),
-                _c("th", [
-                  _c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])
-                ]),
-                _vm._v(" "),
-                _c("th", [
-                  _c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("tbody", { staticClass: "bg-mainContent" }, [
-              _c("tr", { staticClass: "bg-mainContent" }, [
-                _c("td", [_vm._v("Bitrate")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("76")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("−49")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("17")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("sada>")])
-              ])
-            ])
+          _c("span", { staticClass: "w-2/6 tag is-danger" }, [_vm._v("Bad")])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "flex bg-white shadow-xl justify-between rounded p-4 mb-4"
+        },
+        [
+          _c("span", { staticClass: "font-medium text-blue-800" }, [
+            _vm._v("Client RSS Status")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "w-2/6 tag is-warning" }, [
+            _vm._v("Medium")
           ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "flex bg-white shadow-xl justify-between rounded p-4 mb-4"
+        },
+        [
+          _c("span", { staticClass: "font-medium text-blue-800" }, [
+            _vm._v("Sticky Client Status")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "w-2/6 tag is-success" }, [_vm._v("Good")])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "flex bg-white shadow-xl justify-between rounded p-4" },
+        [
+          _c("span", { staticClass: "font-medium text-blue-800" }, [
+            _vm._v("Interference status - overall")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "w-2/6 tag is-warning" }, [
+            _vm._v("Medium")
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "flex bg-white shadow-xl justify-between rounded p-4" },
+        [
+          _c("span", { staticClass: "font-medium text-blue-800" }, [
+            _vm._v("Interference status Co- Channel")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "w-2/6 tag is-success" }, [_vm._v("Good")])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "flex bg-white shadow-xl justify-between rounded p-4" },
+        [
+          _c("span", { staticClass: "font-medium text-blue-800" }, [
+            _vm._v("Sticky Client Status")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "w-2/6 tag is-danger" }, [_vm._v("Bad")])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "flex bg-white shadow-xl justify-between rounded p-4 mb-4 mt-4"
+        },
+        [
+          _c("span", { staticClass: "font-medium text-blue-800" }, [
+            _vm._v("Total number of clients")
+          ]),
+          _vm._v(" "),
+          _c("span", [_vm._v("231")])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "flex bg-white shadow-xl justify-between rounded p-4 mb-4 mt-4"
+        },
+        [
+          _c("span", { staticClass: "font-medium text-blue-800" }, [
+            _vm._v("Max number of concurent clients")
+          ]),
+          _vm._v(" "),
+          _c("span", [_vm._v("45")])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "flex bg-white shadow-xl justify-between rounded p-4" },
+        [
+          _c("span", { staticClass: "font-medium text-blue-800" }, [
+            _vm._v("HGw Number of clients")
+          ]),
+          _vm._v(" "),
+          _c("span", [_vm._v("57")])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "flex bg-white shadow-xl justify-between rounded p-4" },
+        [
+          _c("span", { staticClass: "font-medium text-blue-800" }, [
+            _vm._v("HGw Number of sticky clients")
+          ]),
+          _vm._v(" "),
+          _c("span", [_vm._v("22")])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "flex bg-white shadow-xl justify-between rounded p-4 mb-4"
+        },
+        [
+          _c("span", { staticClass: "font-medium text-blue-800" }, [
+            _vm._v("Data transfered [GB]")
+          ]),
+          _vm._v(" "),
+          _c("span", [_vm._v("120")])
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
+      _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
+        _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
+          _vm._v("HGw Bitrate [Mbps]")
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
-          _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
-            _vm._v("HGw Bitrate [Mbps]")
-          ]),
-          _vm._v(" "),
-          _c("table", { staticClass: "table w-full p-4" }, [
-            _c("thead", [
-              _c("tr", [
-                _c("th", [
-                  _c("abbr", { attrs: { title: "KPI Name" } }, [
-                    _vm._v("KPI Name")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("th", [
-                  _c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])
-                ]),
-                _vm._v(" "),
-                _c("th", [
-                  _c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])
-                ]),
-                _vm._v(" "),
-                _c("th", [
-                  _c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])
-                ]),
-                _vm._v(" "),
-                _c("th", [
-                  _c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])
+        _c("table", { staticClass: "table w-full p-4" }, [
+          _c("thead", [
+            _c("tr", [
+              _c("th", [
+                _c("abbr", { attrs: { title: "KPI Name" } }, [
+                  _vm._v("KPI Name")
                 ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("tbody", { staticClass: "bg-mainContent" }, [
-              _c("tr", { staticClass: "bg-mainContent" }, [
-                _c("td", [_vm._v("27")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("76")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("−49")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("17")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("sada>")])
+              ]),
+              _vm._v(" "),
+              _c("th", [
+                _c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])
+              ]),
+              _vm._v(" "),
+              _c("th", [
+                _c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])
+              ]),
+              _vm._v(" "),
+              _c("th", [
+                _c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])
+              ]),
+              _vm._v(" "),
+              _c("th", [
+                _c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])
               ])
             ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
-          _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
-            _vm._v("HGw Bitrate [Mbps]")
           ]),
           _vm._v(" "),
-          _c("table", { staticClass: "table w-full p-4" }, [
-            _c("thead", [
-              _c("tr", [
-                _c("th", [
-                  _c("abbr", { attrs: { title: "KPI Name" } }, [
-                    _vm._v("KPI Name")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("th", [
-                  _c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])
-                ]),
-                _vm._v(" "),
-                _c("th", [
-                  _c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])
-                ]),
-                _vm._v(" "),
-                _c("th", [
-                  _c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])
-                ]),
-                _vm._v(" "),
-                _c("th", [
-                  _c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("tbody", { staticClass: "bg-mainContent" }, [
-              _c("tr", { staticClass: "bg-mainContent" }, [
-                _c("td", [_vm._v("27")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("76")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("−49")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("17")]),
-                _vm._v(" "),
-                _c("td", [_vm._v("sada>")])
-              ])
+          _c("tbody", { staticClass: "bg-mainContent" }, [
+            _c("tr", { staticClass: "bg-mainContent" }, [
+              _c("td", [_vm._v("Bitrate")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("76")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("−49")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("17")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("sada>")])
             ])
           ])
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
-        _c("div", { staticClass: "bg-white shadow-xl" }, [
-          _vm._v("\n            aaa\n        ")
+      _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
+        _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
+          _vm._v("HGw Bitrate [Mbps]")
+        ]),
+        _vm._v(" "),
+        _c("table", { staticClass: "table w-full p-4" }, [
+          _c("thead", [
+            _c("tr", [
+              _c("th", [
+                _c("abbr", { attrs: { title: "KPI Name" } }, [
+                  _vm._v("KPI Name")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("th", [
+                _c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])
+              ]),
+              _vm._v(" "),
+              _c("th", [
+                _c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])
+              ]),
+              _vm._v(" "),
+              _c("th", [
+                _c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])
+              ]),
+              _vm._v(" "),
+              _c("th", [
+                _c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("tbody", { staticClass: "bg-mainContent" }, [
+            _c("tr", { staticClass: "bg-mainContent" }, [
+              _c("td", [_vm._v("27")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("76")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("−49")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("17")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("sada>")])
+            ])
+          ])
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
-        _c("div", { staticClass: "bg-white shadow-xl" }, [
-          _vm._v("\n            aaa\n        ")
+      _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
+        _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
+          _vm._v("HGw Bitrate [Mbps]")
+        ]),
+        _vm._v(" "),
+        _c("table", { staticClass: "table w-full p-4" }, [
+          _c("thead", [
+            _c("tr", [
+              _c("th", [
+                _c("abbr", { attrs: { title: "KPI Name" } }, [
+                  _vm._v("KPI Name")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("th", [
+                _c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])
+              ]),
+              _vm._v(" "),
+              _c("th", [
+                _c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])
+              ]),
+              _vm._v(" "),
+              _c("th", [
+                _c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])
+              ]),
+              _vm._v(" "),
+              _c("th", [
+                _c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("tbody", { staticClass: "bg-mainContent" }, [
+            _c("tr", { staticClass: "bg-mainContent" }, [
+              _c("td", [_vm._v("27")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("76")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("−49")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("17")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("sada>")])
+            ])
+          ])
         ])
       ])
     ])
