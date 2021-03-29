@@ -12,8 +12,10 @@
             <Header></Header>
 
             <div class="bg-mainContent p-4">
-                <div class="w-full h-5 mb-4 text-right">
-                    HGw Info
+                <div v-show="showTables || showCharts" class="w-full mb-4 text-right">
+                    <button class="lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none" >
+                        HGw Info
+                    </button>
                 </div>
 
                 <Charts v-show="showCharts"></Charts>

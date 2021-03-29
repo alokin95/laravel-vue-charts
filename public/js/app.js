@@ -42,6 +42,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -53092,9 +53094,30 @@ var render = function() {
           "div",
           { staticClass: "bg-mainContent p-4" },
           [
-            _c("div", { staticClass: "w-full h-5 mb-4 text-right" }, [
-              _vm._v("\n                HGw Info\n            ")
-            ]),
+            _c(
+              "div",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.showTables || _vm.showCharts,
+                    expression: "showTables || showCharts"
+                  }
+                ],
+                staticClass: "w-full mb-4 text-right"
+              },
+              [
+                _c(
+                  "button",
+                  {
+                    staticClass:
+                      "lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none"
+                  },
+                  [_vm._v("\n                    HGw Info\n                ")]
+                )
+              ]
+            ),
             _vm._v(" "),
             _c("Charts", {
               directives: [
