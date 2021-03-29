@@ -53489,33 +53489,37 @@ var render = function() {
                 "lg:flex p-4 lg:w-full w-2/3 text-center lg:justify-between m-auto"
             },
             [
-              _c("div", { staticClass: "flex-1" }, [
-                _c("div", { staticClass: "bg-white w-1/2 text-sm" }, [
-                  _c("p", { staticClass: "text-blue-800" }, [
-                    _vm._v("Currently viewing data:")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "flex justify-around" }, [
-                    _c("p", [_vm._v("MAC Address:")]),
-                    _c("span", { staticClass: "text-blue-800" }, [
-                      _vm._v(_vm._s(_vm.macAddressData.mac))
+              _c("div", { staticClass: "flex-1 lg:m-0 mb-4" }, [
+                _c(
+                  "div",
+                  { staticClass: "bg-white w-1/2 text-sm m-auto lg:m-0" },
+                  [
+                    _c("p", { staticClass: "text-blue-800" }, [
+                      _vm._v("Currently viewing data:")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "flex justify-around" }, [
+                      _c("p", [_vm._v("MAC Address:")]),
+                      _c("span", { staticClass: "text-blue-800" }, [
+                        _vm._v(_vm._s(_vm.macAddressData.mac))
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "flex justify-around" }, [
+                      _c("p", [_vm._v("ContractID:")]),
+                      _c("span", { staticClass: "text-blue-800" }, [
+                        _vm._v(
+                          _vm._s(_vm.macAddressData.contract.contract_number)
+                        )
+                      ])
                     ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "flex justify-around" }, [
-                    _c("p", [_vm._v("ContractID:")]),
-                    _c("span", { staticClass: "text-blue-800" }, [
-                      _vm._v(
-                        _vm._s(_vm.macAddressData.contract.contract_number)
-                      )
-                    ])
-                  ])
-                ])
+                  ]
+                )
               ]),
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "flex-1" },
+                { staticClass: "flex-1 lg:m-0 mb-4" },
                 [
                   _c(
                     "div",
@@ -53528,7 +53532,7 @@ var render = function() {
                         "div",
                         {
                           staticClass:
-                            "lg:w-1/3 p-2 border-sidebarLeft border rounded-l-2xl font-bold cursor-pointer",
+                            "lg:w-1/3 w-1/2 p-2 border-sidebarLeft border rounded-l-2xl font-bold cursor-pointer",
                           class: { "selected-period-filter": _vm.oneDay },
                           on: {
                             click: function($event) {
@@ -53543,7 +53547,7 @@ var render = function() {
                         "div",
                         {
                           staticClass:
-                            "lg:w-1/3 p-2 border-sidebarLeft border rounded-r-2xl font-bold cursor-pointer",
+                            "lg:w-1/3 w-1/2 p-2 border-sidebarLeft border rounded-r-2xl font-bold cursor-pointer",
                           class: { "selected-period-filter": _vm.sevenDays },
                           on: {
                             click: function($event) {
@@ -53576,22 +53580,26 @@ var render = function() {
                 1
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "flex-1" }, [
-                _c("div", { staticClass: " w-1/2 lg:w-full h-20" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass:
-                        "lg:float-right lg:w-1/3 text-center appearance-none border-2 border-black rounded-full w-1/2 py-2 px-4 text-loginButtonText leading-tight focus:outline-none",
-                      on: { click: _vm.resetFilters }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Reset filters\n                    "
-                      )
-                    ]
-                  )
-                ])
+              _c("div", { staticClass: "flex-1 lg:m-0 mb-4" }, [
+                _c(
+                  "div",
+                  { staticClass: " w-1/2 lg:w-full h-20 lg:m-0 m-auto" },
+                  [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "lg:float-right lg:w-1/3 text-center appearance-none border-2 border-black rounded-full w-1/2 py-2 px-4 text-loginButtonText leading-tight focus:outline-none",
+                        on: { click: _vm.resetFilters }
+                      },
+                      [
+                        _vm._v(
+                          "\n                        Reset filters\n                    "
+                        )
+                      ]
+                    )
+                  ]
+                )
               ])
             ]
           )
@@ -53602,12 +53610,12 @@ var render = function() {
             "form",
             {
               staticClass:
-                "lg:flex lg:w-1/2 w-2/3 text-center lg:justify-between"
+                "lg:flex lg:w-1/2 w-2/3 text-center lg:justify-between lg:m-0 m-auto"
             },
             [
               _c(
                 "div",
-                { staticClass: "lg:items-center mb-4 ml-4 lg:w-2/6 w-1/2" },
+                { staticClass: "lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2" },
                 [
                   _c("div", { staticClass: "relative" }, [
                     _c("input", {
@@ -53665,7 +53673,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "lg:items-center ml-4 mb-4 lg:w-2/6 w-1/2" },
+                { staticClass: "lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2" },
                 [
                   _c("div", { staticClass: "relative" }, [
                     _c("input", {
@@ -53833,7 +53841,7 @@ var render = function() {
                 "div",
                 {
                   staticClass:
-                    "lg:items-center mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative"
+                    "lg:ml-4 lg:mb-4 m-auto mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative"
                 },
                 [
                   _c("i", {
@@ -53869,7 +53877,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "lg:items-center mb-4 lg:w-2/6 w-1/2" },
+                { staticClass: "lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2" },
                 [
                   _c(
                     "button",

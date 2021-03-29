@@ -16,8 +16,8 @@
         <div class="lg:w-full mb-5 relative">
 
             <div v-if="filtersApplied" class="lg:flex p-4 lg:w-full w-2/3 text-center lg:justify-between m-auto">
-                <div class="flex-1">
-                    <div class="bg-white w-1/2 text-sm">
+                <div class="flex-1 lg:m-0 mb-4">
+                    <div class="bg-white w-1/2 text-sm m-auto lg:m-0">
                         <p class="text-blue-800">Currently viewing data:</p>
 
                         <div class="flex justify-around">
@@ -30,16 +30,16 @@
                     </div>
                 </div>
 
-                <div class="flex-1">
+                <div class="flex-1 lg:m-0 mb-4">
                     <div class="flex lg:w-full h-20 text-center p-4 justify-center">
-                        <div @click="changeDayFilters(1)" :class="{'selected-period-filter': oneDay }" class="lg:w-1/3 p-2 border-sidebarLeft border rounded-l-2xl font-bold cursor-pointer">1 Day</div>
-                        <div @click="changeDayFilters(7)" :class="{'selected-period-filter': sevenDays }" class="lg:w-1/3 p-2 border-sidebarLeft border rounded-r-2xl font-bold cursor-pointer">7 Days</div>
+                        <div @click="changeDayFilters(1)" :class="{'selected-period-filter': oneDay }" class="lg:w-1/3 w-1/2 p-2 border-sidebarLeft border rounded-l-2xl font-bold cursor-pointer">1 Day</div>
+                        <div @click="changeDayFilters(7)" :class="{'selected-period-filter': sevenDays }" class="lg:w-1/3 w-1/2 p-2 border-sidebarLeft border rounded-r-2xl font-bold cursor-pointer">7 Days</div>
                     </div>
                     <date-picker @change="setDateRange" v-model="range" lang="en" range type="date" format="YYY-MM-DD"></date-picker>
                 </div>
 
-                <div class="flex-1">
-                    <div class=" w-1/2 lg:w-full h-20">
+                <div class="flex-1 lg:m-0 mb-4">
+                    <div class=" w-1/2 lg:w-full h-20 lg:m-0 m-auto">
                         <button @click="resetFilters" class="lg:float-right lg:w-1/3 text-center appearance-none border-2 border-black rounded-full w-1/2 py-2 px-4 text-loginButtonText leading-tight focus:outline-none" >
                             Reset filters
                         </button>
@@ -47,9 +47,9 @@
                 </div>
             </div>
 
-            <form v-if="!filtersApplied" class="lg:flex lg:w-1/2 w-2/3 text-center lg:justify-between">
+            <form v-if="!filtersApplied" class="lg:flex lg:w-1/2 w-2/3 text-center lg:justify-between lg:m-0 m-auto">
 
-                <div class="lg:items-center mb-4 ml-4 lg:w-2/6 w-1/2">
+                <div class="lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2">
                     <div class="relative">
                         <input v-validate="{ required: true, regex: regex.macAddress }" name="Mac Address" v-model="filters.macAddress" class="text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="macAddress" type="text" placeholder="Mac: address">
                         <div class="text-sm text-red-500">
@@ -58,7 +58,7 @@
                     </div>
                 </div>
 
-                <div class="lg:items-center ml-4 mb-4 lg:w-2/6 w-1/2">
+                <div class="lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2">
                     <div class="relative">
                         <input @keyup="contractSearch" @focus="contractSearch" v-model="filters.contractId" class="text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="contractId" type="text" placeholder="Contract ID">
                         <div class="absolute h-28">
@@ -92,12 +92,12 @@
                     </div>
                 </div>
 
-                <div class="lg:items-center mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative">
+                <div class="lg:ml-4 lg:mb-4 m-auto mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative">
                     <i v-show="isSpinning"class="fa fa-refresh fa-spin lg:float-right absolute" style="font-size:24px"></i>
                     <i @click="emptyFilters" v-show="!isSpinning" class="fa fa-refresh lg:float-right absolute cursor-pointer" style="font-size:24px"></i>
                 </div>
 
-                <div class="lg:items-center mb-4 lg:w-2/6 w-1/2">
+                <div class="lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2">
                     <button @click="applyFilters" class="text-center shadow-xl bg-loginButton appearance-none border-2 border-loginButton rounded-full w-full py-2 px-4 text-black leading-tight focus:outline-none" type="button">
                         Apply filters
                     </button>
