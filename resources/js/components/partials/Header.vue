@@ -58,7 +58,7 @@
                     </div>
                 </div>
 
-                <div class="lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2">
+                <div class="lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2 lg:mt-0">
                     <div class="relative">
                         <input @keyup="contractSearch" @focus="contractSearch" v-model="filters.contractId" class="text-center shadow-xl bg-transparent appearance-none border-2 border-loginBorders rounded-full w-full py-2 px-4 text-loginInputText leading-tight focus:outline-none" id="contractId" type="text" placeholder="Contract ID">
                         <div class="absolute h-28">
@@ -92,12 +92,12 @@
                     </div>
                 </div>
 
-                <div class="lg:ml-4 lg:mb-4 m-auto mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative">
+                <div class="lg:ml-4 lg:mb-4 m-auto mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative lg:mt-0">
                     <i v-show="isSpinning"class="fa fa-refresh fa-spin lg:float-right absolute" style="font-size:24px"></i>
                     <i @click="emptyFilters" v-show="!isSpinning" class="fa fa-refresh lg:float-right absolute cursor-pointer" style="font-size:24px"></i>
                 </div>
 
-                <div class="lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2">
+                <div class="lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2 lg:mt-0">
                     <button @click="applyFilters" class="text-center shadow-xl bg-loginButton appearance-none border-2 border-loginButton rounded-full w-full py-2 px-4 text-black leading-tight focus:outline-none" type="button">
                         Apply filters
                     </button>

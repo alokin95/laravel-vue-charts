@@ -54783,7 +54783,10 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2" },
+                {
+                  staticClass:
+                    "lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2 lg:mt-0"
+                },
                 [
                   _c("div", { staticClass: "relative" }, [
                     _c("input", {
@@ -54951,7 +54954,7 @@ var render = function() {
                 "div",
                 {
                   staticClass:
-                    "lg:ml-4 lg:mb-4 m-auto mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative"
+                    "lg:ml-4 lg:mb-4 m-auto mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative lg:mt-0"
                 },
                 [
                   _c("i", {
@@ -54987,7 +54990,10 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2" },
+                {
+                  staticClass:
+                    "lg:ml-4 lg:mb-4 m-auto mb-4 lg:w-2/6 w-1/2 lg:mt-0"
+                },
                 [
                   _c(
                     "button",
