@@ -1,8 +1,8 @@
 <template>
-    <div class="lg:flex min-h-full bg-mainContent">
+    <div class="lg:flex lg:min-h-full bg-mainContent">
 
         <!--    Left start   -->
-        <div class="w-full bg-sidebarLeft flex-1 min-h-screen lg:p-0 p-6">
+        <div class="w-full bg-sidebarLeft flex-1 lg:min-h-screen lg:p-0 p-6">
 
         </div>
         <!--    Left end   -->
