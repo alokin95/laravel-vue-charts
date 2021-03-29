@@ -57,7 +57,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       showCharts: false,
-      showTables: false
+      showTables: true
     };
   },
   mounted: function mounted() {
@@ -602,6 +602,137 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -53991,9 +54122,288 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("Tables")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "lg:flex p-4" }, [
+      _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "flex bg-white shadow-xl justify-between rounded p-4 mb-4"
+          },
+          [
+            _c("span", { staticClass: "font-medium text-blue-800" }, [
+              _vm._v("Overall Status")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "w-2/6 tag is-warning" }, [
+              _vm._v("Medium")
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "flex bg-white shadow-xl justify-between rounded p-4 mb-4"
+          },
+          [
+            _c("span", { staticClass: "font-medium text-blue-800" }, [
+              _vm._v("RSS Status")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "w-2/6 tag is-danger" }, [_vm._v("Bad")])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "flex bg-white shadow-xl justify-between rounded p-4 mb-4"
+          },
+          [
+            _c("span", { staticClass: "font-medium text-blue-800" }, [
+              _vm._v("Client RSS Status")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "w-2/6 tag is-warning" }, [
+              _vm._v("Medium")
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "flex bg-white shadow-xl justify-between rounded p-4 mb-4"
+          },
+          [
+            _c("span", { staticClass: "font-medium text-blue-800" }, [
+              _vm._v("Sticky Client Status")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "w-2/6 tag is-success" }, [
+              _vm._v("Good")
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "flex bg-white shadow-xl justify-between rounded p-4"
+          },
+          [
+            _c("span", { staticClass: "font-medium text-blue-800" }, [
+              _vm._v("Interference status - overall")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "w-2/6 tag is-warning" }, [
+              _vm._v("Medium")
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "flex bg-white shadow-xl justify-between rounded p-4"
+          },
+          [
+            _c("span", { staticClass: "font-medium text-blue-800" }, [
+              _vm._v("Interference status Co- Channel")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "w-2/6 tag is-success" }, [
+              _vm._v("Good")
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "flex bg-white shadow-xl justify-between rounded p-4"
+          },
+          [
+            _c("span", { staticClass: "font-medium text-blue-800" }, [
+              _vm._v("Sticky Client Status")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "w-2/6 tag is-danger" }, [_vm._v("Bad")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
+        _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
+          _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
+            _vm._v("HGw Bitrate [Mbps]")
+          ]),
+          _vm._v(" "),
+          _c("table", { staticClass: "table w-full p-4" }, [
+            _c("thead", [
+              _c("tr", [
+                _c("th", [
+                  _c("abbr", { attrs: { title: "KPI Name" } }, [
+                    _vm._v("KPI Name")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("th", [
+                  _c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])
+                ]),
+                _vm._v(" "),
+                _c("th", [
+                  _c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])
+                ]),
+                _vm._v(" "),
+                _c("th", [
+                  _c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])
+                ]),
+                _vm._v(" "),
+                _c("th", [
+                  _c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", { staticClass: "bg-mainContent" }, [
+              _c("tr", { staticClass: "bg-mainContent" }, [
+                _c("td", [_vm._v("Bitrate")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("76")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("−49")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("17")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("sada>")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
+          _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
+            _vm._v("HGw Bitrate [Mbps]")
+          ]),
+          _vm._v(" "),
+          _c("table", { staticClass: "table w-full p-4" }, [
+            _c("thead", [
+              _c("tr", [
+                _c("th", [
+                  _c("abbr", { attrs: { title: "KPI Name" } }, [
+                    _vm._v("KPI Name")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("th", [
+                  _c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])
+                ]),
+                _vm._v(" "),
+                _c("th", [
+                  _c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])
+                ]),
+                _vm._v(" "),
+                _c("th", [
+                  _c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])
+                ]),
+                _vm._v(" "),
+                _c("th", [
+                  _c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", { staticClass: "bg-mainContent" }, [
+              _c("tr", { staticClass: "bg-mainContent" }, [
+                _c("td", [_vm._v("27")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("76")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("−49")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("17")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("sada>")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
+          _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
+            _vm._v("HGw Bitrate [Mbps]")
+          ]),
+          _vm._v(" "),
+          _c("table", { staticClass: "table w-full p-4" }, [
+            _c("thead", [
+              _c("tr", [
+                _c("th", [
+                  _c("abbr", { attrs: { title: "KPI Name" } }, [
+                    _vm._v("KPI Name")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("th", [
+                  _c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])
+                ]),
+                _vm._v(" "),
+                _c("th", [
+                  _c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])
+                ]),
+                _vm._v(" "),
+                _c("th", [
+                  _c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])
+                ]),
+                _vm._v(" "),
+                _c("th", [
+                  _c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("tbody", { staticClass: "bg-mainContent" }, [
+              _c("tr", { staticClass: "bg-mainContent" }, [
+                _c("td", [_vm._v("27")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("76")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("−49")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("17")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("sada>")])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
+        _c("div", { staticClass: "bg-white shadow-xl" }, [
+          _vm._v("\n            aaa\n        ")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
+        _c("div", { staticClass: "bg-white shadow-xl" }, [
+          _vm._v("\n            aaa\n        ")
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 

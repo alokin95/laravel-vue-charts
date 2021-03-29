@@ -44,7 +44,7 @@ export default {
     data() {
         return {
             showCharts: false,
-            showTables: false
+            showTables: true
         }
     },
 
