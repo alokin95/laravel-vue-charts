@@ -34,9 +34,9 @@ class ReportsController extends Controller
         return new JsonResponse($contracts);
     }
 
-    public function getReports(Request $request, $macAddress)
+    public function getReports($macAddress, $range)
     {
-        $reports = $this->macAddressService->getReportsByMacAddress($macAddress);
+        $reports = $this->macAddressService->getReportsByMacAddress($macAddress, $range);
 
         return new JsonResponse($reports);
     }

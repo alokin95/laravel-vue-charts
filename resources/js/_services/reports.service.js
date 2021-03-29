@@ -14,8 +14,8 @@ function getContracts(contractId)
         .then(handleResponse);
 }
 
-function getReports(macAddress)
+function getReports(macAddress, queryString)
 {
-    return fetch(Config.apiUrl + 'api/reports/' + macAddress, requestOptions.get())
+    return fetch(Config.apiUrl + 'api/reports/' + macAddress + '/' + queryString, requestOptions.get())
         .then(handleResponse);
 }

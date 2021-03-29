@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import { router } from './_helpers/router';
 import VeeValidate from 'vee-validate';
-
+import 'vue2-datepicker/index.css';
 //Main component
 import App from "./components/App";
 

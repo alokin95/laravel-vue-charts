@@ -32,9 +32,10 @@
 
                 <div class="flex-1">
                     <div class="flex lg:w-full h-20 text-center p-4 justify-center">
-                        <div class="selected-period-filter lg:w-1/3 p-2 border-sidebarLeft border rounded-l-2xl font-bold cursor-pointer">1 Day</div>
-                        <div class="lg:w-1/3 p-2 border-sidebarLeft border rounded-r-2xl font-bold cursor-pointer">7 Days</div>
+                        <div @click="changeDayFilters(1)" :class="{'selected-period-filter': oneDay }" class="lg:w-1/3 p-2 border-sidebarLeft border rounded-l-2xl font-bold cursor-pointer">1 Day</div>
+                        <div @click="changeDayFilters(7)" :class="{'selected-period-filter': sevenDays }" class="lg:w-1/3 p-2 border-sidebarLeft border rounded-r-2xl font-bold cursor-pointer">7 Days</div>
                     </div>
+                    <date-picker v-model="range" lang="en" range type="date" format="YYY-MM-DD"></date-picker>
                 </div>
 
                 <div class="flex-1">
@@ -113,19 +114,26 @@
                 </ul>
             </div>
         </div>
-
     </div>
 </template>
 
 <script>
 import {authenticationService} from "../../_services/authentication.service";
 import {reportsService} from "../../_services/reports.service";
+import DatePicker from 'vue2-datepicker'
 
 export default {
     name: "Header",
 
+    components: {
+        DatePicker
+    },
+
     data() {
         return {
+            oneDay: true,
+            sevenDays: false,
+            range: '',
             filtersApplied: false,
             showGraphs: false,
             showTables: false,
@@ -154,7 +162,19 @@ export default {
             }
             this.isSpinning = true;
 
-            reportsService.getReports(this.filters.macAddress)
+            let queryString = '1d';
+
+            if (this.sevenDays) {
+                queryString = '7d';
+            }
+
+            // if (this.range.length === 2) {
+            //     if (this.range[0] && this.range[1]) {
+            //         queryString = ''
+            //     }
+            // }
+
+            reportsService.getReports(this.filters.macAddress, queryString)
                 .then(response => {
                     Event.$emit('report-created', response);
                     this.macAddressData = response;
@@ -225,6 +245,25 @@ export default {
             this.showTables = false;
             this.showGraphs = true
             Event.$emit('show-charts');
+        },
+
+        changeDayFilters(days) {
+            if (days === 1) {
+                if (this.oneDay) {
+                    return;
+                }
+                this.oneDay = true;
+                this.sevenDays = false;
+                return this.applyFilters();
+            }
+
+            if (this.sevenDays) {
+                return;
+            }
+            this.sevenDays = true;
+            this.oneDay = false;
+            return this.applyFilters();
+
         }
     }
 }

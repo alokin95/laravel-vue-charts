@@ -14,19 +14,25 @@ class MacAddressRepository extends BaseRepository implements MacAddressRepositor
         parent::__construct($macAddress);
     }
 
-    public function getReportsByMacAddress(string $macAddress)
+    public function getReportsByMacAddress(string $macAddress, $range)
     {
+        $rangeCondition = '-24 hours';
+
+        if ($range === '7d') {
+            $rangeCondition = '-7 days';
+        }
+
         return $this->model
                 ->with(
                 [
-                    'rss' => function($query) {
-                        $query->where('created_at', '>', Carbon::parse('-24 hours'));
+                    'rss' => function($query) use ($rangeCondition) {
+                        $query->where('created_at', '>', Carbon::parse($rangeCondition));
                     },
-                    'interference' => function($query) {
-                        $query->where('created_at', '>', Carbon::parse('-24 hours'));
+                    'interference' => function($query) use ($rangeCondition) {
+                        $query->where('created_at', '>', Carbon::parse($rangeCondition));
                     },
-                    'bitrate' => function($query) {
-                        $query->where('created_at', '>', Carbon::parse('-24 hours'));
+                    'bitrate' => function($query) use ($rangeCondition) {
+                        $query->where('created_at', '>', Carbon::parse($rangeCondition));
                     },
                     'contract'
                 ])
