@@ -21,5 +21,6 @@ Route::middleware('jwt.auth')->group(function()
 {
     Route::get('/contracts/{contractId}', [ReportsController::class, 'contractSearch']);
     Route::get('/reports/{macAddress}/{range}', [ReportsController::class, 'getReports']);
+    Route::get('/reports/{macAddress}/{startDate}/{endDate}', [ReportsController::class, 'getReportsWithDateRange']);
 });
 

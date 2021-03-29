@@ -35,7 +35,7 @@
                         <div @click="changeDayFilters(1)" :class="{'selected-period-filter': oneDay }" class="lg:w-1/3 p-2 border-sidebarLeft border rounded-l-2xl font-bold cursor-pointer">1 Day</div>
                         <div @click="changeDayFilters(7)" :class="{'selected-period-filter': sevenDays }" class="lg:w-1/3 p-2 border-sidebarLeft border rounded-r-2xl font-bold cursor-pointer">7 Days</div>
                     </div>
-                    <date-picker v-model="range" lang="en" range type="date" format="YYY-MM-DD"></date-picker>
+                    <date-picker @change="setDateRange" v-model="range" lang="en" range type="date" format="YYY-MM-DD"></date-picker>
                 </div>
 
                 <div class="flex-1">
@@ -94,7 +94,7 @@
 
                 <div class="lg:items-center mb-4 p-4 lg:p-0 lg:w-1/6 w-1/2 relative">
                     <i v-show="isSpinning"class="fa fa-refresh fa-spin lg:float-right absolute" style="font-size:24px"></i>
-                    <i @click="emptyFilters" v-show="!isSpinning" class="fa fa-refresh lg:float-right absolute" style="font-size:24px"></i>
+                    <i @click="emptyFilters" v-show="!isSpinning" class="fa fa-refresh lg:float-right absolute cursor-pointer" style="font-size:24px"></i>
                 </div>
 
                 <div class="lg:items-center mb-4 lg:w-2/6 w-1/2">
@@ -167,12 +167,6 @@ export default {
             if (this.sevenDays) {
                 queryString = '7d';
             }
-
-            // if (this.range.length === 2) {
-            //     if (this.range[0] && this.range[1]) {
-            //         queryString = ''
-            //     }
-            // }
 
             reportsService.getReports(this.filters.macAddress, queryString)
                 .then(response => {
@@ -248,6 +242,7 @@ export default {
         },
 
         changeDayFilters(days) {
+            this.range = '';
             if (days === 1) {
                 if (this.oneDay) {
                     return;
@@ -264,7 +259,33 @@ export default {
             this.oneDay = false;
             return this.applyFilters();
 
-        }
+        },
+
+        setDateRange() {
+            this.oneDay = false;
+            this.sevenDays = false;
+
+            let range = [];
+
+            if (this.range.length === 2) {
+                if (this.range[0] && this.range[1]) {
+                    range.push(Date.parse(this.range[0]));
+                    range.push(Date.parse(this.range[1]));
+                }
+            }
+
+            reportsService.getReportsWithDateRange(this.filters.macAddress, range)
+                .then(response => {
+                    Event.$emit('report-created', response);
+                    this.macAddressData = response;
+                    this.filtersApplied = true;
+                    this.showGraphs = true;
+                    this.showTables = false;
+                })
+                .catch(err => {
+                    alert("No reports found.")
+                })
+        },
     }
 }
 </script>

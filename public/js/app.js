@@ -235,7 +235,7 @@ __webpack_require__.r(__webpack_exports__);
     fillChartData: function fillChartData(data, label) {
       return {
         labels: data.map(function (d) {
-          return d.created_at;
+          return Date.parse(d.created_at);
         }),
         datasets: [{
           label: label,
@@ -429,12 +429,7 @@ __webpack_require__.r(__webpack_exports__);
 
       if (this.sevenDays) {
         queryString = '7d';
-      } // if (this.range.length === 2) {
-      //     if (this.range[0] && this.range[1]) {
-      //         queryString = ''
-      //     }
-      // }
-
+      }
 
       _services_reports_service__WEBPACK_IMPORTED_MODULE_1__.reportsService.getReports(this.filters.macAddress, queryString).then(function (response) {
         Event.$emit('report-created', response);
@@ -500,6 +495,8 @@ __webpack_require__.r(__webpack_exports__);
       Event.$emit('show-charts');
     },
     changeDayFilters: function changeDayFilters(days) {
+      this.range = '';
+
       if (days === 1) {
         if (this.oneDay) {
           return;
@@ -517,6 +514,30 @@ __webpack_require__.r(__webpack_exports__);
       this.sevenDays = true;
       this.oneDay = false;
       return this.applyFilters();
+    },
+    setDateRange: function setDateRange() {
+      var _this3 = this;
+
+      this.oneDay = false;
+      this.sevenDays = false;
+      var range = [];
+
+      if (this.range.length === 2) {
+        if (this.range[0] && this.range[1]) {
+          range.push(Date.parse(this.range[0]));
+          range.push(Date.parse(this.range[1]));
+        }
+      }
+
+      _services_reports_service__WEBPACK_IMPORTED_MODULE_1__.reportsService.getReportsWithDateRange(this.filters.macAddress, range).then(function (response) {
+        Event.$emit('report-created', response);
+        _this3.macAddressData = response;
+        _this3.filtersApplied = true;
+        _this3.showGraphs = true;
+        _this3.showTables = false;
+      })["catch"](function (err) {
+        alert("No reports found.");
+      });
     }
   }
 });
@@ -814,7 +835,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var reportsService = {
   getContracts: getContracts,
-  getReports: getReports
+  getReports: getReports,
+  getReportsWithDateRange: getReportsWithDateRange
 };
 
 function getContracts(contractId) {
@@ -823,6 +845,10 @@ function getContracts(contractId) {
 
 function getReports(macAddress, queryString) {
   return fetch(_config_config__WEBPACK_IMPORTED_MODULE_0__.Config.apiUrl + 'api/reports/' + macAddress + '/' + queryString, _helpers_request_options__WEBPACK_IMPORTED_MODULE_1__.requestOptions.get()).then(_helpers_handle_response__WEBPACK_IMPORTED_MODULE_2__.handleResponse);
+}
+
+function getReportsWithDateRange(macAddress, range) {
+  return fetch(_config_config__WEBPACK_IMPORTED_MODULE_0__.Config.apiUrl + 'api/reports/' + macAddress + '/' + range[0] + '/' + range[1], _helpers_request_options__WEBPACK_IMPORTED_MODULE_1__.requestOptions.get()).then(_helpers_handle_response__WEBPACK_IMPORTED_MODULE_2__.handleResponse);
 }
 
 /***/ }),
@@ -53517,6 +53543,7 @@ var render = function() {
                       type: "date",
                       format: "YYY-MM-DD"
                     },
+                    on: { change: _vm.setDateRange },
                     model: {
                       value: _vm.range,
                       callback: function($$v) {
@@ -53796,7 +53823,8 @@ var render = function() {
                         expression: "!isSpinning"
                       }
                     ],
-                    staticClass: "fa fa-refresh lg:float-right absolute",
+                    staticClass:
+                      "fa fa-refresh lg:float-right absolute cursor-pointer",
                     staticStyle: { "font-size": "24px" },
                     on: { click: _vm.emptyFilters }
                   })

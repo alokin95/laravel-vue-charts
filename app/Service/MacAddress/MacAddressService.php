@@ -38,4 +38,22 @@ class MacAddressService implements MacAddressServiceInterface
 
         return $reports;
     }
+
+    public function getReportsByMacAddressWithDateRange(string $macAddress, $startMiliseconds, $endMiliseconds)
+    {
+        $startDate = date('d-m-Y', $startMiliseconds / 1000);
+        $endDate = date('d-m-Y', $endMiliseconds / 1000);
+
+        $startDate = new \DateTime($startDate);
+        $startDate->add(new \DateInterval('P1D'));
+
+        $endDate = new \DateTime($endDate);
+        $endDate->add(new \DateInterval('P1D'));
+
+        $range['start'] = $startDate;
+        $range['end'] = $endDate;
+
+        return $this->macAddressRepository->getReportsByMacAddressWithDateRange($macAddress, $range);
+
+    }
 }

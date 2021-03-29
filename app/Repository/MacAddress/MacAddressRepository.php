@@ -41,4 +41,41 @@ class MacAddressRepository extends BaseRepository implements MacAddressRepositor
                 ])
                 ->first();
     }
+
+    public function getReportsByMacAddressWithDateRange(string $macAddress, $range)
+    {
+        return $this->model
+            ->with(
+                [
+                    'rss' => function($query) use ($range) {
+                        $query->where(
+                            [
+                                ['created_at', '>', Carbon::parse($range['start'])],
+                                ['created_at', '<', Carbon::parse($range['end'])],
+                            ]
+                        );
+                    },
+                    'interference' => function($query) use ($range) {
+                        $query->where(
+                            [
+                                ['created_at', '>', Carbon::parse($range['start'])],
+                                ['created_at', '<', Carbon::parse($range['end'])],
+                            ]
+                        );
+                    },
+                    'bitrate' => function($query) use ($range) {
+                        $query->where(
+                            [
+                                ['created_at', '>', Carbon::parse($range['start'])],
+                                ['created_at', '<', Carbon::parse($range['end'])],
+                            ]
+                        );
+                    },
+                    'contract'
+                ])
+            ->where([
+                'mac'   => $macAddress,
+            ])
+            ->first();
+    }
 }

@@ -59,7 +59,7 @@ export default {
 
         fillChartData (data, label) {
             return {
-                labels: data.map(d => d.created_at),
+                labels: data.map(d => Date.parse(d.created_at)),
                 datasets: [
                     {
                         label: label,

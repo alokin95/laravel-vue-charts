@@ -6,6 +6,7 @@ use App\Repository\Contract\ContractRepository;
 use App\Repository\Contract\ContractRepositoryInterface;
 use App\Service\Contract\ContractServiceInterface;
 use App\Service\MacAddress\MacAddressServiceInterface;
+use Carbon\Carbon;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -38,6 +39,17 @@ class ReportsController extends Controller
     {
         $reports = $this->macAddressService->getReportsByMacAddress($macAddress, $range);
 
+        return new JsonResponse($reports);
+    }
+
+    public function getReportsWithDateRange($macAddress, $start, $end)
+    {
+        $reports = $this->macAddressService->getReportsByMacAddressWithDateRange($macAddress, $start, $end);
+
+//        $created_at = new Carbon($reports->rss[0]->created_at);
+//
+////        $createdAt = new Carbon()->toDateTimeString();
+//        dd($created_at->toDateTimeString());
         return new JsonResponse($reports);
     }
 }
