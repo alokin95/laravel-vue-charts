@@ -63,6 +63,11 @@ export default {
             self.showCharts = true;
             self.showTables = false;
         })
+
+        Event.$on('reset-filters', function () {
+            self.showCharts = false;
+            self.showTables = false;
+        })
     }
 }
 </script>

@@ -73,6 +73,10 @@ __webpack_require__.r(__webpack_exports__);
       self.showCharts = true;
       self.showTables = false;
     });
+    Event.$on('reset-filters', function () {
+      self.showCharts = false;
+      self.showTables = false;
+    });
   }
 });
 
@@ -450,6 +454,18 @@ __webpack_require__.r(__webpack_exports__);
     emptyFilters: function emptyFilters() {
       this.filters.macAddress = "";
       this.filters.contractId = "";
+    },
+    resetFilters: function resetFilters() {
+      this.macAddressData = {};
+      this.range = '';
+      this.filtersApplied = false;
+      this.oneDay = true;
+      this.sevenDays = false;
+      this.emptyFilters();
+      this.showTables = false;
+      this.showGraphs = false;
+      this.showSuggestedContracts = false;
+      Event.$emit('reset-filters');
     },
     contractSearch: function contractSearch() {
       var _this2 = this;
@@ -53560,7 +53576,23 @@ var render = function() {
                 1
               ),
               _vm._v(" "),
-              _vm._m(1)
+              _c("div", { staticClass: "flex-1" }, [
+                _c("div", { staticClass: " w-1/2 lg:w-full h-20" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass:
+                        "lg:float-right lg:w-1/3 text-center appearance-none border-2 border-black rounded-full w-1/2 py-2 px-4 text-loginButtonText leading-tight focus:outline-none",
+                      on: { click: _vm.resetFilters }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Reset filters\n                    "
+                      )
+                    ]
+                  )
+                ])
+              ])
             ]
           )
         : _vm._e(),
@@ -53903,27 +53935,6 @@ var staticRenderFns = [
         },
         [_vm._v("Report")]
       )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "flex-1" }, [
-      _c("div", { staticClass: " w-1/2 lg:w-full h-20" }, [
-        _c(
-          "button",
-          {
-            staticClass:
-              "lg:float-right lg:w-1/3 text-center appearance-none border-2 border-black rounded-full w-1/2 py-2 px-4 text-loginButtonText leading-tight focus:outline-none"
-          },
-          [
-            _vm._v(
-              "\n                        Reset filters\n                    "
-            )
-          ]
-        )
-      ])
     ])
   }
 ]

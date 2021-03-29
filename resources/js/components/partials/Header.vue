@@ -40,7 +40,7 @@
 
                 <div class="flex-1">
                     <div class=" w-1/2 lg:w-full h-20">
-                        <button class="lg:float-right lg:w-1/3 text-center appearance-none border-2 border-black rounded-full w-1/2 py-2 px-4 text-loginButtonText leading-tight focus:outline-none" >
+                        <button @click="resetFilters" class="lg:float-right lg:w-1/3 text-center appearance-none border-2 border-black rounded-full w-1/2 py-2 px-4 text-loginButtonText leading-tight focus:outline-none" >
                             Reset filters
                         </button>
                     </div>
@@ -192,6 +192,19 @@ export default {
         emptyFilters() {
             this.filters.macAddress = "";
             this.filters.contractId = "";
+        },
+
+        resetFilters() {
+            this.macAddressData = {};
+            this.range = '';
+            this.filtersApplied = false;
+            this.oneDay = true;
+            this.sevenDays = false;
+            this.emptyFilters();
+            this.showTables = false;
+            this.showGraphs = false;
+            this.showSuggestedContracts = false;
+            Event.$emit('reset-filters');
         },
 
         contractSearch() {
