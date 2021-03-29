@@ -1880,6 +1880,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -56397,9 +56402,44 @@ var render = function() {
                     "button",
                     {
                       staticClass:
-                        "lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none"
+                        "lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none",
+                      on: {
+                        click: function($event) {
+                          _vm.showInfo = !_vm.showInfo
+                        }
+                      }
                     },
                     [_vm._v("\n                    HGw Info\n                ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "relative w-1/12 lg:float-right text-center appearance-none w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none"
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          directives: [
+                            {
+                              name: "show",
+                              rawName: "v-show",
+                              value: _vm.showInfo,
+                              expression: "showInfo"
+                            }
+                          ],
+                          staticClass:
+                            "absolute w-full h-60 bg-white z-50 right-0"
+                        },
+                        [
+                          _vm._v(
+                            "\n                        Mac info\n                    "
+                          )
+                        ]
+                      )
+                    ]
                   )
                 ]
               ),

@@ -16,9 +16,14 @@
 
             <div class="bg-mainContent p-4">
                 <div v-show="showTables || showCharts" class="w-full mb-4 text-right">
-                    <button class="lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none" >
+                    <button @click="showInfo = !showInfo" class="lg:w-1/12 lg:float-right text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none" >
                         HGw Info
                     </button>
+                    <div class="relative w-1/12 lg:float-right text-center appearance-none w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none">
+                        <div v-show="showInfo" class="absolute w-full h-60 bg-white z-50 right-0">
+                            Mac info
+                        </div>
+                    </div>
                 </div>
 
                 <Charts v-show="showCharts"></Charts>
