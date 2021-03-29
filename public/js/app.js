@@ -61,7 +61,9 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var self = this;
     Event.$on('report-created', function (data) {
-      self.showCharts = true;
+      if (!self.showCharts && !self.showTables) {
+        self.showCharts = true;
+      }
     });
     Event.$on('show-tables', function () {
       self.showTables = true;
@@ -432,11 +434,7 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       _services_reports_service__WEBPACK_IMPORTED_MODULE_1__.reportsService.getReports(this.filters.macAddress, queryString).then(function (response) {
-        Event.$emit('report-created', response);
-        _this.macAddressData = response;
-        _this.filtersApplied = true;
-        _this.showGraphs = true;
-        _this.showTables = false;
+        _this.setData(response);
       })["catch"](function (err) {
         alert("No reports found.");
       });
@@ -530,14 +528,20 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       _services_reports_service__WEBPACK_IMPORTED_MODULE_1__.reportsService.getReportsWithDateRange(this.filters.macAddress, range).then(function (response) {
-        Event.$emit('report-created', response);
-        _this3.macAddressData = response;
-        _this3.filtersApplied = true;
-        _this3.showGraphs = true;
-        _this3.showTables = false;
+        _this3.setData(response);
       })["catch"](function (err) {
         alert("No reports found.");
       });
+    },
+    setData: function setData(response) {
+      Event.$emit('report-created', response);
+      this.macAddressData = response;
+      this.filtersApplied = true;
+
+      if (!this.showGraphs && !this.showTables) {
+        this.showGraphs = true;
+        this.showTables = false;
+      }
     }
   }
 });

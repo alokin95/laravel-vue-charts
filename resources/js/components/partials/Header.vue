@@ -170,11 +170,7 @@ export default {
 
             reportsService.getReports(this.filters.macAddress, queryString)
                 .then(response => {
-                    Event.$emit('report-created', response);
-                    this.macAddressData = response;
-                    this.filtersApplied = true;
-                    this.showGraphs = true;
-                    this.showTables = false;
+                    this.setData(response);
                 })
                 .catch(err => {
                     alert("No reports found.")
@@ -276,16 +272,22 @@ export default {
 
             reportsService.getReportsWithDateRange(this.filters.macAddress, range)
                 .then(response => {
-                    Event.$emit('report-created', response);
-                    this.macAddressData = response;
-                    this.filtersApplied = true;
-                    this.showGraphs = true;
-                    this.showTables = false;
+                    this.setData(response)
                 })
                 .catch(err => {
                     alert("No reports found.")
                 })
         },
+
+        setData(response) {
+            Event.$emit('report-created', response);
+            this.macAddressData = response;
+            this.filtersApplied = true;
+            if (!this.showGraphs && !this.showTables) {
+                this.showGraphs = true;
+                this.showTables = false;
+            }
+        }
     }
 }
 </script>

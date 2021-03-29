@@ -49,7 +49,9 @@ export default {
     mounted() {
         let self = this;
         Event.$on('report-created', function (data) {
-            self.showCharts = true;
+            if (!self.showCharts && !self.showTables) {
+                self.showCharts = true;
+            }
         })
 
         Event.$on('show-tables', function () {
