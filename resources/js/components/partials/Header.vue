@@ -36,6 +36,11 @@
                         <div @click="changeDayFilters(7)" :class="{'selected-period-filter': sevenDays }" class="lg:w-1/3 w-1/2 p-2 border-sidebarLeft border rounded-r-2xl font-bold cursor-pointer">7 Days</div>
                     </div>
                     <date-picker @change="setDateRange" v-model="range" lang="en" range type="date" format="YYY-MM-DD"></date-picker>
+                    <div v-if="filtersApplied" class="mx-auto w-full text-center">
+                        <button @click="downloadReport" class="lg:w-full m-4 bg-green-300 text-center appearance-none border-2 border-black rounded-full w-1/3 py-2 px-4 text-loginButtonText leading-tight focus:outline-none">
+                            Download report
+                        </button>
+                    </div>
                 </div>
 
                 <div class="flex-1 lg:m-0 mb-4">
@@ -152,6 +157,25 @@ export default {
     },
 
     methods: {
+        downloadReport() {
+            let self = this;
+
+            Event.$emit('download-start');
+            axios({
+                url: 'api/download-report/' + self.filters.macAddress,
+                method: 'GET',
+                responseType: 'blob', // important
+            }).then((response) => {
+                const url = window.URL.createObjectURL(new Blob([response.data]));
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', 'file.pdf');
+                document.body.appendChild(link);
+                link.click();
+                Event.$emit('download-end');
+            });
+        },
+
         applyFilters() {
             if (this.filters.macAddress === '') {
                 return false;

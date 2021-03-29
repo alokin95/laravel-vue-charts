@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ReportsController;
+use Barryvdh\DomPDF\PDF;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::post('/login', [AuthController::class, 'login']);
+
+Route::get('/download-report/{macAddress}', [ReportsController::class, 'downloadReportPdf']);
 
 Route::middleware('jwt.auth')->group(function()
 {

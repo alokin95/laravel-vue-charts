@@ -1,5 +1,6 @@
 <?php
 
+use Barryvdh\DomPDF\PDF;
 use Illuminate\Support\Facades\Route;
 
 /*

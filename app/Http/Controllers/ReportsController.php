@@ -6,9 +6,11 @@ use App\Repository\Contract\ContractRepository;
 use App\Repository\Contract\ContractRepositoryInterface;
 use App\Service\Contract\ContractServiceInterface;
 use App\Service\MacAddress\MacAddressServiceInterface;
+use Barryvdh\DomPDF\Facade as PDF;
 use Carbon\Carbon;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class ReportsController extends Controller
 {
@@ -51,5 +53,14 @@ class ReportsController extends Controller
 ////        $createdAt = new Carbon()->toDateTimeString();
 //        dd($created_at->toDateTimeString());
         return new JsonResponse($reports);
+    }
+
+    public function downloadReportPdf($macAddress)
+    {
+        set_time_limit(60);
+        $report = $this->macAddressService->generateReportData($macAddress);
+
+        $pdf = PDF::loadView('report-pdf', compact('report'));
+        return $pdf->download('report.pdf');
     }
 }

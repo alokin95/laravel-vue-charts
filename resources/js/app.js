@@ -1,3 +1,4 @@
+import './bootstrap';
 import Vue from 'vue';
 import { router } from './_helpers/router';
 import VeeValidate from 'vee-validate';

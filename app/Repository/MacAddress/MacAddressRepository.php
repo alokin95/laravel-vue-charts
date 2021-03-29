@@ -78,4 +78,9 @@ class MacAddressRepository extends BaseRepository implements MacAddressRepositor
             ])
             ->first();
     }
+
+    public function getReportData(string $macAddress)
+    {
+        return $this->model->with(['contract', 'interference', 'rss', 'bitrate'])->where('mac', $macAddress)->first();
+    }
 }

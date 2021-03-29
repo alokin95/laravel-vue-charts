@@ -62,6 +62,14 @@ class MacAddressService implements MacAddressServiceInterface
         return $reports;
     }
 
+    public function generateReportData(string $macAddress)
+    {
+        $report = $this->macAddressRepository->getReportData($macAddress);
+        $this->getAggregateData($report);
+
+        return $report;
+    }
+
     private function getAggregateData($reports) {
         $rss['max']     = $reports->rss->max('value');
         $rss['avg']     = round($reports->rss->avg('value'));
