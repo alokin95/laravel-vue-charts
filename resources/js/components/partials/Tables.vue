@@ -61,7 +61,7 @@
 
         </div>
 
-        <div class="lg:flex-1 lg:mr-2">
+        <div v-if="interferenceData && bitrateData && rssData" class="lg:flex-1 lg:mr-2">
 
             <div class="bg-white shadow-xl mb-4">
                 <h1 class="text-blue-800 font-medium p-4">HGw Bitrate [Mbps]</h1>
@@ -78,17 +78,17 @@
                     <tbody class="bg-mainContent">
                     <tr class="bg-mainContent">
                         <td>Bitrate</td>
-                        <td>76</td>
-                        <td>−49</td>
-                        <td>17</td>
-                        <td>sada></td>
+                        <td>{{ bitrateData.min }}</td>
+                        <td>{{ bitrateData.avg }}</td>
+                        <td>{{ bitrateData.max }}</td>
+                        <td>{{ bitrateData.last }}</td>
                     </tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="bg-white shadow-xl mb-4">
-                <h1 class="text-blue-800 font-medium p-4">HGw Bitrate [Mbps]</h1>
+                <h1 class="text-blue-800 font-medium p-4">HGw RSS</h1>
                 <table class="table w-full p-4">
                     <thead>
                     <tr>
@@ -101,23 +101,22 @@
                     </thead>
                     <tbody class="bg-mainContent">
                     <tr class="bg-mainContent">
-                        <td>27</td>
-                        <td>76</td>
-                        <td>−49</td>
-                        <td>17</td>
-                        <td>sada></td>
+                        <td>RSS [dBm]</td>
+                        <td>{{ rssData.min }}</td>
+                        <td>{{ rssData.avg }}</td>
+                        <td>{{ rssData.Max ? rssData.max : rssData.last }}</td>
+                        <td>{{ rssData.last }}</td>
                     </tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="bg-white shadow-xl mb-4">
-                <h1 class="text-blue-800 font-medium p-4">HGw Bitrate [Mbps]</h1>
+                <h1 class="text-blue-800 font-medium p-4">HGw Interference network RSS</h1>
                 <table class="table w-full p-4">
                     <thead>
                     <tr>
                         <th><abbr title="KPI Name">KPI Name</abbr></th>
-                        <th><abbr title="Min">Min</abbr></th>
                         <th><abbr title="Avg">Avg</abbr></th>
                         <th><abbr title="Max">Max</abbr></th>
                         <th><abbr title="Last">Last</abbr></th>
@@ -125,11 +124,11 @@
                     </thead>
                     <tbody class="bg-mainContent">
                     <tr class="bg-mainContent">
-                        <td>27</td>
-                        <td>76</td>
-                        <td>−49</td>
-                        <td>17</td>
-                        <td>sada></td>
+                        <td>RSS [dBm]</td>
+                        <td>{{ interferenceData.avg }}</td>
+                        <td>{{ interferenceData.max }}</td>
+                        <td>{{ interferenceData.last }}</td>
+
                     </tr>
                     </tbody>
                 </table>
@@ -196,8 +195,26 @@ export default {
                 { label: 'Low', value: 18, color: '#db1b18' },
                 { label: 'Medium', value: 36, color: '#dee610' },
                 { label: 'High', value: 46, color: '#36e0a5 '}
-            ]
-        };
+            ],
+            rssData: null,
+            bitrateData: null,
+            interferenceData: null
+        }
+    },
+
+    mounted() {
+        let self = this;
+        Event.$on('report-created', function(data) {
+            self.setData(data);
+        })
+    },
+
+    methods: {
+        setData(data) {
+            this.rssData = data.rssData;
+            this.bitrateData = data.bitrateData;
+            this.interferenceData = data.interferenceData;
+        }
     }
 }
 </script>

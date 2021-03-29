@@ -790,7 +790,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Tables",
   data: function data() {
@@ -807,8 +806,24 @@ __webpack_require__.r(__webpack_exports__);
         label: 'High',
         value: 46,
         color: '#36e0a5 '
-      }]
+      }],
+      rssData: null,
+      bitrateData: null,
+      interferenceData: null
     };
+  },
+  mounted: function mounted() {
+    var self = this;
+    Event.$on('report-created', function (data) {
+      self.setData(data);
+    });
+  },
+  methods: {
+    setData: function setData(data) {
+      this.rssData = data.rssData;
+      this.bitrateData = data.bitrateData;
+      this.interferenceData = data.interferenceData;
+    }
   }
 });
 
@@ -55087,7 +55102,85 @@ var render = function() {
   return _c("div", { staticClass: "lg:flex p-4" }, [
     _vm._m(0),
     _vm._v(" "),
-    _vm._m(1),
+    _vm.interferenceData && _vm.bitrateData && _vm.rssData
+      ? _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
+          _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
+            _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
+              _vm._v("HGw Bitrate [Mbps]")
+            ]),
+            _vm._v(" "),
+            _c("table", { staticClass: "table w-full p-4" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c("tbody", { staticClass: "bg-mainContent" }, [
+                _c("tr", { staticClass: "bg-mainContent" }, [
+                  _c("td", [_vm._v("Bitrate")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.bitrateData.min))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.bitrateData.avg))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.bitrateData.max))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.bitrateData.last))])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
+            _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
+              _vm._v("HGw RSS")
+            ]),
+            _vm._v(" "),
+            _c("table", { staticClass: "table w-full p-4" }, [
+              _vm._m(2),
+              _vm._v(" "),
+              _c("tbody", { staticClass: "bg-mainContent" }, [
+                _c("tr", { staticClass: "bg-mainContent" }, [
+                  _c("td", [_vm._v("RSS [dBm]")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.rssData.min))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.rssData.avg))]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      _vm._s(
+                        _vm.rssData.Max ? _vm.rssData.max : _vm.rssData.last
+                      )
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.rssData.last))])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
+            _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
+              _vm._v("HGw Interference network RSS")
+            ]),
+            _vm._v(" "),
+            _c("table", { staticClass: "table w-full p-4" }, [
+              _vm._m(3),
+              _vm._v(" "),
+              _c("tbody", { staticClass: "bg-mainContent" }, [
+                _c("tr", { staticClass: "bg-mainContent" }, [
+                  _c("td", [_vm._v("RSS [dBm]")]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.interferenceData.avg))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.interferenceData.max))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(_vm.interferenceData.last))])
+                ])
+              ])
+            ])
+          ])
+        ])
+      : _vm._e(),
     _vm._v(" "),
     _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
       _c(
@@ -55476,149 +55569,57 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "lg:flex-1 lg:mr-2" }, [
-      _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
-        _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
-          _vm._v("HGw Bitrate [Mbps]")
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [
+          _c("abbr", { attrs: { title: "KPI Name" } }, [_vm._v("KPI Name")])
         ]),
         _vm._v(" "),
-        _c("table", { staticClass: "table w-full p-4" }, [
-          _c("thead", [
-            _c("tr", [
-              _c("th", [
-                _c("abbr", { attrs: { title: "KPI Name" } }, [
-                  _vm._v("KPI Name")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("th", [
-                _c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])
-              ]),
-              _vm._v(" "),
-              _c("th", [
-                _c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])
-              ]),
-              _vm._v(" "),
-              _c("th", [
-                _c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])
-              ]),
-              _vm._v(" "),
-              _c("th", [
-                _c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("tbody", { staticClass: "bg-mainContent" }, [
-            _c("tr", { staticClass: "bg-mainContent" }, [
-              _c("td", [_vm._v("Bitrate")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("76")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("−49")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("17")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("sada>")])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
-        _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
-          _vm._v("HGw Bitrate [Mbps]")
+        _c("th", [_c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])]),
+        _vm._v(" "),
+        _c("th", [_c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])]),
+        _vm._v(" "),
+        _c("th", [_c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])]),
+        _vm._v(" "),
+        _c("th", [_c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [
+          _c("abbr", { attrs: { title: "KPI Name" } }, [_vm._v("KPI Name")])
         ]),
         _vm._v(" "),
-        _c("table", { staticClass: "table w-full p-4" }, [
-          _c("thead", [
-            _c("tr", [
-              _c("th", [
-                _c("abbr", { attrs: { title: "KPI Name" } }, [
-                  _vm._v("KPI Name")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("th", [
-                _c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])
-              ]),
-              _vm._v(" "),
-              _c("th", [
-                _c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])
-              ]),
-              _vm._v(" "),
-              _c("th", [
-                _c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])
-              ]),
-              _vm._v(" "),
-              _c("th", [
-                _c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("tbody", { staticClass: "bg-mainContent" }, [
-            _c("tr", { staticClass: "bg-mainContent" }, [
-              _c("td", [_vm._v("27")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("76")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("−49")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("17")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("sada>")])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "bg-white shadow-xl mb-4" }, [
-        _c("h1", { staticClass: "text-blue-800 font-medium p-4" }, [
-          _vm._v("HGw Bitrate [Mbps]")
+        _c("th", [_c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])]),
+        _vm._v(" "),
+        _c("th", [_c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])]),
+        _vm._v(" "),
+        _c("th", [_c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])]),
+        _vm._v(" "),
+        _c("th", [_c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [
+          _c("abbr", { attrs: { title: "KPI Name" } }, [_vm._v("KPI Name")])
         ]),
         _vm._v(" "),
-        _c("table", { staticClass: "table w-full p-4" }, [
-          _c("thead", [
-            _c("tr", [
-              _c("th", [
-                _c("abbr", { attrs: { title: "KPI Name" } }, [
-                  _vm._v("KPI Name")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("th", [
-                _c("abbr", { attrs: { title: "Min" } }, [_vm._v("Min")])
-              ]),
-              _vm._v(" "),
-              _c("th", [
-                _c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])
-              ]),
-              _vm._v(" "),
-              _c("th", [
-                _c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])
-              ]),
-              _vm._v(" "),
-              _c("th", [
-                _c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("tbody", { staticClass: "bg-mainContent" }, [
-            _c("tr", { staticClass: "bg-mainContent" }, [
-              _c("td", [_vm._v("27")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("76")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("−49")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("17")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("sada>")])
-            ])
-          ])
-        ])
+        _c("th", [_c("abbr", { attrs: { title: "Avg" } }, [_vm._v("Avg")])]),
+        _vm._v(" "),
+        _c("th", [_c("abbr", { attrs: { title: "Max" } }, [_vm._v("Max")])]),
+        _vm._v(" "),
+        _c("th", [_c("abbr", { attrs: { title: "Last" } }, [_vm._v("Last")])])
       ])
     ])
   }

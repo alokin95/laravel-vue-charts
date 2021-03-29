@@ -71,12 +71,12 @@ class MacAddressService implements MacAddressServiceInterface
         $bitrate['max']     = $reports->bitrate->max('value');
         $bitrate['avg']     = $reports->bitrate->avg('value');
         $bitrate['min']     = $reports->bitrate->min('value');
-        $bitrate['last']    = $reports->bitrate->last('value');
+        $bitrate['last']    = $reports->bitrate->last()->value;
 
         $interference['max']     = $reports->interference->max('value');
         $interference['avg']     = $reports->interference->avg('value');
         $interference['min']     = $reports->interference->min('value');
-        $interference['last']    = $reports->interference->last('value');
+        $interference['last']    = $reports->interference->last()->value;
 
         $reports->rssData = $rss;
         $reports->bitrateData = $bitrate;
